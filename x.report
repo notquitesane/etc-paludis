@@ -1,60 +1,147 @@
 These are the actions I will take, in order:
 
-r   app-admin/eselect:0::gentoo 1.4.5 to ::installed replacing 1.4.5
-    -doc -emacs vim-syntax build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target
+n   dev-qt/qtcore:5::gentoo 5.6.1 to ::installed
+    "Cross-platform application development framework"
+    -debug icu -systemd (-test) build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: dev-qt/qtdbus-5.6.1:5::gentoo, dev-qt/qtgui-5.6.1:5::gentoo, dev-qt/qtwidgets-5.6.1:5::gentoo, dev-util/cmake-3.5.2-r1:0::installed
 
-u   app-arch/libarchive:0::gentoo 3.2.2 to ::installed replacing 3.2.1-r3
-    acl bzip2 e2fsprogs expat iconv (-libressl) lz4 lzma lzo nettle -static-libs threads+ xattr zlib ABI_X86: -32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target
-    5.21 MBytes to download
+n   dev-libs/libxml2:2::gentoo 2.9.4 to ::installed [cycle 1]
+    "Version 2 of the library to manipulate XML files"
+    -debug -examples -icu ipv6 lzma python readline -static-libs (-test) ABI_X86: 32 (64) (-x32) PYTHON_TARGETS: -python2_7 python3_4 (-python3_5) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: !<dev-libs/libxml2-2.7.7 from sys-libs/zlib-1.2.8-r1:0::installed, dev-libs/libcroco-0.6.11:0.6::installed, gnome-base/librsvg-2.40.16:2::installed, 4 more
+    In dependency cycle with existing packages: x11-libs/cairo:0, sys-devel/gcc:4.9.3, x11-proto/xextproto:0, media-libs/mesa:0, x11-proto/kbproto:0, media-gfx/graphite2:0, sys-devel/llvm:0, dev-libs/libxml2:2, dev-libs/nettle:0, x11-proto/xproto:0, dev-qt/qtwidgets:5, x11-proto/glproto:0, x11-proto/dri2proto:0, x11-proto/fixesproto:0, x11-proto/compositeproto:0, x11-proto/recordproto:0, x11-proto/xf86vidmodeproto:0, x11-misc/shared-mime-info:0, x11-libs/pango:0, x11-proto/xcb-proto:0, dev-qt/qtgui:5, dev-qt/qtdbus:5
 
-r   app-crypt/gnupg:0::gentoo 2.1.15 to ::installed replacing 2.1.15
-    bzip2 -doc gnutls -ldap nls readline (-selinux) -smartcard -tofu tools usb build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target
+n   dev-libs/nettle:0::gentoo 3.2-r1 to ::installed [cycle 1]
+    "Low-level cryptographic library"
+    -doc gmp (-neon) -static-libs (-test) ABI_X86: 32 (64) (-x32) CPU_FLAGS_X86: -aes build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: app-arch/libarchive-3.2.2:0::installed, net-libs/gnutls-3.3.24-r1:0::installed
 
-n   app-crypt/pinentry:0::gentoo 0.9.5 to ::installed
-    "Collection of simple PIN or passphrase entry dialogs which utilize the Assuan protocol"
-    -caps -clipboard -emacs -gnome-keyring -gtk ncurses -qt4 -static build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target
+n   dev-qt/qtdbus:5::gentoo 5.6.1 to ::installed [cycle 1]
+    "The D-Bus module for the Qt5 framework"
+    -debug (-test) build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: dev-qt/qtgui-5.6.1:5::gentoo
 
-n   dev-libs/mpc:0::gentoo 1.0.2-r1 to ::installed
-    "A library for multiprecision complex arithmetic with exact rounding"
-    -static-libs ABI_X86: -32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target
+n   dev-qt/qtgui:5::gentoo 5.6.1 to ::installed [cycle 1]
+    "The GUI module and platform plugins for the Qt5 framework"
+    -accessibility dbus -debug -egl -eglfs -evdev gif -gles2 -gtkstyle -ibus -jpeg -libinput png -tslib -tuio udev xcb (-test) build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: dev-qt/qtwidgets-5.6.1:5::gentoo, dev-util/cmake-3.5.2-r1:0::installed
 
-n   dev-perl/Text-Unidecode:0::gentoo 1.270.0 to ::installed
-    "Plain ASCII transliterations of Unicode text"
-    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target
+n   dev-qt/qtwidgets:5::gentoo 5.6.1 to ::installed [cycle 1]
+    "Set of components for creating classic desktop-style UIs for the Qt5 framework"
+    -debug -gles2 -gtkstyle png xcb (-test) build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: dev-util/cmake-3.5.2-r1:0::installed
 
-n   dev-perl/Unicode-EastAsianWidth:0::gentoo 1.330.0-r1 to ::installed
-    "East Asian Width properties"
-    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target
+n   media-gfx/graphite2:0::gentoo 1.3.8 to ::installed [cycle 1]
+    "Library providing rendering capabilities for complex non-Roman writing systems"
+    -perl (-test) ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: media-libs/harfbuzz-1.3.1:0::installed
 
-r   sys-apps/texinfo:0::gentoo 6.1 to ::installed replacing 6.1
-    nls -static build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target
-
-s   sys-devel/gcc:4.9.3::gentoo 4.9.3 to ::installed
+s   sys-devel/gcc:4.9.3::gentoo 4.9.3 to ::installed [cycle 1]
     "The GNU Compiler Collection"
     (-altivec) (-awt) cilk cxx -debug doc (-fixed-point) fortran gcj go graphite hardened (-libssp) (multilib) nls -nopie -nossp nptl objc objc++ objc-gc openmp -regression-test (-sanitize) -vanilla vtv build_options: -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target
+    Reasons: sys-devel/llvm-3.7.1-r3:0::gentoo
 
-r   sys-devel/gettext:0::gentoo 0.19.7 to ::installed replacing 0.19.7
-    acl -cvs cxx -doc -emacs git -java ncurses nls openmp -static-libs ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target, !<sys-devel/gettext-0.18.1.1-r3 from app-crypt/pinentry-0.9.5:0::gentoo
+n   sys-devel/llvm:0::gentoo 3.7.1-r3 to ::installed [cycle 1]
+    "Low Level Virtual Machine"
+    clang -debug -doc gold -libedit libffi -lldb -multitarget ncurses -ocaml python static-analyzer -xml (-test) ABI_X86: 32 (64) (-x32) PYTHON_TARGETS: -python2_7 VIDEO_CARDS: -radeon build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: media-libs/mesa-12.0.1:0::gentoo, sys-devel/clang-3.7.1-r100:0::installed
 
-r   sys-libs/ncurses:5::gentoo 5.9-r99 to ::installed replacing 5.9-r99
-    -ada cxx* -gpm -static-libs -tinfo unicode ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target
+n   x11-libs/cairo:0::gentoo 1.14.6 to ::installed [cycle 1]
+    "A vector graphics library with cross-device output support"
+    X (-aqua) -debug (-directfb) (-gles2) glib -opengl -static-libs svg -valgrind -xcb -xlib-xcb ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: gnome-base/librsvg-2.40.16:2::installed, media-libs/harfbuzz-1.3.1:0::installed, x11-libs/gtk+-3.20.9:3::installed, x11-libs/pango-1.40.3:0::gentoo
 
-r   sys-libs/zlib:0::gentoo 1.2.8-r1 to ::installed replacing 1.2.8-r1
-    -minizip* static-libs ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target
+n   x11-misc/shared-mime-info:0::gentoo 1.4 to ::installed [cycle 1]
+    "The Shared MIME-info Database specification"
+    (-test) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: dev-libs/glib-2.48.2:2::installed, x11-libs/gtk+-3.20.9:3::installed, x11-libs/pango-1.40.3:0::gentoo
 
-Total: 6 reinstalls, 1 upgrades, 1 new slot installs, 4 new installs, 5.21 MBytes to download
+n   x11-proto/compositeproto:0::gentoo 0.4.2-r1 to ::installed [cycle 1]
+    "X.Org Composite protocol headers"
+    ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/libXcomposite-0.4.4-r1:0::installed
+
+n   x11-proto/dri2proto:0::gentoo 2.8-r1 to ::installed [cycle 1]
+    "X.Org DRI2 protocol headers"
+    ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: media-libs/mesa-12.0.1:0::gentoo
+
+n   x11-proto/glproto:0::gentoo 1.4.17-r1 to ::installed [cycle 1]
+    "X.Org GL protocol headers"
+    ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: !<x11-proto/glproto-1.4.17-r1 from app-eselect/eselect-opengl-1.3.1-r4:0::installed, media-libs/mesa-12.0.1:0::gentoo
+
+n   x11-proto/kbproto:0::gentoo 1.0.7 to ::installed [cycle 1]
+    "X.Org KB protocol headers"
+    ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/libX11-1.6.4:0::installed, x11-libs/libXt-1.1.5:0::installed
+
+n   x11-proto/recordproto:0::gentoo 1.14.2-r1 to ::installed [cycle 1]
+    "X.Org Record protocol headers"
+    -doc ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/libXtst-1.2.3:0::installed
+
+n   x11-proto/xcb-proto:0::gentoo 1.12-r2 to ::installed [cycle 1]
+    "X C-language Bindings protocol headers"
+    ABI_X86: 32 (64) (-x32) PYTHON_TARGETS: -python2_7 python3_4 (-python3_5) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/xcb-util-cursor-0.1.3-r1:0::installed
+
+n   x11-proto/xextproto:0::gentoo 7.3.0 to ::installed [cycle 1]
+    "X.Org XExt protocol headers"
+    -doc ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: media-libs/mesa-12.0.1:0::gentoo, x11-libs/libX11-1.6.4:0::installed, x11-libs/libXext-1.3.3:0::installed, 6 more
+
+n   x11-proto/fixesproto:0::gentoo 5.0-r1 to ::installed [cycle 1]
+    "X.Org Fixes protocol headers"
+    ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/libXfixes-5.0.3:0::installed
+
+n   x11-proto/xf86vidmodeproto:0::gentoo 2.3.1-r1 to ::installed [cycle 1]
+    "X.Org XF86VidMode protocol headers"
+    ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: media-libs/mesa-12.0.1:0::gentoo, x11-libs/libXxf86vm-1.1.4:0::installed
+
+n   media-libs/mesa:0::gentoo 12.0.1 to ::installed [cycle 1]
+    "OpenGL-like graphic library for Linux"
+    -bindist classic -d3d9 -debug dri3 egl gallium gbm -gles1 gles2 llvm nptl -opencl -openmax -osmesa pax_kernel pic (-selinux) udev -vaapi -valgrind -vdpau -wayland -xa -xvmc ABI_X86: 32 (64) (-x32) VIDEO_CARDS: (-freedreno) i915 i965 -ilo intel -nouveau -r100 -r200 -r300 -r600 -radeon -radeonsi (-vc4) -vmware build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: !<media-libs/mesa-10.3.4-r1 from app-eselect/eselect-opengl-1.3.1-r4:0::installed, !=media-libs/mesa-10.3.5 from app-eselect/eselect-opengl-1.3.1-r4:0::installed, !=media-libs/mesa-10.3.7-r1 from app-eselect/eselect-opengl-1.3.1-r4:0::installed, virtual/opengl-7.0-r1:0::installed
+
+n   x11-proto/xproto:0::gentoo 7.0.29 to ::installed [cycle 1]
+    "X.Org xproto protocol headers"
+    -doc ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/libICE-1.0.9:0::installed, x11-libs/libSM-1.2.2-r1:0::installed, x11-libs/libX11-1.6.4:0::installed, 17 more
+
+n   x11-libs/pango:0::gentoo 1.40.3 to ::installed [cycle 1]
+    "Internationalized text layout and rendering library"
+    X introspection (-test) ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: gnome-base/librsvg-2.40.16:2::installed, x11-libs/gtk+-3.20.9:3::installed
+
+n   app-vim/eselect-syntax:0::gentoo 20070506 to ::installed
+    "vim plugin: Eselect syntax highlighting, filetype and indent settings"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: app-admin/eselect-1.4.5:0::installed
+
+n   app-vim/gtk-syntax:0::gentoo 20130716 to ::installed
+    "vim plugin: Syntax highlighting for GLib, Gtk+, Xlib, Gimp, Gnome, and more"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/gtk+-3.20.9:3::installed
+
+n   app-vim/pam-syntax:0::gentoo 20060424 to ::installed
+    "vim plugin: PAM configuration syntax highlighting"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: sys-libs/pam-1.2.1:0::installed
+
+n   x11-themes/hicolor-icon-theme:0::gentoo 0.15 to ::installed
+    "Fallback theme for the freedesktop icon theme specification"
+    build_options: -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-themes/adwaita-icon-theme-3.20:0::installed
+
+n   gnome-extra/polkit-gnome:0::gentoo 0.105-r1 to ::installed
+    "A dbus session bus service that is used to bring up authentication dialogs"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: sys-auth/polkit-0.113:0::installed
+
+Total: 1 new slot installs, 27 new installs
 
 Build Options:
     dwarf_compress:                Compress DWARF2+ debug information
@@ -64,27 +151,71 @@ Build Options:
     work:                          Whether to preserve or remove working directories
 
 USE:
+    X:                             Add support for X11
+    accessibility:                 Add support for accessibility (eg 'at-spi' library)
     altivec:                       Add support for optimizations for G4 and G5/ppc970 processors
+    aqua:                          Include support for the Mac OS X Aqua (Carbon/Cocoa) GUI
     awt:                           Useful only when building GCJ, this enables Abstract Window Toolkit (AWT) peer support on top of GTK+
-    caps:                          Use Linux capabilities library to control privilege
+    bindist:                       Disable patent-encumbered ARB_texture_float, EXT_texture_shared_exponent, and EXT_packed_float extensions.
     cilk:                          Support the Cilk Plus language (C/C++ based languages for parallel programming)
-    clipboard:                     Enable clipboard integration
+    clang:                         Build the clang C/C++ compiler
+    classic:                       Build drivers based on the classic architecture.
     cxx:                           Build support for C++ (bindings, extra libraries, code generation, ...)
+    d3d9:                          Enable Direct 3D9 API through Nine state tracker. Can be used together with patched wine.
+    dbus:                          Enable dbus support for anything that needs it (gpsd, gnomemeeting, etc)
     debug:                         Enable extra debug codepaths, like asserts and extra output. If you want to get meaningful backtraces see https://wiki.gentoo.org/wiki/Project:Quality_Assurance/Backtraces
-    doc:                           Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
-    emacs:                         Add support for GNU Emacs
+    directfb:                      Add support for DirectFB layer (library for FB devices)
+    doc:
+        dev-libs/nettle:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+        sys-devel/gcc:4.9.3::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+        sys-devel/llvm:0::gentoo:  Build and install the HTML documentation and regenerate the man pages
+        x11-proto/recordproto:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+        x11-proto/xextproto:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+        x11-proto/xproto:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+    dri3:                          Enable DRI3 support.
+    egl:
+        dev-qt/qtgui:5::gentoo:    Enable EGL integration
+        media-libs/mesa:0::gentoo:  Enable EGL support.
+    eglfs:                         Build the EGL Full Screen/Single Surface platform plugin
+    evdev:                         Enable support for input devices via evdev
+    examples:                      Install examples, usually source code
     fixed-point:                   Enable fixed-point arithmetic support for MIPS targets in gcc (Warning: significantly increases compile time!)
     fortran:                       Add support for fortran
+    gallium:                       Build drivers based on Gallium3D, the new architecture for 3D graphics drivers.
+    gbm:                           Enable the Graphics Buffer Manager for EGL on KMS.
     gcj:                           Enable building with gcj (The GNU Compiler for the Javatm Programming Language)
-    gnome-keyring:                 Enable support for storing passwords via gnome-keyring
+    gif:                           Add GIF image support
+    gles1:                         Enable GLESv1 support.
+    gles2:
+        dev-qt/qtgui:5::gentoo:    Use GLES 2.0 or later instead of full OpenGL
+        dev-qt/qtwidgets:5::gentoo:  Use GLES 2.0 or later instead of full OpenGL
+        x11-libs/cairo:0::gentoo:  Use OpenGL ES 2 backend for acceleration.
+        media-libs/mesa:0::gentoo:  Enable GLESv2 support.
+    glib:                          Compile with GLib Object System support
+    gmp:                           Add support for dev-libs/gmp (GNU MP library)
     go:                            Build the GCC Go language frontend.
+    gold:                          Build the gold linker plugin
     graphite:                      Add support for the framework for loop optimizations based on a polyhedral intermediate representation
-    gtk:                           Add support for x11-libs/gtk+ (The GIMP Toolkit)
+    gtkstyle:
+        dev-qt/qtgui:5::gentoo:    Build a widgets style that mimics the active GTK+ theme
+        dev-qt/qtwidgets:5::gentoo:  Build a Qt style called GTK+ that mimics the active GTK+ theme
     hardened:                      Activate default security enhancements for toolchain (gcc, glibc, binutils)
+    ibus:                          Build the IBus input method plugin
+    icu:                           Enable ICU (Internationalization Components for Unicode) support, using dev-libs/icu
+    introspection:                 Add support for GObject based introspection
+    ipv6:                          Add support for IP version 6
+    jpeg:                          Add JPEG image support
+    libedit:                       Use the libedit library (replacement for readline)
+    libffi:                        Enable support for Foreign Function Interface library
+    libinput:                      Enable support for input devices via dev-libs/libinput
     libssp:                        Build SSP support into a dedicated library rather than use the code in the C library (DO NOT ENABLE THIS IF YOU DON'T KNOW WHAT IT DOES)
-    minizip:                       include the minizip library for quick and dirty zip extraction
+    lldb:                          Build the lldb debugger
+    llvm:                          Enable LLVM backend for Gallium3D.
+    lzma:                          Support for LZMA (de)compression algorithm
     multilib:                      On 64bit systems, if you want to be able to compile 32bit and 64bit binaries
-    ncurses:                       Add ncurses support (console display library)
+    multitarget:                   Build all host targets (default: host only)
+    ncurses:                       Support querying terminal properties using ncurses' terminfo
+    neon:                          Enable optimization support for ARM NEON processors
     nls:                           Add Native Language Support (using gettext - GNU locale utilities)
     nopie:                         Disable PIE support (NOT FOR GENERAL USE)
     nossp:                         Disable SSP support (NOT FOR GENERAL USE)
@@ -92,21 +223,117 @@ USE:
     objc:                          Build support for the Objective C code language
     objc++:                        Build support for the Objective C++ language
     objc-gc:                       Build support for the Objective C code language Garbage Collector
+    ocaml:                         Add support/bindings for the Ocaml language
+    opencl:                        Enable the Clover Gallium OpenCL state tracker.
+    opengl:                        Use Mesa backend for acceleration
+    openmax:                       Enable OpenMAX video decode/encode acceleration for Gallium3D.
     openmp:                        Build support for the OpenMP (support parallel computing), requires >=sys-devel/gcc-4.2 built with USE="openmp"
-    qt4:                           Add support for the Qt GUI/Application Toolkit version 4.x
+    osmesa:                        Build the Mesa library for off-screen rendering.
+    pax_kernel:                    Enable if the user plans to run the package under a pax enabled hardened kernel
+    perl:                          Add optional support/bindings for the Perl language
+    pic:                           disable optimized assembly code that is not PIC friendly
+    png:                           Add support for libpng (PNG images)
+    python:                        Add optional support/bindings for the Python language
+    readline:                      Enable support for libreadline, a GNU line-editing library that almost everyone wants
     regression-test:               Run the testsuite and install the results (requires FEATURES=test)
     sanitize:                      Build support for various sanitizer functions (ASAN/TSAN/etc...)
-    static:                        !!do not set this during bootstrap!! Causes binaries to be statically linked instead of dynamically
+    selinux:                       !!internal use only!! Security Enhanced Linux support, this must be set by the selinux profile or breakage will occur
+    static-analyzer:               Install the Clang static analyzer (requires USE=clang)
     static-libs:                   Build static versions of dynamic libraries as well
-    threads:                       Add threads support for various packages. Usually pthreads
+    svg:                           Add support for SVG (Scalable Vector Graphics)
+    systemd:                       Enable native journald logging support
+    test:                          Workaround to pull in packages needed to run with FEATURES=test. Portage-2.1.2 handles this internally, so don't set it in make.conf/package.use anymore
+    tslib:                         Enable support for touchscreen devices via x11-libs/tslib
+    tuio:                          Build plugin to receive touch events over the TUIO protocol
+    udev:                          Enable virtual/udev integration (device discovery, power and storage device support, etc)
+    vaapi:                         Enable Video Acceleration API for hardware decoding
+    valgrind:
+        x11-libs/cairo:0::gentoo:  Built-in support to mark memory regions
+        media-libs/mesa:0::gentoo:  Compile in valgrind memory hints
     vanilla:                       Do not add extra patches which change default behaviour; DO NOT USE THIS ON A GLOBAL SCALE as the severity of the meaning changes drastically
+    vdpau:                         Enable the VDPAU acceleration interface for the Gallium3D Video Layer.
     vtv:                           Build support for virtual table verification (a C++ hardening feature)
+    wayland:                       Enable support for dev-libs/wayland
+    xa:                            Enable the XA (X Acceleration) API for Gallium3D.
+    xcb:
+        dev-qt/qtgui:5::gentoo:    Build the XCB platform plugin and enable X11 integration
+        dev-qt/qtwidgets:5::gentoo:  Support the X C-language Binding, a replacement for Xlib
+        x11-libs/cairo:0::gentoo:  Support the X C-language Binding, a replacement for Xlib
+    xlib-xcb:                      Use XCB renderer backend for acceleration over xlib. Enabling this may solve or introduce display corruption problems.
+    xml:                           Add support for XML files
+    xvmc:                          Enable the XvMC acceleration interface for the Gallium3D Video Layer.
 
 abi_x86:
     32:                            32-bit (x86) libraries
     64:                            64-bit (amd64) libraries
     x32:                           x32 ABI libraries
 
-Executing pretend actions: 1 of 12]2;1 of 12 pretend app-admin/eselect-1.4.5:0::gentoo]2;Completed 1 of 12 pretend app-admin/eselect-1.4.5:0::gentoo2 of 12]2;2 of 12 pretend app-arch/libarchive-3.2.2:0::gentoo]2;Completed 2 of 12 pretend app-arch/libarchive-3.2.2:0::gentoo3 of 12]2;3 of 12 pretend app-crypt/gnupg-2.1.15:0::gentoo]2;Completed 3 of 12 pretend app-crypt/gnupg-2.1.15:0::gentoo4 of 12]2;4 of 12 pretend app-crypt/pinentry-0.9.5:0::gentoo]2;Completed 4 of 12 pretend app-crypt/pinentry-0.9.5:0::gentoo5 of 12]2;5 of 12 pretend dev-libs/mpc-1.0.2-r1:0::gentoo]2;Completed 5 of 12 pretend dev-libs/mpc-1.0.2-r1:0::gentoo6 of 12]2;6 of 12 pretend dev-perl/Text-Unidecode-1.270.0:0::gentoo]2;Completed 6 of 12 pretend dev-perl/Text-Unidecode-1.270.0:0::gentoo7 of 12]2;7 of 12 pretend dev-perl/Unicode-EastAsianWidth-1.330.0-r1:0::gentoo]2;Completed 7 of 12 pretend dev-perl/Unicode-EastAsianWidth-1.330.0-r1:0::gentoo8 of 12]2;8 of 12 pretend sys-apps/texinfo-6.1:0::gentoo]2;Completed 8 of 12 pretend sys-apps/texinfo-6.1:0::gentoo9 of 12]2;9 of 12 pretend sys-devel/gcc-4.9.3:4.9.3::gentoo]2;Completed 9 of 12 pretend sys-devel/gcc-4.9.3:4.9.3::gentoo10 of 12]2;10 of 12 pretend sys-devel/gettext-0.19.7:0::gentoo]2;Completed 10 of 12 pretend sys-devel/gettext-0.19.7:0::gentoo11 of 12]2;11 of 12 pretend sys-libs/ncurses-5.9-r99:5::gentoo]2;Completed 11 of 12 pretend sys-libs/ncurses-5.9-r99:5::gentoo12 of 12]2;12 of 12 pretend sys-libs/zlib-1.2.8-r1:0::gentoo]2;Completed 12 of 12 pretend sys-libs/zlib-1.2.8-r1:0::gentoo
+cpu_flags_x86:
+    aes:                           Enable support for Intel's AES instruction set (AES-NI)
 
- [35;01m*[0m No unread news items found
+python_targets:
+    python2_7:                     Build with Python 2.7
+    python3_4:                     Build with Python 3.4
+    python3_5:                     Build with Python 3.5
+
+video_cards:
+    freedreno:                     VIDEO_CARDS setting to build reverse-engineered driver for Qualcomm Adreno cards
+    i915:                          VIDEO_CARDS setting to build driver for Intel i915 video cards
+    i965:                          VIDEO_CARDS setting to build driver for Intel i965 video cards
+    ilo:                           VIDEO_CARDS setting to build unofficial gallium driver for Intel gen6/7 video cards
+    intel:                         VIDEO_CARDS setting to build driver for Intel video cards
+    nouveau:                       VIDEO_CARDS setting to build reverse-engineered driver for nvidia cards
+    r100:                          VIDEO_CARDS setting to build only r100 based chips code for radeon
+    r200:                          VIDEO_CARDS setting to build only r200 based chips code for radeon
+    r300:                          VIDEO_CARDS setting to build only r300, r400 and r500 based chips code for radeon
+    r600:                          VIDEO_CARDS setting to build only r600, r700, Evergreen and Northern Islands based chips code for radeon
+    radeon:                        VIDEO_CARDS setting to build driver for ATI radeon video cards
+    radeonsi:                      VIDEO_CARDS setting to build only Southern Islands based chips code for radeon
+    vc4:                           VIDEO_CARDS setting to build driver for vc4 video cards
+    vmware:                        VIDEO_CARDS setting to build driver for vmware video cards
+
+I encountered the following errors:
+
+!   virtual/libudev
+    Reasons: target, dev-qt/qtgui-5.6.1:5::gentoo, media-libs/mesa-12.0.1:0::gentoo, 4 more
+    Unsuitable candidates:
+      * virtual/libudev-215-r1:0::installed
+        Did not meet virtual/libudev, never using existing, installing to / from target
+      * virtual/libudev-215-r1:0::gentoo
+        Did not meet >=virtual/libudev-208:0/1=[static-libs?], use existing if possible, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled if it is enabled for 'sys-fs/lvm2-2.02.116-r4:0::installed'
+      * virtual/libudev-232:0::gentoo
+        Masked by keyword
+            Keywords ~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+        Did not meet >=virtual/libudev-208:0/1=[static-libs?], use existing if possible, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled if it is enabled for 'sys-fs/lvm2-2.02.116-r4:0::installed'
+!   sys-libs/ncurses
+    Reasons: app-crypt/pinentry-0.9.5:0::installed, app-shells/bash-4.3_p48:0::installed, app-shells/zsh-5.2-r1:0::installed, 14 more
+    Unsuitable candidates:
+      * sys-libs/ncurses-5.9-r3:0::gentoo
+        Did not meet >=sys-libs/ncurses-5.2-r2:0/6=, use existing if possible, installing to / from app-shells/bash-4.3_p48:0::installed
+        Did not meet >=sys-libs/ncurses-5.2-r2:0/6=[unicode], use existing if possible, installing to / from sys-apps/util-linux-2.26.2:0::installed
+        Did not meet >=sys-libs/ncurses-5.7-r7:0/6=, use existing if possible, installing to / from media-sound/alsa-utils-1.0.29:0.9::installed
+        Did not meet >=sys-libs/ncurses-5.9-r3:0/6=[abi_x86_32(-),abi_x86_64(-)], use existing if possible, installing to / from sys-libs/gpm-1.20.7-r2:0::installed
+        Did not meet sys-libs/ncurses:0/5[ada?,cxx?,gpm?,static-libs?,tinfo?,unicode?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?], use existing if possible, installing to / from sys-libs/ncurses-5.9-r99:5::installed
+        Did not meet sys-libs/ncurses:0/6=, use existing if possible, installing to / from sys-devel/gettext-0.19.7:0::installed (and 3 more)
+      * sys-libs/ncurses-5.9-r4:0::gentoo
+        Masked by keyword
+            Keywords ~alpha ~amd64 ~amd64-fbsd ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~sparc-fbsd ~x86 ~x86-fbsd
+        Did not meet >=sys-libs/ncurses-5.2-r2:0/6=, use existing if possible, installing to / from app-shells/bash-4.3_p48:0::installed
+        Did not meet >=sys-libs/ncurses-5.2-r2:0/6=[unicode], use existing if possible, installing to / from sys-apps/util-linux-2.26.2:0::installed
+        Did not meet >=sys-libs/ncurses-5.7-r7:0/6=, use existing if possible, installing to / from media-sound/alsa-utils-1.0.29:0.9::installed
+        Did not meet >=sys-libs/ncurses-5.9-r3:0/6=[abi_x86_32(-),abi_x86_64(-)], use existing if possible, installing to / from sys-libs/gpm-1.20.7-r2:0::installed
+        Did not meet sys-libs/ncurses:0/5[ada?,cxx?,gpm?,static-libs?,tinfo?,unicode?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?], use existing if possible, installing to / from sys-libs/ncurses-5.9-r99:5::installed
+        Did not meet sys-libs/ncurses:0/6=, use existing if possible, installing to / from sys-devel/gettext-0.19.7:0::installed (and 3 more)
+      * sys-libs/ncurses-5.9-r5:0::gentoo
+        Did not meet >=sys-libs/ncurses-5.2-r2:0/6=, use existing if possible, installing to / from app-shells/bash-4.3_p48:0::installed
+        Did not meet >=sys-libs/ncurses-5.2-r2:0/6=[unicode], use existing if possible, installing to / from sys-apps/util-linux-2.26.2:0::installed
+        Did not meet >=sys-libs/ncurses-5.7-r7:0/6=, use existing if possible, installing to / from media-sound/alsa-utils-1.0.29:0.9::installed
+        Did not meet >=sys-libs/ncurses-5.9-r3:0/6=[abi_x86_32(-),abi_x86_64(-)], use existing if possible, installing to / from sys-libs/gpm-1.20.7-r2:0::installed
+        Did not meet sys-libs/ncurses:0/6=, use existing if possible, installing to / from sys-devel/gettext-0.19.7:0::installed (and 3 more)
+      * sys-libs/ncurses-6.0-r1:0::gentoo
+        Masked by keyword
+            Keywords alpha arm arm64 hppa ia64 m68k ppc ppc64 s390 sh sparc ~amd64 ~amd64-fbsd ~mips ~sparc-fbsd ~x86 ~x86-fbsd
+        Did not meet sys-libs/ncurses:0/5[ada?,cxx?,gpm?,static-libs?,tinfo?,unicode?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?], use existing if possible, installing to / from sys-libs/ncurses-5.9-r99:5::installed
+
