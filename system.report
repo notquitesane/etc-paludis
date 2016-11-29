@@ -1,5 +1,20 @@
 These are the actions I will take, in order:
 
+n   dev-perl/XML-NamespaceSupport:0::gentoo 1.110.0-r1 to ::installed
+    "A Perl module that offers a simple to process namespaced XML names"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: app-text/docbook2X-0.8.8-r4:0::gentoo, dev-perl/XML-LibXML-2.12.100:0::gentoo, dev-perl/XML-SAX-0.990.0-r1:0::gentoo
+
+n   dev-perl/XML-Parser:0::gentoo 2.410.0-r2 to ::installed
+    "A Perl extension interface to James Clark's XML parser, expat"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: dev-util/intltool-0.51.0-r1:0::installed
+
+n   dev-perl/XML-SAX-Base:0::gentoo 1.80.0-r1 to ::installed
+    "Base class SAX Drivers and Filters"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: dev-perl/XML-SAX-0.990.0-r1:0::gentoo
+
 n   dev-qt/qtchooser:0::gentoo 0_p20151008 to ::installed
     "Qt4/Qt5 version chooser"
     (-test) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
@@ -7,11 +22,17 @@ n   dev-qt/qtchooser:0::gentoo 0_p20151008 to ::installed
 
 r   dev-libs/gmp:0::gentoo 6.1.0 to ::installed replacing 6.1.0
     asm -cxx* -doc -pgo -static-libs ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: dev-libs/cloog-0.18.4:0::installed, dev-libs/isl-0.15:0::installed, dev-libs/mpc-1.0.2-r1:0::installed, 5 more
+    Reasons: dev-libs/cloog-0.18.4:0::installed, dev-libs/isl-0.15:0::installed, dev-libs/mpc-1.0.2-r1:0::gentoo, 5 more
 
-r   sys-libs/ncurses:5::gentoo 5.9-r99 to ::installed replacing 5.9-r99
-    -ada -cxx* -gpm* -static-libs -tinfo unicode ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: app-admin/eselect-1.4.5:0::installed, app-editors/vim-7.4.769:0::gentoo, sys-libs/readline-6.3_p8-r2:0::installed
+n   dev-libs/mpfr:0::gentoo 3.1.3_p4 to ::installed
+    "library for multiple-precision floating-point computations with exact rounding"
+    -static-libs ABI_X86: -32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: dev-libs/mpc-1.0.2-r1:0::gentoo, sys-devel/gcc-4.9.3:4.9.3::gentoo
+
+n   dev-libs/mpc:0::gentoo 1.0.2-r1 to ::installed
+    "A library for multiprecision complex arithmetic with exact rounding"
+    -static-libs ABI_X86: -32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: sys-devel/gcc-4.9.3:4.9.3::gentoo
 
 r   sys-libs/zlib:0::gentoo 1.2.8-r1 to ::installed replacing 1.2.8-r1
     -minizip* static-libs ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
@@ -21,15 +42,29 @@ r   dev-libs/xapian:0::gentoo 1.2.22 to ::installed replacing 1.2.22
     brass chert -doc inmemory -static-libs CPU_FLAGS_X86: -sse* -sse2* build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
     Reasons: app-doc/doxygen-1.8.11-r2:0::gentoo
 
+n   dev-perl/libintl-perl:0::gentoo 1.240.0 to ::installed
+    "High-Level Interface to Uniforum Message Translation"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: sys-apps/texinfo-6.1:0::installed
+
 r   virtual/libudev:0::gentoo 215-r1 to ::installed replacing 215-r1
     -static-libs* -systemd ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
     Reasons: dev-qt/qtgui-5.6.1:5::gentoo, media-libs/mesa-12.0.1:0::gentoo, sys-apps/pciutils-3.4.1:0::installed, sys-apps/util-linux-2.26.2:0::gentoo
 
-u   app-arch/libarchive:0::gentoo 3.2.2 to ::installed replacing 3.2.1-r3 [cycle 1]
-    acl bzip2 e2fsprogs expat iconv (-libressl) lz4 lzma lzo nettle -static-libs threads+ xattr zlib ABI_X86: -32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: dev-util/cmake-3.5.2-r1:0::installed, sys-apps/paludis-2.6.0:0::installed
-    5.21 MBytes to download
-    In dependency cycle with existing packages: x11-proto/glproto:0, x11-misc/util-macros:0, x11-proto/dri2proto:0, dev-qt/qtwidgets:5, x11-libs/pixman:0, x11-libs/gdk-pixbuf:2, sys-apps/util-linux:0, dev-db/sqlite:3, app-accessibility/at-spi2-core:2, x11-misc/shared-mime-info:0, app-arch/libarchive:0, sys-apps/openrc:0, dev-util/gdbus-codegen:0, sys-apps/shadow:0, sys-libs/cracklib:0, dev-libs/libxml2:2, sys-devel/gcc:4.9.3, x11-proto/compositeproto:0, dev-libs/gobject-introspection:0, app-misc/pax-utils:0, app-text/docbook2X:0, dev-lang/python:3.4, x11-proto/xextproto:0, x11-proto/xf86vidmodeproto:0, x11-themes/hicolor-icon-theme:0, app-editors/vim:0, x11-libs/pango:0, dev-libs/libxslt:0, dev-vcs/git:0, dev-qt/qtgui:5, x11-proto/xproto:0, x11-proto/xcb-proto:0, dev-qt/qtcore:5, dev-libs/libtasn1:0, x11-proto/kbproto:0, app-text/asciidoc:0, x11-proto/recordproto:0, app-crypt/pinentry:0, net-libs/gnutls:0, dev-lang/python:2.7, x11-proto/fixesproto:0, app-text/ghostscript-gpl:0, dev-qt/qtdbus:5, sys-devel/llvm:0, media-libs/freetype:2, media-gfx/graphite2:0, virtual/man:0, dev-python/pyelftools:0, media-libs/alsa-lib:0, media-libs/mesa:0, sys-apps/portage:0, sys-devel/gettext:0, x11-libs/cairo:0
+n   dev-perl/Text-Unidecode:0::gentoo 1.270.0 to ::installed
+    "Plain ASCII transliterations of Unicode text"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: sys-apps/texinfo-6.1:0::installed
+
+n   dev-perl/Unicode-EastAsianWidth:0::gentoo 1.330.0-r1 to ::installed
+    "East Asian Width properties"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: sys-apps/texinfo-6.1:0::installed
+
+d   app-shells/zsh:0::gentoo (formerly from mv) 5.2 to ::installed replacing 5.2-r1 [cycle 1]
+    -caps -debug -doc -examples gdbm maildir pcre -static unicode build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: dev-util/ninja-1.6.0:0::installed
+    In dependency cycle with existing packages: x11-misc/util-macros:0, x11-libs/pixman:0, x11-libs/gdk-pixbuf:2, x11-libs/cairo:0, sys-devel/gettext:0, sys-apps/portage:0, media-libs/mesa:0, media-libs/alsa-lib:0, virtual/man:0, dev-python/pyelftools:0, media-gfx/graphite2:0, app-accessibility/at-spi2-core:2, x11-misc/shared-mime-info:0, dev-perl/XML-LibXML:0, app-arch/libarchive:0, sys-apps/shadow:0, dev-libs/libtasn1:0, x11-proto/kbproto:0, x11-proto/glproto:0, dev-db/sqlite:3, sys-apps/util-linux:0, app-crypt/pinentry:0, dev-libs/nettle:0, x11-proto/xf86vidmodeproto:0, x11-proto/xcb-proto:0, x11-proto/xproto:0, x11-proto/recordproto:0, app-text/asciidoc:0, dev-lang/python:3.4, x11-proto/xextproto:0, x11-proto/fixesproto:0, net-libs/gnutls:0, dev-lang/python:2.7, dev-qt/qtcore:5, dev-perl/XML-SAX:0, dev-libs/libxml2:2, sys-libs/cracklib:0, app-shells/zsh:0, x11-themes/hicolor-icon-theme:0, app-editors/vim:0, x11-libs/pango:0, dev-libs/libxslt:0, app-misc/pax-utils:0, dev-libs/gobject-introspection:0, x11-proto/compositeproto:0, app-text/docbook2X:0, sys-devel/gcc:4.9.3, dev-qt/qtwidgets:5, x11-proto/dri2proto:0, app-text/ghostscript-gpl:0, dev-qt/qtdbus:5, sys-devel/llvm:0, media-libs/freetype:2, dev-qt/qtgui:5, dev-vcs/git:0, sys-apps/openrc:0, dev-util/gdbus-codegen:0
 
 r   dev-db/sqlite:3::gentoo 3.13.0 to ::installed replacing 3.13.0 [cycle 1]
     -debug -doc -icu* readline -secure-delete* -static-libs -tcl -tools* (-test) ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
@@ -43,13 +78,35 @@ u   dev-libs/libtasn1:0::gentoo 4.8 to ::installed replacing 4.5 [cycle 1]
     -doc -static-libs ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
     Reasons: net-libs/gnutls-3.3.24-r1:0::gentoo
 
-r   dev-libs/libxml2:2::gentoo 2.9.4 to ::installed replacing 2.9.4 [cycle 1]
-    -debug -examples -icu* ipv6 lzma python readline -static-libs (-test) ABI_X86: 32 (64) (-x32) PYTHON_TARGETS: -python2_7* python3_4 (-python3_5) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+n   dev-libs/libxml2:2::gentoo 2.9.4 to ::installed [cycle 1]
+    "Version 2 of the library to manipulate XML files"
+    -debug -examples -icu ipv6 lzma python readline -static-libs (-test) ABI_X86: 32 (64) (-x32) PYTHON_TARGETS: -python2_7 python3_4 (-python3_5) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
     Reasons: !<dev-libs/libxml2-2.7.7 from sys-libs/zlib-1.2.8-r1:0::gentoo, app-text/build-docbook-catalog-1.19.1:0::installed, app-text/docbook-xml-dtd-4.5-r1:4.5::installed, 9 more
 
-r   dev-libs/libxslt:0::gentoo 1.1.29 to ::installed replacing 1.1.29 [cycle 1]
-    crypt -debug -examples python -static-libs ABI_X86: -32 (64) (-x32) PYTHON_TARGETS: -python2_7* build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+n   dev-libs/libxslt:0::gentoo 1.1.29 to ::installed [cycle 1]
+    "XSLT libraries and tools"
+    crypt -debug -examples python -static-libs ABI_X86: -32 (64) (-x32) PYTHON_TARGETS: -python2_7 build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
     Reasons: app-text/asciidoc-8.6.9-r2:0::gentoo, app-text/docbook2X-0.8.8-r4:0::gentoo, app-text/po4a-0.45-r3:0::installed, 10 more
+
+n   dev-libs/nettle:0::gentoo 3.2-r1 to ::installed [cycle 1]
+    "Low-level cryptographic library"
+    -doc gmp (-neon) -static-libs (-test) ABI_X86: 32 (64) (-x32) CPU_FLAGS_X86: -aes build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: app-arch/libarchive-3.2.2:0::gentoo, net-libs/gnutls-3.3.24-r1:0::gentoo
+
+u   app-arch/libarchive:0::gentoo 3.2.2 to ::installed replacing 3.2.1-r3 [cycle 1]
+    acl bzip2 e2fsprogs expat iconv (-libressl) lz4 lzma lzo nettle -static-libs threads+ xattr zlib ABI_X86: -32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: dev-util/cmake-3.5.2-r1:0::installed, sys-apps/paludis-2.6.0:0::installed
+    5.21 MBytes to download
+
+n   dev-perl/XML-SAX:0::gentoo 0.990.0-r1 to ::installed [cycle 1]
+    "Perl module for using and building Perl SAX2 XML parsers, filters, and drivers"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: !<dev-perl/XML-SAX-0.990.0 from dev-perl/XML-SAX-Base-1.80.0-r1:0::gentoo, app-text/docbook2X-0.8.8-r4:0::gentoo, dev-perl/XML-LibXML-2.12.100:0::gentoo
+
+n   dev-perl/XML-LibXML:0::gentoo 2.12.100 to ::installed [cycle 1]
+    "Perl binding for libxml2"
+    (-test) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: app-text/docbook2X-0.8.8-r4:0::gentoo
 
 n   app-text/docbook2X:0::gentoo 0.8.8-r4 to ::installed [cycle 1]
     "Tools to convert docbook to man and info"
@@ -81,8 +138,8 @@ r   dev-util/gdbus-codegen:0::gentoo 2.48.2 to ::installed replacing 2.48.2 [cyc
 
 n   media-gfx/graphite2:0::gentoo 1.3.8 to ::installed [cycle 1]
     "Library providing rendering capabilities for complex non-Roman writing systems"
-    You need to change: ABI_X86: -32 -> 32 No changes needed: -perl (-test) ABI_X86: (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons requiring changes: media-libs/harfbuzz-1.3.1:0::installed 
+    -perl (-test) ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: media-libs/harfbuzz-1.3.1:0::installed
 
 r   media-libs/freetype:2::gentoo 2.6.3-r1 to ::installed replacing 2.6.3-r1 [cycle 1]
     X adobe-cff -bindist bzip2 -debug -doc -fontforge -harfbuzz -infinality -png static-libs -utils* ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
@@ -293,7 +350,7 @@ n   app-doc/doxygen:0::gentoo 1.8.11-r2 to ::installed
     clang -debug -doc -dot doxysearch -latex -qt5 (-sqlite) build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
     Reasons: sys-apps/paludis-2.6.0:0::installed
 
-Total: 25 reinstalls, 5 upgrades, 1 new slot installs, 32 new installs, 5.21 MBytes to download
+Total: 1 downgrades, 22 reinstalls, 5 upgrades, 1 new slot installs, 46 new installs, 5.21 MBytes to download
 
 I did not take the following:
 
@@ -326,6 +383,7 @@ USE:
         app-doc/doxygen:0::gentoo:  support for sys-devel/clang assisted parsing
     classic:                       Build drivers based on the classic architecture.
     clipboard:                     Enable clipboard integration
+    crypt:                         Add support for encryption -- using mcrypt or gpg where applicable
     crywrap:                       Build the crywrap TLS proxy service
     cups:                          Add support for CUPS (Common Unix Printing System)
     cxx:                           Build support for C++ (bindings, extra libraries, code generation, ...)
@@ -335,6 +393,7 @@ USE:
     directfb:                      Add support for DirectFB layer (library for FB devices)
     djvu:                          Support DjVu, a PDF-like document format esp. suited for scanned documents
     doc:
+        dev-libs/nettle:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
         x11-proto/recordproto:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
         x11-proto/xextproto:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
         x11-proto/xproto:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
@@ -364,10 +423,10 @@ USE:
         x11-libs/cairo:0::gentoo:  Use OpenGL ES 2 backend for acceleration.
         media-libs/mesa:0::gentoo:  Enable GLESv2 support.
     glib:                          Compile with GLib Object System support
+    gmp:                           Add support for dev-libs/gmp (GNU MP library)
     gnome-keyring:                 Enable support for storing passwords via gnome-keyring
     go:                            Build the GCC Go language frontend.
     gold:                          Build the gold linker plugin
-    gpm:                           Add support for sys-libs/gpm (Console-based mouse driver)
     graphite:                      Add support for the framework for loop optimizations based on a polyhedral intermediate representation
     gtk:                           Add support for x11-libs/gtk+ (The GIMP Toolkit)
     gtkstyle:
@@ -379,6 +438,7 @@ USE:
     icu:                           Enable ICU (Internationalization Components for Unicode) support, using dev-libs/icu
     idn:                           Enable support for Internationalized Domain Names
     introspection:                 Add support for GObject based introspection
+    ipv6:                          Add support for IP version 6
     jpeg:                          Add JPEG image support
     latex:                         Add support for LaTeX (typesetting package)
     libedit:                       Use the libedit library (replacement for readline)
@@ -388,12 +448,14 @@ USE:
     libssp:                        Build SSP support into a dedicated library rather than use the code in the C library (DO NOT ENABLE THIS IF YOU DON'T KNOW WHAT IT DOES)
     lldb:                          Build the lldb debugger
     llvm:                          Enable LLVM backend for Gallium3D.
+    lzma:                          Support for LZMA (de)compression algorithm
     minizip:                       include the minizip library for quick and dirty zip extraction
     multilib:                      On 64bit systems, if you want to be able to compile 32bit and 64bit binaries
     multitarget:                   Build all host targets (default: host only)
     ncurses:
         app-crypt/pinentry:0::gentoo:  Add ncurses support (console display library)
         sys-devel/llvm:0::gentoo:  Support querying terminal properties using ncurses' terminfo
+    neon:                          Enable optimization support for ARM NEON processors
     nls:                           Add Native Language Support (using gettext - GNU locale utilities)
     nopie:                         Disable PIE support (NOT FOR GENERAL USE)
     nossp:                         Disable SSP support (NOT FOR GENERAL USE)
@@ -412,11 +474,14 @@ USE:
     pic:                           disable optimized assembly code that is not PIC friendly
     png:                           Add support for libpng (PNG images)
     python:
+        dev-libs/libxml2:2::gentoo:  Add optional support/bindings for the Python language
+        dev-libs/libxslt:0::gentoo:  Add optional support/bindings for the Python language
         app-misc/pax-utils:0::gentoo:  Install a more powerful/faster version of lddtree
         sys-libs/cracklib:0::gentoo:  Add optional support/bindings for the Python language
         sys-devel/llvm:0::gentoo:  Add optional support/bindings for the Python language
     qt4:                           Add support for the Qt GUI/Application Toolkit version 4.x
     qt5:                           Add support for the Qt 5 application and UI framework
+    readline:                      Enable support for libreadline, a GNU line-editing library that almost everyone wants
     regression-test:               Run the testsuite and install the results (requires FEATURES=test)
     sanitize:                      Build support for various sanitizer functions (ASAN/TSAN/etc...)
     seccomp:                       Enable seccomp (secure computing mode) to perform system call filtering at runtime to increase security of programs
@@ -461,6 +526,7 @@ abi_x86:
     x32:                           x32 ABI libraries
 
 cpu_flags_x86:
+    aes:                           Enable support for Intel's AES instruction set (AES-NI)
     sse:                           Use the SSE instruction set
     sse2:                          Use the SSE2 instruction set
 
@@ -529,13 +595,7 @@ I encountered the following errors:
     Reasons: !<dev-libs/openssl-1.0.2d-r1:0 from app-misc/c_rehash-1.7-r1:0::installed, app-arch/libarchive-3.2.2:0::gentoo, dev-lang/python-2.7.12:2.7::gentoo, 11 more
     Unsuitable candidates:
       * dev-libs/openssl-1.0.2j:0::installed
-      * dev-libs/openssl-1.0.2h-r2:0::sabayon
-        Did not meet dev-libs/openssl:0/0=[static-libs,abi_x86_64(-)], use existing if same, installing to / from net-misc/curl-7.51.0:0::installed
-            Flag 'static-libs' enabled
       * dev-libs/openssl-1.0.2j:0::gentoo
-        Did not meet dev-libs/openssl:0/0=[static-libs,abi_x86_64(-)], use existing if same, installing to / from net-misc/curl-7.51.0:0::installed
-            Flag 'static-libs' enabled
-      * dev-libs/openssl-1.0.2j:0::sabayon
         Did not meet dev-libs/openssl:0/0=[static-libs,abi_x86_64(-)], use existing if same, installing to / from net-misc/curl-7.51.0:0::installed
             Flag 'static-libs' enabled
       * dev-libs/openssl-1.1.0c:0::gentoo
@@ -546,7 +606,7 @@ I encountered the following errors:
         Did not meet dev-libs/openssl:0/0=, use existing if same, installing to / from net-misc/wget-1.18:0::installed
         Did not meet dev-libs/openssl:0/0=[static-libs,abi_x86_64(-)], use existing if same, installing to / from net-misc/curl-7.51.0:0::installed
 !   dev-libs/libpcre
-    Reasons: app-shells/zsh-5.2-r1:0::installed, dev-libs/glib-2.48.2:2::installed, dev-qt/qtcore-5.6.1:5::gentoo, 3 more
+    Reasons: app-shells/zsh-5.2:0::gentoo, dev-libs/glib-2.48.2:2::installed, dev-qt/qtcore-5.6.1:5::gentoo, 3 more
     Unsuitable candidates:
       * dev-libs/libpcre-8.38-r1:3::installed
       * dev-libs/libpcre-8.38-r1:3::gentoo
@@ -564,14 +624,14 @@ I encountered the following errors:
         Did not meet =dev-lang/perl-5.22*, use existing if same, installing to / from virtual/perl-Data-Dumper-2.158.0-r1:0::installed (and 21 more)
         Did not meet =dev-lang/perl-5.22.2*, use existing if same, installing to / from virtual/perl-File-Spec-3.560.100-r1:0::installed
         Did not meet dev-lang/perl:0/5.22=, use existing if same, installing to / from sys-apps/texinfo-6.1:0::installed (and 26 more)
-        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from dev-perl/libintl-perl-1.240.0:0::installed (and 19 more)
+        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from app-text/po4a-0.45-r3:0::installed (and 11 more)
       * dev-lang/perl-5.20.2-r1:0::gentoo
         Masked by keyword
             Keywords ~alpha ~amd64 ~amd64-fbsd ~amd64-linux ~arm ~arm64 ~hppa ~hppa-hpux ~ia64 ~ia64-hpux ~ia64-linux ~m68k ~m68k-mint ~mips ~ppc ~ppc-aix ~ppc-macos ~ppc64 ~s390 ~sh ~sparc ~sparc-solaris ~sparc64-solaris ~x64-freebsd ~x64-macos ~x64-solaris ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~x86-linux ~x86-macos ~x86-solaris
         Did not meet =dev-lang/perl-5.22*, use existing if same, installing to / from virtual/perl-Data-Dumper-2.158.0-r1:0::installed (and 21 more)
         Did not meet =dev-lang/perl-5.22.2*, use existing if same, installing to / from virtual/perl-File-Spec-3.560.100-r1:0::installed
         Did not meet dev-lang/perl:0/5.22=, use existing if same, installing to / from sys-apps/texinfo-6.1:0::installed (and 26 more)
-        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from dev-perl/libintl-perl-1.240.0:0::installed (and 19 more)
+        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from app-text/po4a-0.45-r3:0::installed (and 11 more)
       * dev-lang/perl-5.22.0:0::gentoo
         Masked by keyword
             Keywords ~alpha ~amd64 ~amd64-fbsd ~amd64-linux ~arm ~arm64 ~hppa ~hppa-hpux ~ia64 ~ia64-hpux ~ia64-linux ~m68k ~m68k-mint ~mips ~ppc ~ppc-aix ~ppc-macos ~ppc64 ~s390 ~sh ~sparc ~sparc-solaris ~sparc64-solaris ~x64-freebsd ~x64-macos ~x64-solaris ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~x86-linux ~x86-macos ~x86-solaris
@@ -591,7 +651,7 @@ I encountered the following errors:
         Did not meet =dev-lang/perl-5.22.2*, use existing if same, installing to / from virtual/perl-File-Spec-3.560.100-r1:0::installed
         Did not meet dev-lang/perl:0/5.20=[-build(-)], use existing if same, installing to / from perl-core/Module-Metadata-1.0.26:0::installed
         Did not meet dev-lang/perl:0/5.22=, use existing if same, installing to / from sys-apps/texinfo-6.1:0::installed (and 26 more)
-        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from dev-perl/libintl-perl-1.240.0:0::installed (and 19 more)
+        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from app-text/po4a-0.45-r3:0::installed (and 11 more)
       * dev-lang/perl-5.24.0-r2:0::gentoo
         Masked by keyword
             Keywords ~alpha ~amd64 ~amd64-fbsd ~amd64-linux ~arm ~arm64 ~hppa ~hppa-hpux ~ia64 ~ia64-hpux ~ia64-linux ~m68k ~m68k-mint ~mips ~ppc ~ppc-aix ~ppc-macos ~ppc64 ~s390 ~sh ~sparc ~sparc-solaris ~sparc64-solaris ~x64-freebsd ~x64-macos ~x64-solaris ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~x86-linux ~x86-macos ~x86-solaris
@@ -599,7 +659,7 @@ I encountered the following errors:
         Did not meet =dev-lang/perl-5.22.2*, use existing if same, installing to / from virtual/perl-File-Spec-3.560.100-r1:0::installed
         Did not meet dev-lang/perl:0/5.20=[-build(-)], use existing if same, installing to / from perl-core/Module-Metadata-1.0.26:0::installed
         Did not meet dev-lang/perl:0/5.22=, use existing if same, installing to / from sys-apps/texinfo-6.1:0::installed (and 26 more)
-        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from dev-perl/libintl-perl-1.240.0:0::installed (and 19 more)
+        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from app-text/po4a-0.45-r3:0::installed (and 11 more)
       * dev-lang/perl-5.24.1_rc4:0::gentoo
         Masked by keyword
             Keywords ~alpha ~amd64 ~amd64-fbsd ~amd64-linux ~arm ~arm64 ~hppa ~hppa-hpux ~ia64 ~ia64-hpux ~ia64-linux ~m68k ~m68k-mint ~mips ~ppc ~ppc-aix ~ppc-macos ~ppc64 ~s390 ~sh ~sparc ~sparc-solaris ~sparc64-solaris ~x64-freebsd ~x64-macos ~x64-solaris ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~x86-linux ~x86-macos ~x86-solaris
@@ -607,7 +667,7 @@ I encountered the following errors:
         Did not meet =dev-lang/perl-5.22.2*, use existing if same, installing to / from virtual/perl-File-Spec-3.560.100-r1:0::installed
         Did not meet dev-lang/perl:0/5.20=[-build(-)], use existing if same, installing to / from perl-core/Module-Metadata-1.0.26:0::installed
         Did not meet dev-lang/perl:0/5.22=, use existing if same, installing to / from sys-apps/texinfo-6.1:0::installed (and 26 more)
-        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from dev-perl/libintl-perl-1.240.0:0::installed (and 19 more)
+        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from app-text/po4a-0.45-r3:0::installed (and 11 more)
 !   sys-fs/eudev
     Reasons: virtual/libudev-215-r1:0::gentoo, virtual/udev-215:0::installed
     Unsuitable candidates:
@@ -642,11 +702,6 @@ I encountered the following errors:
 
 I cannot proceed without being permitted to do the following:
 
-X   app-text/gnome-doc-utils 0.20.10-r1:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon dev-libs/libxml2-2.9.4:2::installed (DEPEND), dependent upon dev-libs/libxml2-2.9.4:2::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
 X   dev-java/java-config 2.2.0-r3:2::installed
     Will be broken by uninstalls:
     Reasons: dependent upon sys-apps/portage-2.3.0:0::installed (RDEPEND)
@@ -661,10 +716,4 @@ X   sys-fs/lvm2 2.02.116-r4:0::installed
     Will be broken by uninstalls:
     Reasons: dependent upon sys-apps/util-linux-2.26.2:0::installed (DEPEND), dependent upon virtual/libudev-215-r1:0::installed (DEPEND), dependent upon virtual/libudev-215-r1:0::installed (RDEPEND)
     Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-n   media-gfx/graphite2:0::gentoo 1.3.8 to ::installed
-    "Library providing rendering capabilities for complex non-Roman writing systems"
-    You need to change: ABI_X86: -32 -> 32 No changes needed: -perl (-test) ABI_X86: (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons requiring changes: media-libs/harfbuzz-1.3.1:0::installed 
-    Cannot proceed without: user configuration changes
 
