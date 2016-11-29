@@ -1,160 +1,550 @@
 These are the actions I will take, in order:
 
+<   dev-python/pystatgrab 0.6:0::installed
+    Reasons: dependent upon sys-libs/libstatgrab-0.91:0::installed (DEPEND), dependent upon sys-libs/libstatgrab-0.91:0::installed (RDEPEND)
+
 d   sys-libs/ncurses:0::gentoo 5.9-r5 to ::installed replacing 6.0-r1
     -ada cxx -debug -doc -gpm* -minimal (-profile) -static-libs -tinfo -trace unicode ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: sys-libs/ncurses-5.9-r99:5::gentoo
+    Reasons: app-crypt/pinentry-0.9.5:0::gentoo, app-editors/nano-2.5.3:0::gentoo, app-misc/tmux-2.1:0::gentoo, 30 more
 
 r   sys-libs/ncurses:5::gentoo 5.9-r99 to ::installed replacing 5.9-r99
     -ada cxx -gpm -static-libs -tinfo unicode ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target, !<=sys-libs/ncurses-5.9-r4:5 from sys-libs/ncurses-5.9-r5:0::gentoo
+    Reasons: target, !<=sys-libs/ncurses-5.9-r4:5 from sys-libs/ncurses-5.9-r5:0::gentoo, app-admin/eselect-1.4.5:0::gentoo, 14 more
 
-Total: 1 downgrades, 1 reinstalls
+d   sys-libs/libstatgrab:0::gentoo 0.17 to ::installed replacing 0.91
+    -static-libs build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+    452.37 kBytes to download
+
+n   dev-perl/Curses:0::gentoo 1.320.0 to ::installed
+    "Curses interface modules for Perl"
+    unicode build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: dev-perl/CursesWidgets-1.997.0-r1:0::gentoo
+
+r   dev-perl/CursesWidgets:0::gentoo 1.997.0-r1 to ::installed replacing 1.997.0-r1
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   sys-libs/readline:0::gentoo 6.3_p8-r2 to ::installed replacing 6.3_p8-r2
+    -static-libs -utils ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), app-crypt/gnupg-2.1.15:0::installed, app-shells/bash-4.3_p48:0::gentoo, 19 more
+
+r   app-editors/nano:0::gentoo 2.5.3 to ::installed replacing 2.5.3
+    -debug -justify -magic minimal -ncurses -nls -slang -spell -static -unicode build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+d   app-shells/zsh:0::gentoo (formerly from mv) 5.2 to ::installed replacing 5.2-r1
+    -caps -debug doc* -examples gdbm maildir pcre -static unicode build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), dev-util/ninja-1.6.0:0::installed
+
+n   dev-qt/qtcore:5::gentoo 5.6.1 to ::installed
+    "Cross-platform application development framework"
+    -debug icu -systemd (-test) build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: dev-qt/qtdbus-5.6.1:5::gentoo, dev-qt/qtgui-5.6.1:5::gentoo, dev-qt/qtwidgets-5.6.1:5::gentoo, dev-util/cmake-3.5.2-r1:0::gentoo
+
+r   media-libs/aalib:0::gentoo 1.4_rc5-r6 to ::installed replacing 1.4_rc5-r6
+    -X -gpm -slang -static-libs ABI_X86: -32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   media-sound/ncmpc:0::gentoo 0.24 to ::installed replacing 0.24
+    -artist-screen -chat-screen -colors -debug help-screen -key-screen -lirc -lyrics-screen -mouse nls -search-screen -song-screen build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   sys-apps/less:0::gentoo 481 to ::installed replacing 481
+    pcre unicode build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   sys-devel/bc:0::gentoo 1.06.95-r1 to ::installed replacing 1.06.95-r1
+    -libedit readline -static build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   sys-libs/slang:0::gentoo 2.2.4-r1 to ::installed replacing 2.2.4-r1
+    cjk pcre* png readline -static-libs zlib ABI_X86: -32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   app-shells/bash:0::gentoo 4.3_p48 to ::installed replacing 4.3_p48
+    -afs -bashlogger -examples -mem-scramble net nls -plugins (readline) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), app-admin/perl-cleaner-2.20:0::installed, app-eselect/eselect-mesa-0.0.10:0::installed, 2 more
+
+r   app-admin/eselect:0::gentoo 1.4.5 to ::installed replacing 1.4.5 [cycle 1]
+    -doc -emacs vim-syntax build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), !<app-admin/eselect-1.4.5 from sys-devel/binutils-config-5-r2:0::installed, app-eselect/eselect-fontconfig-1.1:0::installed, 9 more
+    In dependency cycle with existing packages: x11-proto/xcb-proto:0, x11-proto/xproto:0, x11-proto/kbproto:0, x11-misc/shared-mime-info:0, dev-lang/ghc:0, dev-qt/qtgui:5, app-admin/eselect:0, net-mail/mailutils:0, media-gfx/graphite2:0, dev-qt/qtdbus:5, sys-process/psmisc:0, app-misc/tmux:0, sys-devel/gcc:4.9.3, net-analyzer/nstats:0, dev-db/mariadb:0, x11-proto/xf86vidmodeproto:0, media-sound/timidity++:0, x11-proto/xextproto:0, dev-util/cmake:0, dev-scheme/guile:12, net-irc/irssi:0, media-sound/lame:0, sys-boot/grub:2, media-sound/alsa-utils:0.9, media-libs/mesa:0, app-crypt/pinentry:0, dev-libs/nettle:0, x11-proto/recordproto:0, dev-lang/python:2.7, x11-proto/fixesproto:0, dev-lang/python:3.4, dev-libs/libxml2:2, x11-libs/pango:0, app-editors/vim:0, net-wireless/bluez:0, sys-block/parted:0, sys-libs/gpm:0, sys-apps/openrc:0, sys-process/procps:0, dev-qt/qtwidgets:5, sys-apps/texinfo:0, x11-proto/dri2proto:0, sys-devel/gettext:0, www-client/w3m:0, sys-devel/llvm:0, www-client/elinks:0, x11-libs/cairo:0, x11-proto/compositeproto:0, x11-proto/glproto:0
+
+u   dev-lang/python:2.7::gentoo 2.7.12 to ::installed replacing 2.7.10-r1 [cycle 1]
+    (-berkdb) -build -doc -examples gdbm hardened ipv6 (-libressl)+ ncurses readline sqlite ssl (threads) tk (wide-unicode) -wininst xml build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), dev-libs/gobject-introspection-1.48.0:0::installed, dev-python/pyxattr-0.5.5:0::installed, 7 more
+
+u   dev-lang/python:3.4::gentoo 3.4.5 to ::installed replacing 3.4.3-r1 [cycle 1]
+    -build -examples gdbm hardened ipv6 (-libressl)+ ncurses readline sqlite ssl (threads) tk -wininst xml build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), app-editors/vim-7.4.769:0::gentoo, dev-libs/libxml2-2.9.4:2::gentoo, 9 more
+
+n   dev-libs/libxml2:2::gentoo 2.9.4 to ::installed [cycle 1]
+    "Version 2 of the library to manipulate XML files"
+    -debug -examples -icu ipv6 lzma python readline -static-libs (-test) ABI_X86: 32 (64) (-x32) PYTHON_TARGETS: -python2_7 python3_4 (-python3_5) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: !<dev-libs/libxml2-2.7.7 from sys-libs/zlib-1.2.8-r1:0::installed, dev-libs/libcroco-0.6.11:0.6::installed, dev-libs/xmlrpc-c-1.32.05-r1:0::gentoo, 5 more
+
+n   dev-libs/nettle:0::gentoo 3.2-r1 to ::installed [cycle 1]
+    "Low-level cryptographic library"
+    -doc gmp (-neon) -static-libs (-test) ABI_X86: 32 (64) (-x32) CPU_FLAGS_X86: -aes build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: app-arch/libarchive-3.2.2:0::installed, net-libs/gnutls-3.3.24-r1:0::installed
+
+n   dev-qt/qtdbus:5::gentoo 5.6.1 to ::installed [cycle 1]
+    "The D-Bus module for the Qt5 framework"
+    -debug (-test) build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: dev-qt/qtgui-5.6.1:5::gentoo
+
+n   dev-qt/qtgui:5::gentoo 5.6.1 to ::installed [cycle 1]
+    "The GUI module and platform plugins for the Qt5 framework"
+    -accessibility dbus -debug -egl -eglfs -evdev gif -gles2 -gtkstyle -ibus -jpeg -libinput png -tslib -tuio udev xcb (-test) build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: dev-qt/qtwidgets-5.6.1:5::gentoo, dev-util/cmake-3.5.2-r1:0::gentoo
+
+n   dev-qt/qtwidgets:5::gentoo 5.6.1 to ::installed [cycle 1]
+    "Set of components for creating classic desktop-style UIs for the Qt5 framework"
+    -debug -gles2 -gtkstyle png xcb (-test) build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: dev-util/cmake-3.5.2-r1:0::gentoo
+
+r   dev-util/cmake:0::gentoo 3.5.2-r1 to ::installed replacing 3.5.2-r1 [cycle 1]
+    -doc -emacs ncurses qt5 -system-jsoncpp (-test) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), dev-db/mariadb-10.0.28:0::gentoo, media-gfx/graphite2-1.3.8:0::gentoo, sys-devel/llvm-3.7.1-r3:0::gentoo
+
+n   media-gfx/graphite2:0::gentoo 1.3.8 to ::installed [cycle 1]
+    "Library providing rendering capabilities for complex non-Roman writing systems"
+    -perl (-test) ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: media-libs/harfbuzz-1.3.1:0::installed
+
+r   media-sound/alsa-utils:0.9::gentoo 1.0.29 to ::installed replacing 1.0.29 [cycle 1]
+    -doc libsamplerate ncurses nls (-selinux) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), sys-power/pm-utils-1.4.1-r6:0::installed
+
+r   media-sound/lame:0::gentoo 3.99.5-r1 to ::installed replacing 3.99.5-r1 [cycle 1]
+    -debug frontend -mp3rtp -sndfile -static-libs ABI_X86: 32 (64) (-x32) CPU_FLAGS_X86: (-mmx) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   media-sound/timidity++:0::gentoo 2.14.0-r2 to ::installed replacing 2.14.0-r2 [cycle 1]
+    -X -alsa -ao -emacs -flac -gtk -jack -motif -nas ncurses -oss (-selinux) -slang -speex -tk -vorbis build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   net-analyzer/nstats:0::gentoo 0.4-r2 to ::installed replacing 0.4-r2 [cycle 1]
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   net-irc/irssi:0::gentoo 0.8.20-r1 to ::installed replacing 0.8.20-r1 [cycle 1]
+    ipv6 (-libressl) perl proxy (-selinux) -socks5 ssl build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+n   net-wireless/bluez:0::gentoo 5.39 to ::installed [cycle 1]
+    "Bluetooth Tools and System Daemons for Linux"
+    -cups -debug -deprecated -doc -experimental -extra-tools obex readline (-selinux) -systemd -test-programs udev (-test) ABI_X86: 32 (64) (-x32) PYTHON_SINGLE_TARGET: python3_4 (-python3_5) PYTHON_TARGETS: python3_4 (-python3_5) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: net-libs/libpcap-1.8.0:0::installed
+
+r   www-client/w3m:0::gentoo 0.5.3-r5 to ::installed replacing 0.5.3-r5 [cycle 1]
+    -X -fbcon -gpm -gtk -imlib -lynxkeymap (-migemo) nls -nntp ssl unicode -vanilla -xface L10N: -ja build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+n   x11-libs/cairo:0::gentoo 1.14.6 to ::installed [cycle 1]
+    "A vector graphics library with cross-device output support"
+    X (-aqua) -debug (-directfb) (-gles2) glib -opengl -static-libs svg -valgrind -xcb -xlib-xcb ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: gnome-base/librsvg-2.40.16:2::installed, media-libs/harfbuzz-1.3.1:0::installed, x11-libs/gtk+-3.20.9:3::installed, x11-libs/pango-1.40.3:0::gentoo
+
+n   x11-proto/compositeproto:0::gentoo 0.4.2-r1 to ::installed [cycle 1]
+    "X.Org Composite protocol headers"
+    ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/libXcomposite-0.4.4-r1:0::installed
+
+n   x11-proto/dri2proto:0::gentoo 2.8-r1 to ::installed [cycle 1]
+    "X.Org DRI2 protocol headers"
+    ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: media-libs/mesa-12.0.1:0::gentoo
+
+n   x11-proto/glproto:0::gentoo 1.4.17-r1 to ::installed [cycle 1]
+    "X.Org GL protocol headers"
+    ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: !<x11-proto/glproto-1.4.17-r1 from app-eselect/eselect-opengl-1.3.1-r4:0::installed, media-libs/mesa-12.0.1:0::gentoo
+
+n   x11-proto/kbproto:0::gentoo 1.0.7 to ::installed [cycle 1]
+    "X.Org KB protocol headers"
+    ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/libX11-1.6.4:0::installed, x11-libs/libXt-1.1.5:0::installed
+
+n   x11-proto/recordproto:0::gentoo 1.14.2-r1 to ::installed [cycle 1]
+    "X.Org Record protocol headers"
+    -doc ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/libXtst-1.2.3:0::installed
+
+n   x11-proto/xcb-proto:0::gentoo 1.12-r2 to ::installed [cycle 1]
+    "X C-language Bindings protocol headers"
+    ABI_X86: 32 (64) (-x32) PYTHON_TARGETS: -python2_7 python3_4 (-python3_5) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/xcb-util-cursor-0.1.3-r1:0::installed
+
+n   x11-proto/xextproto:0::gentoo 7.3.0 to ::installed [cycle 1]
+    "X.Org XExt protocol headers"
+    -doc ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: media-libs/mesa-12.0.1:0::gentoo, x11-libs/libX11-1.6.4:0::installed, x11-libs/libXext-1.3.3:0::installed, 6 more
+
+n   x11-proto/fixesproto:0::gentoo 5.0-r1 to ::installed [cycle 1]
+    "X.Org Fixes protocol headers"
+    ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/libXfixes-5.0.3:0::installed
+
+n   x11-proto/xf86vidmodeproto:0::gentoo 2.3.1-r1 to ::installed [cycle 1]
+    "X.Org XF86VidMode protocol headers"
+    ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: media-libs/mesa-12.0.1:0::gentoo, x11-libs/libXxf86vm-1.1.4:0::installed
+
+n   x11-proto/xproto:0::gentoo 7.0.29 to ::installed [cycle 1]
+    "X.Org xproto protocol headers"
+    -doc ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/libICE-1.0.9:0::installed, x11-libs/libSM-1.2.2-r1:0::installed, x11-libs/libX11-1.6.4:0::installed, 17 more
+
+r   app-crypt/pinentry:0::gentoo 0.9.5 to ::installed replacing 0.9.5 [cycle 2]
+    -caps -clipboard -emacs -gnome-keyring -gtk ncurses -qt4 -static build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), app-crypt/gnupg-2.1.15:0::installed
+    In dependency cycle with: app-admin/eselect:0, app-arch/libarchive:0, app-crypt/gnupg:0, app-crypt/pinentry:0, app-editors/vim:0, app-eselect/eselect-lib-bin-symlink:0, app-eselect/eselect-mesa:0, app-eselect/eselect-opengl:0, app-eselect/eselect-pinentry:0, app-eselect/eselect-timidity:0, app-eselect/eselect-vi:0, app-misc/tmux:0, app-vim/ntp-syntax:0, dev-db/mariadb:0, dev-lang/ghc:0, dev-lang/python:2.7, dev-lang/python:3.4, dev-lang/tk:0, dev-libs/gobject-introspection:0, dev-libs/libxml2:2, dev-libs/nettle:0, dev-perl/Locale-gettext:0, dev-python/pyxattr:0, dev-qt/qtdbus:5, dev-qt/qtgui:5, dev-qt/qtwidgets:5, dev-scheme/guile:12, dev-tcltk/blt:0, dev-tcltk/tix:0, dev-util/cmake:0, dev-util/intltool:0, dev-util/ninja:0, dev-vcs/git:0, mail-mta/msmtp:0, media-gfx/graphite2:0, media-libs/alsa-lib:0, media-libs/fontconfig:1.0, media-libs/freetype:2, media-libs/harfbuzz:0, media-libs/mesa:0, media-sound/alsa-utils:0.9, media-sound/lame:0, media-sound/timidity++:0, net-analyzer/nstats:0, net-irc/irssi:0, net-libs/gnutls:0, net-libs/libpcap:0, net-mail/mailbase:0, net-mail/mailutils:0, net-misc/netifrc:0, net-misc/ntp:0, net-wireless/bluez:0, sys-apps/baselayout:0, sys-apps/coreutils:0, sys-apps/dbus:0, sys-apps/file:0, sys-apps/help2man:0, sys-apps/kmod:0, sys-apps/openrc:0, sys-apps/portage:0, sys-apps/sysvinit:0, sys-apps/texinfo:0, sys-auth/consolekit:0, sys-auth/pam_mktemp:0, sys-auth/pambase:0, sys-auth/polkit:0, sys-block/parted:0, sys-boot/grub:2, sys-devel/autoconf:2.5, sys-devel/autogen:0, sys-devel/automake:1.15, sys-devel/gcc:4.9.3, sys-devel/gettext:0, sys-devel/libtool:2, sys-devel/llvm:0, sys-fs/eudev:0, sys-fs/lvm2:0, sys-fs/udev-init-scripts:0, sys-libs/glibc:2.2, sys-libs/gpm:0, sys-libs/pam:0, sys-power/pm-utils:0, sys-process/procps:0, sys-process/psmisc:0, virtual/libmysqlclient:0, virtual/libudev:0, virtual/mta:0, virtual/mysql:0, virtual/opengl:0, virtual/pam:0, virtual/udev:0, www-client/elinks:0, www-client/w3m:0, x11-libs/cairo:0, x11-libs/libICE:0, x11-libs/libSM:0, x11-libs/libX11:0, x11-libs/libXau:0, x11-libs/libXdamage:0, x11-libs/libXdmcp:0, x11-libs/libXext:0, x11-libs/libXfixes:0, x11-libs/libXft:0, x11-libs/libXi:0, x11-libs/libXrender:0, x11-libs/libXt:0, x11-libs/libXxf86vm:0, x11-libs/libxcb:0, x11-libs/pango:0, x11-libs/xcb-util:0, x11-libs/xcb-util-image:0, x11-libs/xcb-util-keysyms:0, x11-libs/xcb-util-renderutil:0, x11-libs/xcb-util-wm:0, x11-misc/shared-mime-info:0, x11-proto/compositeproto:0, x11-proto/dri2proto:0, x11-proto/fixesproto:0, x11-proto/glproto:0, x11-proto/kbproto:0, x11-proto/recordproto:0, x11-proto/xcb-proto:0, x11-proto/xextproto:0, x11-proto/xf86driproto:0, x11-proto/xf86vidmodeproto:0, x11-proto/xproto:0
+
+r   app-editors/vim:0::gentoo 7.4.769 to ::installed replacing 7.4.769 [cycle 2]
+    -X acl -cscope -debug gpm -lua -luajit -minimal nls -perl python -racket -ruby (-selinux) -tcl vim-pager PYTHON_TARGETS: -python2_7* python3_4 build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), app-misc/tmux-2.1:0::gentoo, app-vim/eselect-syntax-20070506:0::gentoo, 5 more
+
+r   app-misc/tmux:0::gentoo 2.1 to ::installed replacing 2.1 [cycle 2]
+    -debug (-selinux) vim-syntax build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   dev-lang/ghc:0::gentoo (formerly from haskell) 7.10.3 to ::installed replacing 7.10.3 [cycle 2]
+    -binary -doc -ghcbootstrap -ghcmakebinary gmp build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   dev-scheme/guile:12::gentoo 1.8.8-r3 to ::installed replacing 1.8.8-r3 [cycle 2]
+    -debug -debug-freelist -debug-malloc deprecated -discouraged -emacs networking nls readline regex threads build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), sys-devel/autogen-5.18.4:0::installed
+
+r   net-mail/mailutils:0::gentoo 2.99.98 to ::installed replacing 2.99.98 [cycle 2]
+    berkdb -bidi clients gdbm -guile ipv6 -kerberos -ldap mysql nls pam -postgres python -sasl -servers ssl -static-libs tcpd threads -tokyocabinet build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   sys-apps/texinfo:0::gentoo 6.1 to ::installed replacing 6.1 [cycle 2]
+    nls -static build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), dev-db/mariadb-10.0.28:0::gentoo, dev-scheme/guile-1.8.8-r3:12::gentoo, 2 more
+
+r   sys-block/parted:0::gentoo 3.2 to ::installed replacing 3.2 [cycle 2]
+    debug device-mapper nls readline (-selinux) -static-libs build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   sys-boot/grub:2::gentoo 2.02_beta3-r1 to ::installed replacing 2.02_beta3-r1 [cycle 2]
+    -debug device-mapper doc efiemu -fonts (-libzfs) mount -multislot nls -sdl -static -themes truetype (-test) GRUB_PLATFORMS: -coreboot -efi-32 -efi-64* -emu -ieee1275 -loongson -multiboot pc -qemu -qemu-mips -uboot -xen -xen-32 build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+s   sys-devel/gcc:4.9.3::gentoo 4.9.3 to ::installed [cycle 2]
+    "The GNU Compiler Collection"
+    (-altivec) (-awt) cilk cxx -debug doc (-fixed-point) fortran gcj go graphite hardened (-libssp) (multilib) nls -nopie -nossp nptl objc objc++ objc-gc openmp -regression-test (-sanitize) -vanilla vtv build_options: -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: !sys-devel/gcc[libffi(-)] from dev-lang/python-2.7.12:2.7::gentoo, !sys-devel/gcc[libffi(-)] from dev-lang/python-3.4.5:3.4::gentoo, dev-db/mariadb-10.0.28:0::gentoo, 2 more
+
+r   sys-devel/gettext:0::gentoo 0.19.7 to ::installed replacing 0.19.7 [cycle 2]
+    acl -cvs cxx -doc -emacs git -java ncurses nls openmp -static-libs ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), !<sys-devel/gettext-0.18.1.1-r3 from app-crypt/pinentry-0.9.5:0::gentoo, !<sys-devel/gettext-0.18.1.1-r3 from app-misc/tmux-2.1:0::gentoo, 48 more
+
+n   sys-devel/llvm:0::gentoo 3.7.1-r3 to ::installed [cycle 2]
+    "Low Level Virtual Machine"
+    clang -debug -doc gold -libedit libffi -lldb -multitarget ncurses -ocaml python static-analyzer -xml (-test) ABI_X86: 32 (64) (-x32) PYTHON_TARGETS: -python2_7 VIDEO_CARDS: -radeon build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: media-libs/mesa-12.0.1:0::gentoo, sys-devel/clang-3.7.1-r100:0::installed
+
+n   media-libs/mesa:0::gentoo 12.0.1 to ::installed [cycle 2]
+    "OpenGL-like graphic library for Linux"
+    -bindist classic -d3d9 -debug dri3 egl gallium gbm -gles1 gles2 llvm nptl -opencl -openmax -osmesa pax_kernel pic (-selinux) udev -vaapi -valgrind -vdpau -wayland -xa -xvmc ABI_X86: 32 (64) (-x32) VIDEO_CARDS: (-freedreno) i915 i965 -ilo intel -nouveau -r100 -r200 -r300 -r600 -radeon -radeonsi (-vc4) -vmware build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: !<media-libs/mesa-10.3.4-r1 from app-eselect/eselect-opengl-1.3.1-r4:0::installed, !=media-libs/mesa-10.3.5 from app-eselect/eselect-opengl-1.3.1-r4:0::installed, !=media-libs/mesa-10.3.7-r1 from app-eselect/eselect-opengl-1.3.1-r4:0::installed, virtual/opengl-7.0-r1:0::installed
+
+r   sys-libs/gpm:0::gentoo 1.20.7-r2 to ::installed replacing 1.20.7-r2 [cycle 2]
+    (-selinux) -static-libs ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), app-editors/vim-7.4.769:0::gentoo, www-client/elinks-0.12_pre6-r1:0::gentoo
+
+r   www-client/elinks:0::gentoo 0.12_pre6-r1 to ::installed replacing 0.12_pre6-r1 [cycle 2]
+    -X bittorrent bzip2 -debug -finger -ftp -gc -gopher gpm -guile -idn ipv6 -javascript -lua mouse nls -nntp -perl -ruby -samba ssl unicode -xml zlib build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   sys-process/psmisc:0::gentoo 22.21-r3 to ::installed replacing 22.21-r3 [cycle 1]
+    -X ipv6 nls (-selinux) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), sys-apps/openrc-0.22.4:0::gentoo
+
+u   sys-apps/openrc:0::gentoo 0.22.4 to ::installed replacing 0.22.2 [cycle 1]
+    -audit -debug ncurses netifrc -newnet pam (-prefix) (-selinux) -static-libs tools unicode build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), !<sys-apps/openrc-0.11 from sys-fs/lvm2-2.02.116-r4:0::installed, !<sys-apps/openrc-0.11.8 from sys-libs/pam-1.2.1:0::installed, 5 more
+
+r   sys-process/procps:0::gentoo 3.3.11-r3 to ::installed replacing 3.3.11-r3 [cycle 1]
+    kill modern-top ncurses nls (-selinux) -static-libs -systemd unicode (-test) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), !<sys-process/procps-3.3.9-r2 from sys-apps/openrc-0.22.4:0::gentoo, dev-db/mariadb-10.0.28:0::gentoo
+
+r   dev-db/mariadb:0::gentoo 10.0.28 to ::installed replacing 10.0.28 [cycle 1]
+    -bindist -debug -embedded -extraengine -jdbc -jemalloc -latin1 (-libressl) -odbc openssl -oqgraph pam perl -profiling (-selinux) server -sphinx -static -static-libs -systemtap -tcmalloc -tokudb -xml -yassl (-test) ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), virtual/libmysqlclient-18:0::installed, virtual/mysql-5.6-r6:0::installed
+
+n   x11-misc/shared-mime-info:0::gentoo 1.4 to ::installed [cycle 1]
+    "The Shared MIME-info Database specification"
+    (-test) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: dev-libs/glib-2.48.2:2::installed, x11-libs/gtk+-3.20.9:3::installed, x11-libs/pango-1.40.3:0::gentoo
+
+n   x11-libs/pango:0::gentoo 1.40.3 to ::installed [cycle 1]
+    "Internationalized text layout and rendering library"
+    X introspection (-test) ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: gnome-base/librsvg-2.40.16:2::installed, x11-libs/gtk+-3.20.9:3::installed
+
+n   app-vim/eselect-syntax:0::gentoo 20070506 to ::installed
+    "vim plugin: Eselect syntax highlighting, filetype and indent settings"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: app-admin/eselect-1.4.5:0::gentoo
+
+n   app-vim/gtk-syntax:0::gentoo 20130716 to ::installed
+    "vim plugin: Syntax highlighting for GLib, Gtk+, Xlib, Gimp, Gnome, and more"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-libs/gtk+-3.20.9:3::installed
+
+n   app-vim/pam-syntax:0::gentoo 20060424 to ::installed
+    "vim plugin: PAM configuration syntax highlighting"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: sys-libs/pam-1.2.1:0::installed
+
+r   dev-libs/libcdio:0::gentoo 0.92 to ::installed replacing 0.92
+    -cddb cxx -minimal -static-libs (-test) ABI_X86: -32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   dev-libs/xmlrpc-c:0::gentoo 1.32.05-r1 to ::installed replacing 1.32.05-r1
+    -abyss cgi curl cxx libxml2 -static-libs threads* -tools (-test) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   games-strategy/dopewars:0::gentoo 1.5.12-r2 to ::installed replacing 1.5.12-r2
+    -gnome -gtk ncurses nls -sdl build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   media-sound/ecasound:1::gentoo 2.6.0 to ::installed replacing 2.6.0
+    -alsa -audiofile -debug -doc -jack -libsamplerate -mikmod ncurses -oss python -ruby -sndfile -vorbis build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   net-wireless/wpa_supplicant:0::gentoo 2.6 to ::installed replacing 2.6
+    ap dbus -eap-sim -fasteap -gnutls hs2-0 (-libressl) -p2p (-ps3) -qt4 -qt5 readline (-selinux) -smartcard ssl -tdls -uncommon-eap-types (-wimax) wps build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+r   sys-devel/gdb:0::gentoo 7.10.1 to ::installed replacing 7.10.1
+    client -expat lzma -multitarget nls python server -vanilla (-test) PYTHON_SINGLE_TARGET: -python2_7 python3_4 (-python3_5) PYTHON_TARGETS: -python2_7 python3_4 (-python3_5) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses), !<sys-devel/gdb-7.10-r1[nls] from sys-libs/binutils-libs-2.25.1-r2:0::installed
+
+r   sys-cluster/torque:0::gentoo 4.1.7-r1 to ::installed replacing 4.1.7-r1
+    -cpusets crypt -doc -drmaa (-libressl) -munge -nvidia -server syslog -tk build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (reinstalling dependents of sys-libs/ncurses)
+
+n   x11-themes/hicolor-icon-theme:0::gentoo 0.15 to ::installed
+    "Fallback theme for the freedesktop icon theme specification"
+    build_options: -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: x11-themes/adwaita-icon-theme-3.20:0::installed
+
+n   gnome-extra/polkit-gnome:0::gentoo 0.105-r1 to ::installed
+    "A dbus session bus service that is used to bring up authentication dialogs"
+    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: sys-auth/polkit-0.113:0::installed
+
+Total: 3 downgrades, 40 reinstalls, 3 upgrades, 1 new slot installs, 29 new installs, 1 uninstalls, 452.37 kBytes to download
+
+I did not take the following:
+
+(<) sys-boot/efibootmgr 0.12:0::installed
+    Reasons: was used by sys-boot/grub-2.02_beta3-r1:2::installed
+    Take using: --purge
+
+Build Options:
+    dwarf_compress:                Compress DWARF2+ debug information
+    optional_tests:                Run tests considered by the package to be optional
+    symbols:                       How to handle debug symbols in installed files
+    trace:                         Trace actions executed by the package (very noisy, for debugging broken builds only)
+    work:                          Whether to preserve or remove working directories
 
 USE:
+    X:                             Add support for X11
+    accessibility:                 Add support for accessibility (eg 'at-spi' library)
+    altivec:                       Add support for optimizations for G4 and G5/ppc970 processors
+    aqua:                          Include support for the Mac OS X Aqua (Carbon/Cocoa) GUI
+    awt:                           Useful only when building GCJ, this enables Abstract Window Toolkit (AWT) peer support on top of GTK+
+    bindist:                       Disable patent-encumbered ARB_texture_float, EXT_texture_shared_exponent, and EXT_packed_float extensions.
+    cilk:                          Support the Cilk Plus language (C/C++ based languages for parallel programming)
+    clang:                         Build the clang C/C++ compiler
+    classic:                       Build drivers based on the classic architecture.
+    cups:                          Add support for CUPS (Common Unix Printing System)
+    cxx:                           Build support for C++ (bindings, extra libraries, code generation, ...)
+    d3d9:                          Enable Direct 3D9 API through Nine state tracker. Can be used together with patched wine.
+    dbus:                          Enable dbus support for anything that needs it (gpsd, gnomemeeting, etc)
+    debug:                         Enable extra debug codepaths, like asserts and extra output. If you want to get meaningful backtraces see https://wiki.gentoo.org/wiki/Project:Quality_Assurance/Backtraces
+    deprecated:                    Build deprecated plugins
+    directfb:                      Add support for DirectFB layer (library for FB devices)
+    doc:
+        app-shells/zsh:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+        dev-libs/nettle:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+        net-wireless/bluez:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+        x11-proto/recordproto:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+        x11-proto/xextproto:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+        x11-proto/xproto:0::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+        sys-devel/gcc:4.9.3::gentoo:  Add extra documentation (API, Javadoc, etc). It is recommended to enable per package instead of globally
+        sys-devel/llvm:0::gentoo:  Build and install the HTML documentation and regenerate the man pages
+    dri3:                          Enable DRI3 support.
+    egl:
+        dev-qt/qtgui:5::gentoo:    Enable EGL integration
+        media-libs/mesa:0::gentoo:  Enable EGL support.
+    eglfs:                         Build the EGL Full Screen/Single Surface platform plugin
+    evdev:                         Enable support for input devices via evdev
+    examples:                      Install examples, usually source code
+    experimental:                  Build experimental plugins
+    extra-tools:                   Install tools that upstream doesn't install on purpose by default. All this tools shouldn't be used. Then, please notify upstream about you still need them to let them know the situation.
+    fixed-point:                   Enable fixed-point arithmetic support for MIPS targets in gcc (Warning: significantly increases compile time!)
+    fortran:                       Add support for fortran
+    gallium:                       Build drivers based on Gallium3D, the new architecture for 3D graphics drivers.
+    gbm:                           Enable the Graphics Buffer Manager for EGL on KMS.
+    gcj:                           Enable building with gcj (The GNU Compiler for the Javatm Programming Language)
+    gif:                           Add GIF image support
+    gles1:                         Enable GLESv1 support.
+    gles2:
+        dev-qt/qtgui:5::gentoo:    Use GLES 2.0 or later instead of full OpenGL
+        dev-qt/qtwidgets:5::gentoo:  Use GLES 2.0 or later instead of full OpenGL
+        x11-libs/cairo:0::gentoo:  Use OpenGL ES 2 backend for acceleration.
+        media-libs/mesa:0::gentoo:  Enable GLESv2 support.
+    glib:                          Compile with GLib Object System support
+    gmp:                           Add support for dev-libs/gmp (GNU MP library)
+    go:                            Build the GCC Go language frontend.
+    gold:                          Build the gold linker plugin
     gpm:                           Add support for sys-libs/gpm (Console-based mouse driver)
+    graphite:                      Add support for the framework for loop optimizations based on a polyhedral intermediate representation
+    gtkstyle:
+        dev-qt/qtgui:5::gentoo:    Build a widgets style that mimics the active GTK+ theme
+        dev-qt/qtwidgets:5::gentoo:  Build a Qt style called GTK+ that mimics the active GTK+ theme
+    hardened:                      Activate default security enhancements for toolchain (gcc, glibc, binutils)
+    ibus:                          Build the IBus input method plugin
+    icu:                           Enable ICU (Internationalization Components for Unicode) support, using dev-libs/icu
+    introspection:                 Add support for GObject based introspection
+    ipv6:                          Add support for IP version 6
+    jpeg:                          Add JPEG image support
+    libedit:                       Use the libedit library (replacement for readline)
+    libffi:                        Enable support for Foreign Function Interface library
+    libinput:                      Enable support for input devices via dev-libs/libinput
+    libressl:                      Use dev-libs/libressl as SSL provider (might need ssl USE flag), packages should not depend on this USE flag
+    libssp:                        Build SSP support into a dedicated library rather than use the code in the C library (DO NOT ENABLE THIS IF YOU DON'T KNOW WHAT IT DOES)
+    lldb:                          Build the lldb debugger
+    llvm:                          Enable LLVM backend for Gallium3D.
+    lzma:                          Support for LZMA (de)compression algorithm
+    multilib:                      On 64bit systems, if you want to be able to compile 32bit and 64bit binaries
+    multitarget:                   Build all host targets (default: host only)
+    ncurses:                       Support querying terminal properties using ncurses' terminfo
+    neon:                          Enable optimization support for ARM NEON processors
+    nls:                           Add Native Language Support (using gettext - GNU locale utilities)
+    nopie:                         Disable PIE support (NOT FOR GENERAL USE)
+    nossp:                         Disable SSP support (NOT FOR GENERAL USE)
+    nptl:                          Enable support for Native POSIX Threads Library, the new threading module (requires linux-2.6 or better usually)
+    obex:                          Enable OBEX transfer support.
+    objc:                          Build support for the Objective C code language
+    objc++:                        Build support for the Objective C++ language
+    objc-gc:                       Build support for the Objective C code language Garbage Collector
+    ocaml:                         Add support/bindings for the Ocaml language
+    opencl:                        Enable the Clover Gallium OpenCL state tracker.
+    opengl:                        Use Mesa backend for acceleration
+    openmax:                       Enable OpenMAX video decode/encode acceleration for Gallium3D.
+    openmp:                        Build support for the OpenMP (support parallel computing), requires >=sys-devel/gcc-4.2 built with USE="openmp"
+    osmesa:                        Build the Mesa library for off-screen rendering.
+    pax_kernel:                    Enable if the user plans to run the package under a pax enabled hardened kernel
+    pcre:                          Add support for Perl Compatible Regular Expressions
+    perl:                          Add optional support/bindings for the Perl language
+    pic:                           disable optimized assembly code that is not PIC friendly
+    png:                           Add support for libpng (PNG images)
+    python:                        Add optional support/bindings for the Python language
+    readline:                      Enable support for libreadline, a GNU line-editing library that almost everyone wants
+    regression-test:               Run the testsuite and install the results (requires FEATURES=test)
+    sanitize:                      Build support for various sanitizer functions (ASAN/TSAN/etc...)
+    selinux:                       !!internal use only!! Security Enhanced Linux support, this must be set by the selinux profile or breakage will occur
+    static-analyzer:               Install the Clang static analyzer (requires USE=clang)
+    static-libs:                   Build static versions of dynamic libraries as well
+    svg:                           Add support for SVG (Scalable Vector Graphics)
+    systemd:
+        dev-qt/qtcore:5::gentoo:   Enable native journald logging support
+        net-wireless/bluez:0::gentoo:  Enable use of systemd-specific libraries and features like socket activation or session tracking
+    test:                          Workaround to pull in packages needed to run with FEATURES=test. Portage-2.1.2 handles this internally, so don't set it in make.conf/package.use anymore
+    test-programs:                 Install tools for testing of various Bluetooth functions
+    threads:                       Controls whether to build the Abyss web-server with pthreads or fork 'threading'.
+    tslib:                         Enable support for touchscreen devices via x11-libs/tslib
+    tuio:                          Build plugin to receive touch events over the TUIO protocol
+    udev:                          Enable virtual/udev integration (device discovery, power and storage device support, etc)
+    unicode:                       Add support for Unicode
+    vaapi:                         Enable Video Acceleration API for hardware decoding
+    valgrind:
+        x11-libs/cairo:0::gentoo:  Built-in support to mark memory regions
+        media-libs/mesa:0::gentoo:  Compile in valgrind memory hints
+    vanilla:                       Do not add extra patches which change default behaviour; DO NOT USE THIS ON A GLOBAL SCALE as the severity of the meaning changes drastically
+    vdpau:                         Enable the VDPAU acceleration interface for the Gallium3D Video Layer.
+    vtv:                           Build support for virtual table verification (a C++ hardening feature)
+    wayland:                       Enable support for dev-libs/wayland
+    xa:                            Enable the XA (X Acceleration) API for Gallium3D.
+    xcb:
+        dev-qt/qtgui:5::gentoo:    Build the XCB platform plugin and enable X11 integration
+        dev-qt/qtwidgets:5::gentoo:  Support the X C-language Binding, a replacement for Xlib
+        x11-libs/cairo:0::gentoo:  Support the X C-language Binding, a replacement for Xlib
+    xlib-xcb:                      Use XCB renderer backend for acceleration over xlib. Enabling this may solve or introduce display corruption problems.
+    xml:                           Add support for XML files
+    xvmc:                          Enable the XvMC acceleration interface for the Gallium3D Video Layer.
 
-I cannot proceed without being permitted to do the following:
+abi_x86:
+    32:                            32-bit (x86) libraries
+    64:                            64-bit (amd64) libraries
+    x32:                           x32 ABI libraries
 
-X   app-crypt/pinentry 0.9.5:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
+cpu_flags_x86:
+    aes:                           Enable support for Intel's AES instruction set (AES-NI)
 
-X   app-editors/nano 2.5.3:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
+grub_platforms:
+    efi-64:                        EFI 64 bit platform support
 
-X   app-misc/tmux 2.1:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
+python_single_target:
+    python3_4:                     Build for Python 3.4 only
+    python3_5:                     Build for Python 3.5 only
 
-X   app-shells/bash 4.3_p48:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
+python_targets:
+    python2_7:                     Build with Python 2.7
+    python3_4:                     Build with Python 3.4
+    python3_5:                     Build with Python 3.5
 
-X   dev-db/mariadb 10.0.28:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
+video_cards:
+    freedreno:                     VIDEO_CARDS setting to build reverse-engineered driver for Qualcomm Adreno cards
+    i915:                          VIDEO_CARDS setting to build driver for Intel i915 video cards
+    i965:                          VIDEO_CARDS setting to build driver for Intel i965 video cards
+    ilo:                           VIDEO_CARDS setting to build unofficial gallium driver for Intel gen6/7 video cards
+    intel:                         VIDEO_CARDS setting to build driver for Intel video cards
+    nouveau:                       VIDEO_CARDS setting to build reverse-engineered driver for nvidia cards
+    r100:                          VIDEO_CARDS setting to build only r100 based chips code for radeon
+    r200:                          VIDEO_CARDS setting to build only r200 based chips code for radeon
+    r300:                          VIDEO_CARDS setting to build only r300, r400 and r500 based chips code for radeon
+    r600:                          VIDEO_CARDS setting to build only r600, r700, Evergreen and Northern Islands based chips code for radeon
+    radeon:                        VIDEO_CARDS setting to build driver for ATI radeon video cards
+    radeonsi:                      VIDEO_CARDS setting to build only Southern Islands based chips code for radeon
+    vc4:                           VIDEO_CARDS setting to build driver for vc4 video cards
+    vmware:                        VIDEO_CARDS setting to build driver for vmware video cards
 
-X   dev-lang/ghc 7.10.3:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
+I encountered the following errors:
 
-X   dev-libs/libcdio 0.92:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
+!   sys-apps/util-linux
+    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND), target (reinstalling dependents of sys-libs/ncurses), 8 more
+    Unsuitable candidates:
+      * sys-apps/util-linux-2.26.2:0::gentoo
+        Did not meet sys-apps/util-linux[static-libs(+)], use existing if possible, installing to / from sys-fs/cryptsetup-1.7.2:0::installed
+            Flag 'static-libs' enabled, assuming enabled if missing
+      * sys-apps/util-linux-2.27.1:0::gentoo
+        Masked by keyword
+            Keywords ~alpha ~amd64 ~amd64-linux ~arm ~arm-linux ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-linux
+        Did not meet sys-apps/util-linux[static-libs(+)], use existing if possible, installing to / from sys-fs/cryptsetup-1.7.2:0::installed
+            Flag 'static-libs' enabled, assuming enabled if missing
+      * sys-apps/util-linux-2.28.2:0::gentoo
+        Masked by keyword
+            Keywords ~alpha ~amd64 ~amd64-linux ~arm ~arm-linux ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-linux
+        Did not meet sys-apps/util-linux[static-libs(+)], use existing if possible, installing to / from sys-fs/cryptsetup-1.7.2:0::installed
+            Flag 'static-libs' enabled, assuming enabled if missing
+      * sys-apps/util-linux-2.29:0::gentoo
+        Masked by keyword
+            Keywords ~alpha ~amd64 ~amd64-linux ~arm ~arm-linux ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-linux
+        Did not meet sys-apps/util-linux[static-libs(+)], use existing if possible, installing to / from sys-fs/cryptsetup-1.7.2:0::installed
+            Flag 'static-libs' enabled, assuming enabled if missing
+      * sys-apps/util-linux-9999:0::gentoo
+        Masked by keyword
+            Keywords 
+        Did not meet sys-apps/util-linux[static-libs(+)], use existing if possible, installing to / from sys-fs/cryptsetup-1.7.2:0::installed
+            Flag 'static-libs' enabled, assuming enabled if missing
 
-X   dev-scheme/guile 1.8.8-r3:12::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   dev-util/cmake 3.5.2-r1:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   media-libs/aalib 1.4_rc5-r6:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   media-sound/alsa-utils 1.0.29:0.9::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   media-sound/lame 3.99.5-r1:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   net-irc/irssi 0.8.20-r1:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   net-mail/mailutils 2.99.98:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   net-wireless/wpa_supplicant 2.6:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-apps/less 481:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-apps/openrc 0.22.2:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-apps/texinfo 6.1:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-apps/util-linux 2.26.2:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-block/parted 3.2:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-boot/grub 2.02_beta3-r1:2::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-devel/gdb 7.10.1:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-devel/gettext 0.19.7:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-libs/gpm 1.20.7-r2:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-libs/slang 2.2.4-r1:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-process/procps 3.3.11-r3:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-process/psmisc 22.21-r3:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   www-client/w3m 0.5.3-r5:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-libs/ncurses-6.0-r1:0::installed (DEPEND), dependent upon sys-libs/ncurses-6.0-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-Executing pretend actions: 1 of 2]2;1 of 2 pretend sys-libs/ncurses-5.9-r5:0::gentoo]2;Completed 1 of 2 pretend sys-libs/ncurses-5.9-r5:0::gentoo2 of 2]2;2 of 2 pretend sys-libs/ncurses-5.9-r99:5::gentoo]2;Completed 2 of 2 pretend sys-libs/ncurses-5.9-r99:5::gentoo
-
- [35;01m*[0m No unread news items found
