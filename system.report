@@ -1,10 +1,5 @@
 These are the actions I will take, in order:
 
-n   dev-libs/mpfr:0::gentoo 3.1.3_p4 to ::installed
-    "library for multiple-precision floating-point computations with exact rounding"
-    -static-libs ABI_X86: -32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: dev-libs/mpc-1.0.2-r1:0::gentoo, sys-devel/gcc-4.9.3:4.9.3::gentoo
-
 n   dev-libs/mpc:0::gentoo 1.0.2-r1 to ::installed
     "A library for multiprecision complex arithmetic with exact rounding"
     -static-libs ABI_X86: -32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
@@ -17,19 +12,6 @@ r   sys-libs/ncurses:5::gentoo 5.9-r99 to ::installed replacing 5.9-r99
 r   sys-libs/zlib:0::gentoo 1.2.8-r1 to ::installed replacing 1.2.8-r1
     -minizip* static-libs ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
     Reasons: app-arch/libarchive-3.2.2:0::gentoo, app-crypt/gnupg-2.1.15:0::installed, app-text/ghostscript-gpl-9.15-r1:0::gentoo, 41 more
-
-r   dev-libs/xapian:0::gentoo 1.2.22 to ::installed replacing 1.2.22
-    brass chert -doc inmemory -static-libs CPU_FLAGS_X86: -sse* -sse2* build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: app-doc/doxygen-1.8.11-r2:0::gentoo
-
-n   dev-perl/libintl-perl:0::gentoo 1.240.0 to ::installed
-    "High-Level Interface to Uniforum Message Translation"
-    build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: sys-apps/texinfo-6.1:0::installed
-
-r   virtual/libudev:0::gentoo 215-r1 to ::installed replacing 215-r1
-    -static-libs* -systemd ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: dev-qt/qtgui-5.6.1:5::gentoo, media-libs/mesa-12.0.1:0::gentoo, sys-apps/pciutils-3.4.1:0::installed, sys-apps/util-linux-2.26.2:0::gentoo
 
 n   dev-perl/Text-Unidecode:0::gentoo 1.270.0 to ::installed
     "Plain ASCII transliterations of Unicode text"
@@ -45,7 +27,7 @@ n   app-crypt/pinentry:0::gentoo 0.9.5 to ::installed [cycle 1]
     "Collection of simple PIN or passphrase entry dialogs which utilize the Assuan protocol"
     -caps -clipboard -emacs -gnome-keyring -gtk ncurses -qt4 -static build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
     Reasons: app-crypt/gnupg-2.1.15:0::installed
-    In dependency cycle with existing packages: x11-libs/gdk-pixbuf:2, x11-libs/cairo:0, sys-libs/db:4.8, sys-apps/portage:0, media-libs/mesa:0, media-libs/alsa-lib:0, virtual/man:0, dev-python/pyelftools:0, media-gfx/graphite2:0, dev-util/gdbus-codegen:0, sys-apps/openrc:0, net-libs/nghttp2:0, sys-apps/util-linux:0, dev-util/boost-build:0, dev-perl/XML-LibXML:0, x11-misc/shared-mime-info:0, dev-libs/boost:0, app-arch/libarchive:0, sys-apps/shadow:0, dev-libs/libtasn1:0, x11-proto/kbproto:0, x11-proto/glproto:0, dev-db/sqlite:3, app-crypt/pinentry:0, dev-libs/nettle:0, x11-proto/xf86vidmodeproto:0, x11-proto/xcb-proto:0, x11-proto/xproto:0, x11-proto/recordproto:0, app-text/asciidoc:0, x11-proto/xextproto:0, x11-misc/util-macros:0, x11-proto/fixesproto:0, sys-libs/cracklib:0, dev-libs/libxml2:2, dev-perl/XML-SAX:0, x11-libs/pixman:0, dev-lang/python:3.4, dev-libs/libpcre:3, app-accessibility/at-spi2-core:2, dev-lang/python:2.7, net-libs/gnutls:0, app-shells/zsh:0, x11-themes/hicolor-icon-theme:0, app-editors/vim:0, x11-libs/pango:0, dev-libs/libxslt:0, app-misc/pax-utils:0, dev-libs/gobject-introspection:0, x11-proto/compositeproto:0, app-text/docbook2X:0, x11-proto/dri2proto:0, dev-qt/qtwidgets:5, sys-devel/gcc:4.9.3, app-text/ghostscript-gpl:0, dev-qt/qtcore:5, dev-qt/qtdbus:5, sys-devel/llvm:0, media-libs/freetype:2, dev-vcs/git:0, dev-qt/qtgui:5
+    In dependency cycle with existing packages: x11-libs/gdk-pixbuf:2, x11-libs/cairo:0, sys-libs/db:4.8, sys-apps/portage:0, media-libs/mesa:0, media-libs/alsa-lib:0, virtual/man:0, dev-python/pyelftools:0, media-gfx/graphite2:0, dev-util/gdbus-codegen:0, sys-apps/openrc:0, net-libs/nghttp2:0, dev-util/boost-build:0, dev-perl/XML-LibXML:0, x11-misc/shared-mime-info:0, dev-libs/boost:0, app-arch/libarchive:0, sys-apps/shadow:0, dev-libs/libtasn1:0, x11-proto/kbproto:0, x11-proto/glproto:0, dev-db/sqlite:3, app-crypt/pinentry:0, dev-libs/nettle:0, x11-proto/xf86vidmodeproto:0, x11-proto/xcb-proto:0, x11-proto/xproto:0, x11-proto/recordproto:0, app-text/asciidoc:0, x11-proto/xextproto:0, x11-misc/util-macros:0, x11-proto/fixesproto:0, sys-libs/cracklib:0, dev-libs/libxml2:2, dev-perl/XML-SAX:0, x11-libs/pixman:0, dev-lang/python:3.4, dev-libs/libpcre:3, app-accessibility/at-spi2-core:2, dev-lang/python:2.7, net-libs/gnutls:0, app-shells/zsh:0, x11-themes/hicolor-icon-theme:0, app-editors/vim:0, x11-libs/pango:0, dev-libs/libxslt:0, app-misc/pax-utils:0, dev-libs/gobject-introspection:0, x11-proto/compositeproto:0, app-text/docbook2X:0, x11-proto/dri2proto:0, dev-qt/qtwidgets:5, sys-devel/gcc:4.9.3, app-text/ghostscript-gpl:0, dev-qt/qtcore:5, dev-qt/qtdbus:5, sys-devel/llvm:0, media-libs/freetype:2, dev-vcs/git:0, dev-qt/qtgui:5
 
 r   dev-db/sqlite:3::gentoo 3.13.0 to ::installed replacing 3.13.0 [cycle 1]
     -debug -doc -icu* readline -secure-delete* -static-libs -tcl -tools* (-test) ABI_X86: 32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
@@ -53,7 +35,7 @@ r   dev-db/sqlite:3::gentoo 3.13.0 to ::installed replacing 3.13.0 [cycle 1]
 
 u   dev-lang/python:3.4::gentoo 3.4.5 to ::installed replacing 3.4.3-r1 [cycle 1]
     -build -examples gdbm hardened ipv6 (-libressl)+ ncurses readline sqlite ssl (threads) tk -wininst xml build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: app-editors/vim-7.4.769:0::gentoo, app-misc/ca-certificates-20151214.3.21:0::installed, dev-libs/boost-1.56.0-r1:0::gentoo, 16 more
+    Reasons: app-editors/vim-7.4.769:0::gentoo, app-misc/ca-certificates-20151214.3.21:0::installed, dev-libs/boost-1.56.0-r1:0::gentoo, 17 more
 
 r   app-editors/vim:0::gentoo 7.4.769 to ::installed replacing 7.4.769 [cycle 1]
     -X acl -cscope -debug gpm -lua -luajit -minimal nls -perl python -racket -ruby (-selinux) -tcl vim-pager PYTHON_TARGETS: -python2_7* python3_4 build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
@@ -159,7 +141,7 @@ r   net-libs/gnutls:0::gentoo 3.3.24-r1 to ::installed replacing 3.3.24-r1 [cycl
 
 u   sys-apps/openrc:0::gentoo 0.22.4 to ::installed replacing 0.22.2 [cycle 1]
     -audit -debug ncurses netifrc -newnet pam (-prefix) (-selinux) -static-libs tools unicode build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target (system::gentoo), !<sys-apps/openrc-0.11.8 from sys-libs/pam-1.2.1:0::installed, !<sys-apps/openrc-0.12 from net-misc/netifrc-0.2.2:0::installed, 6 more
+    Reasons: target (system::gentoo), !<sys-apps/openrc-0.11 from sys-fs/lvm2-2.02.116-r4:0::installed, !<sys-apps/openrc-0.11.8 from sys-libs/pam-1.2.1:0::installed, 7 more
 
 r   sys-apps/portage:0::gentoo 2.3.0 to ::installed replacing 2.3.0 [cycle 1]
     -build doc -epydoc (ipc) (-selinux) (xattr) LINGUAS: -ru PYTHON_TARGETS: (-pypy) -python2_7* python3_4 (-python3_5) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
@@ -167,7 +149,7 @@ r   sys-apps/portage:0::gentoo 2.3.0 to ::installed replacing 2.3.0 [cycle 1]
 
 u   dev-lang/python:2.7::gentoo 2.7.12 to ::installed replacing 2.7.10-r1 [cycle 1]
     (-berkdb) -build -doc -examples gdbm hardened ipv6 (-libressl)+ ncurses readline sqlite ssl (threads) tk (wide-unicode) -wininst xml build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: app-text/asciidoc-8.6.9-r2:0::gentoo, dev-lang/spidermonkey-1.8.5-r4:0::installed, dev-libs/gobject-introspection-1.48.0:0::gentoo, 8 more
+    Reasons: app-text/asciidoc-8.6.9-r2:0::gentoo, dev-lang/spidermonkey-1.8.5-r4:0::installed, dev-libs/gobject-introspection-1.48.0:0::gentoo, 9 more
 
 r   app-text/asciidoc:0::gentoo 8.6.9-r2 to ::installed replacing 8.6.9-r2 [cycle 1]
     -examples -graphviz -highlight* (-test) PYTHON_SINGLE_TARGET: (-pypy) python2_7 PYTHON_TARGETS: (-pypy) python2_7 build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
@@ -176,11 +158,11 @@ r   app-text/asciidoc:0::gentoo 8.6.9-r2 to ::installed replacing 8.6.9-r2 [cycl
 r   dev-util/boost-build:0::gentoo 1.56.0 to ::installed replacing 1.56.0 [cycle 2]
     -examples python* (-test) PYTHON_TARGETS: -python2_7* build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
     Reasons: !<=dev-util/boost-build-1.35.0-r1 from dev-util/boost-build-1.56.0:0::gentoo, dev-libs/boost-1.56.0-r1:0::gentoo
-    In dependency cycle with existing packages: x11-libs/gdk-pixbuf:2, x11-libs/cairo:0, sys-libs/db:4.8, sys-apps/portage:0, media-libs/mesa:0, media-libs/alsa-lib:0, virtual/man:0, dev-python/pyelftools:0, media-gfx/graphite2:0, dev-util/gdbus-codegen:0, sys-apps/openrc:0, net-libs/nghttp2:0, sys-apps/util-linux:0, dev-util/boost-build:0, dev-perl/XML-LibXML:0, x11-misc/shared-mime-info:0, dev-libs/boost:0, app-arch/libarchive:0, sys-apps/shadow:0, dev-libs/libtasn1:0, x11-proto/kbproto:0, x11-proto/glproto:0, dev-db/sqlite:3, app-crypt/pinentry:0, dev-libs/nettle:0, x11-proto/xf86vidmodeproto:0, x11-proto/xcb-proto:0, x11-proto/xproto:0, x11-proto/recordproto:0, app-text/asciidoc:0, x11-proto/xextproto:0, x11-misc/util-macros:0, x11-proto/fixesproto:0, sys-libs/cracklib:0, dev-libs/libxml2:2, dev-perl/XML-SAX:0, x11-libs/pixman:0, dev-lang/python:3.4, dev-libs/libpcre:3, app-accessibility/at-spi2-core:2, dev-lang/python:2.7, net-libs/gnutls:0, app-shells/zsh:0, x11-themes/hicolor-icon-theme:0, app-editors/vim:0, x11-libs/pango:0, dev-libs/libxslt:0, app-misc/pax-utils:0, dev-libs/gobject-introspection:0, x11-proto/compositeproto:0, app-text/docbook2X:0, x11-proto/dri2proto:0, dev-qt/qtwidgets:5, sys-devel/gcc:4.9.3, app-text/ghostscript-gpl:0, dev-qt/qtcore:5, dev-qt/qtdbus:5, sys-devel/llvm:0, media-libs/freetype:2, dev-vcs/git:0, dev-qt/qtgui:5; Self dependent (already met)
+    In dependency cycle with existing packages: x11-libs/gdk-pixbuf:2, x11-libs/cairo:0, sys-libs/db:4.8, sys-apps/portage:0, media-libs/mesa:0, media-libs/alsa-lib:0, virtual/man:0, dev-python/pyelftools:0, media-gfx/graphite2:0, dev-util/gdbus-codegen:0, sys-apps/openrc:0, net-libs/nghttp2:0, dev-util/boost-build:0, dev-perl/XML-LibXML:0, x11-misc/shared-mime-info:0, dev-libs/boost:0, app-arch/libarchive:0, sys-apps/shadow:0, dev-libs/libtasn1:0, x11-proto/kbproto:0, x11-proto/glproto:0, dev-db/sqlite:3, app-crypt/pinentry:0, dev-libs/nettle:0, x11-proto/xf86vidmodeproto:0, x11-proto/xcb-proto:0, x11-proto/xproto:0, x11-proto/recordproto:0, app-text/asciidoc:0, x11-proto/xextproto:0, x11-misc/util-macros:0, x11-proto/fixesproto:0, sys-libs/cracklib:0, dev-libs/libxml2:2, dev-perl/XML-SAX:0, x11-libs/pixman:0, dev-lang/python:3.4, dev-libs/libpcre:3, app-accessibility/at-spi2-core:2, dev-lang/python:2.7, net-libs/gnutls:0, app-shells/zsh:0, x11-themes/hicolor-icon-theme:0, app-editors/vim:0, x11-libs/pango:0, dev-libs/libxslt:0, app-misc/pax-utils:0, dev-libs/gobject-introspection:0, x11-proto/compositeproto:0, app-text/docbook2X:0, x11-proto/dri2proto:0, dev-qt/qtwidgets:5, sys-devel/gcc:4.9.3, app-text/ghostscript-gpl:0, dev-qt/qtcore:5, dev-qt/qtdbus:5, sys-devel/llvm:0, media-libs/freetype:2, dev-vcs/git:0, dev-qt/qtgui:5; Self dependent (already met)
 
 r   dev-libs/boost:0::gentoo 1.56.0-r1 to ::installed replacing 1.56.0-r1 [cycle 1]
     context -debug -doc icu mpi nls python -static-libs threads tools ABI_X86: -32 (64) (-x32) PYTHON_TARGETS: -python2_7* python3_4 build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
-    Reasons: !<dev-libs/boost-1.34.0 from dev-util/boost-build-1.56.0:0::gentoo, net-libs/nghttp2-1.10.0:0::gentoo
+    Reasons: !<dev-libs/boost-1.34.0 from dev-util/boost-build-1.56.0:0::gentoo, net-libs/nghttp2-1.10.0:0::gentoo, sys-block/thin-provisioning-tools-0.4.1:0::installed
 
 r   dev-vcs/git:0::gentoo 2.7.3-r1 to ::installed replacing 2.7.3-r1 [cycle 1]
     blksha1 -cgi curl -cvs doc -emacs -gnome-keyring gpg -gtk highlight -iconv (-libressl) -mediawiki -mediawiki-experimental nls pcre* perl (-ppcsha1) python -subversion threads tk webdav -xinetd (-test) PYTHON_TARGETS: -python2_7* build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
@@ -193,10 +175,6 @@ r   media-libs/alsa-lib:0::gentoo 1.0.29 to ::installed replacing 1.0.29 [cycle 
 r   net-libs/nghttp2:0::gentoo 1.10.0 to ::installed replacing 1.10.0 [cycle 1]
     cxx* -debug -hpack-tools -jemalloc (-libressl) -static-libs threads -utils -xml (-test) ABI_X86: -32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
     Reasons: net-misc/curl-7.51.0:0::installed
-
-r   sys-apps/util-linux:0::gentoo 2.26.2 to ::installed replacing 2.26.2 [cycle 1]
-    -build -caps cramfs -fdformat ncurses nls pam python (-selinux) -slang -static-libs* suid -systemd -tty-helpers* udev unicode (-test) ABI_X86: 32 (64) (-x32) PYTHON_SINGLE_TARGET: -python2_7 python3_4 PYTHON_TARGETS: -python2_7 python3_4 build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
-    Reasons: target (system::gentoo), !<sys-apps/util-linux-2.13 from sys-apps/coreutils-8.23:0::installed, !sys-apps/util-linux[kill] from sys-process/procps-3.3.11-r3:0::installed, 6 more
 
 s   sys-devel/gcc:4.9.3::gentoo 4.9.3 to ::installed [cycle 1]
     "The GNU Compiler Collection"
@@ -350,7 +328,7 @@ n   app-doc/doxygen:0::gentoo 1.8.11-r2 to ::installed
     clang -debug -doc -dot doxysearch -latex -qt5 (-sqlite) build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
     Reasons: sys-apps/paludis-2.6.0:0::installed
 
-Total: 1 downgrades, 27 reinstalls, 5 upgrades, 1 new slot installs, 42 new installs, 5.21 MBytes to download
+Total: 1 downgrades, 24 reinstalls, 5 upgrades, 1 new slot installs, 40 new installs, 5.21 MBytes to download
 
 I did not take the following:
 
@@ -502,7 +480,6 @@ USE:
     tiff:                          Add support for the TIFF image format
     tools:                         Install additional tools
     tslib:                         Enable support for touchscreen devices via x11-libs/tslib
-    tty-helpers:                   install the mesg/wall/write tools for talking to local users
     tuio:                          Build plugin to receive touch events over the TUIO protocol
     udev:                          Enable virtual/udev integration (device discovery, power and storage device support, etc)
     utils:                         Install utilities and examples from ft2demos
@@ -530,7 +507,6 @@ abi_x86:
 
 cpu_flags_x86:
     aes:                           Enable support for Intel's AES instruction set (AES-NI)
-    sse:                           Use the SSE instruction set
     sse2:                          Use the SSE2 instruction set
 
 l10n:
@@ -570,6 +546,33 @@ I encountered the following errors:
       * sys-devel/gcc-5.3.0:5.3.0::gentoo
         Masked by keyword
             Keywords ~alpha ~amd64 ~amd64-fbsd ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd
+!   sys-apps/util-linux
+    Reasons: target (system::gentoo), !<sys-apps/util-linux-2.13 from sys-apps/coreutils-8.23:0::installed, !sys-apps/util-linux[kill] from sys-process/procps-3.3.11-r3:0::installed, 9 more
+    Unsuitable candidates:
+      * sys-apps/util-linux-2.26.2:0::installed
+      * sys-apps/util-linux-2.26.2:0::gentoo
+        Did not meet >=sys-apps/util-linux-2.16[static-libs], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled
+      * sys-apps/util-linux-2.27.1:0::gentoo
+        Masked by keyword
+            Keywords ~alpha ~amd64 ~amd64-linux ~arm ~arm-linux ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-linux
+        Did not meet >=sys-apps/util-linux-2.16[static-libs], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled
+      * sys-apps/util-linux-2.28.2:0::gentoo
+        Masked by keyword
+            Keywords ~alpha ~amd64 ~amd64-linux ~arm ~arm-linux ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-linux
+        Did not meet >=sys-apps/util-linux-2.16[static-libs], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled
+      * sys-apps/util-linux-2.29:0::gentoo
+        Masked by keyword
+            Keywords ~alpha ~amd64 ~amd64-linux ~arm ~arm-linux ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-linux
+        Did not meet >=sys-apps/util-linux-2.16[static-libs], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled
+      * sys-apps/util-linux-9999:0::gentoo
+        Masked by keyword
+            Keywords 
+        Did not meet >=sys-apps/util-linux-2.16[static-libs], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled
 !   sys-libs/ncurses
     Reasons: app-admin/eselect-1.4.5:0::installed, app-crypt/pinentry-0.9.5:0::gentoo, app-editors/nano-2.5.3:0::installed, 22 more
     Unsuitable candidates:
@@ -598,7 +601,7 @@ I encountered the following errors:
         Masked by keyword
             Keywords alpha arm arm64 hppa ia64 m68k ppc ppc64 s390 sh sparc ~amd64 ~amd64-fbsd ~mips ~sparc-fbsd ~x86 ~x86-fbsd
 !   dev-libs/openssl
-    Reasons: !<dev-libs/openssl-1.0.2d-r1:0 from app-misc/c_rehash-1.7-r1:0::installed, app-arch/libarchive-3.2.2:0::gentoo, dev-lang/python-2.7.12:2.7::gentoo, 12 more
+    Reasons: !<dev-libs/openssl-1.0.2d-r1:0 from app-misc/c_rehash-1.7-r1:0::installed, app-arch/libarchive-3.2.2:0::gentoo, dev-lang/python-2.7.12:2.7::gentoo, 13 more
     Unsuitable candidates:
       * dev-libs/openssl-1.0.2j:0::installed
       * dev-libs/openssl-1.0.2j:0::gentoo
@@ -617,14 +620,14 @@ I encountered the following errors:
         Did not meet =dev-lang/perl-5.22*, use existing if same, installing to / from virtual/perl-Data-Dumper-2.158.0-r1:0::installed (and 21 more)
         Did not meet =dev-lang/perl-5.22.2*, use existing if same, installing to / from virtual/perl-File-Spec-3.560.100-r1:0::installed
         Did not meet dev-lang/perl:0/5.22=, use existing if same, installing to / from sys-apps/texinfo-6.1:0::installed (and 26 more)
-        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from app-text/po4a-0.45-r3:0::installed (and 14 more)
+        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from dev-perl/libintl-perl-1.240.0:0::installed (and 15 more)
       * dev-lang/perl-5.20.2-r1:0::gentoo
         Masked by keyword
             Keywords ~alpha ~amd64 ~amd64-fbsd ~amd64-linux ~arm ~arm64 ~hppa ~hppa-hpux ~ia64 ~ia64-hpux ~ia64-linux ~m68k ~m68k-mint ~mips ~ppc ~ppc-aix ~ppc-macos ~ppc64 ~s390 ~sh ~sparc ~sparc-solaris ~sparc64-solaris ~x64-freebsd ~x64-macos ~x64-solaris ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~x86-linux ~x86-macos ~x86-solaris
         Did not meet =dev-lang/perl-5.22*, use existing if same, installing to / from virtual/perl-Data-Dumper-2.158.0-r1:0::installed (and 21 more)
         Did not meet =dev-lang/perl-5.22.2*, use existing if same, installing to / from virtual/perl-File-Spec-3.560.100-r1:0::installed
         Did not meet dev-lang/perl:0/5.22=, use existing if same, installing to / from sys-apps/texinfo-6.1:0::installed (and 26 more)
-        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from app-text/po4a-0.45-r3:0::installed (and 14 more)
+        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from dev-perl/libintl-perl-1.240.0:0::installed (and 15 more)
       * dev-lang/perl-5.22.0:0::gentoo
         Masked by keyword
             Keywords ~alpha ~amd64 ~amd64-fbsd ~amd64-linux ~arm ~arm64 ~hppa ~hppa-hpux ~ia64 ~ia64-hpux ~ia64-linux ~m68k ~m68k-mint ~mips ~ppc ~ppc-aix ~ppc-macos ~ppc64 ~s390 ~sh ~sparc ~sparc-solaris ~sparc64-solaris ~x64-freebsd ~x64-macos ~x64-solaris ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~x86-linux ~x86-macos ~x86-solaris
@@ -644,7 +647,7 @@ I encountered the following errors:
         Did not meet =dev-lang/perl-5.22.2*, use existing if same, installing to / from virtual/perl-File-Spec-3.560.100-r1:0::installed
         Did not meet dev-lang/perl:0/5.20=[-build(-)], use existing if same, installing to / from perl-core/Module-Metadata-1.0.26:0::installed
         Did not meet dev-lang/perl:0/5.22=, use existing if same, installing to / from sys-apps/texinfo-6.1:0::installed (and 26 more)
-        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from app-text/po4a-0.45-r3:0::installed (and 14 more)
+        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from dev-perl/libintl-perl-1.240.0:0::installed (and 15 more)
       * dev-lang/perl-5.24.0-r2:0::gentoo
         Masked by keyword
             Keywords ~alpha ~amd64 ~amd64-fbsd ~amd64-linux ~arm ~arm64 ~hppa ~hppa-hpux ~ia64 ~ia64-hpux ~ia64-linux ~m68k ~m68k-mint ~mips ~ppc ~ppc-aix ~ppc-macos ~ppc64 ~s390 ~sh ~sparc ~sparc-solaris ~sparc64-solaris ~x64-freebsd ~x64-macos ~x64-solaris ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~x86-linux ~x86-macos ~x86-solaris
@@ -652,7 +655,7 @@ I encountered the following errors:
         Did not meet =dev-lang/perl-5.22.2*, use existing if same, installing to / from virtual/perl-File-Spec-3.560.100-r1:0::installed
         Did not meet dev-lang/perl:0/5.20=[-build(-)], use existing if same, installing to / from perl-core/Module-Metadata-1.0.26:0::installed
         Did not meet dev-lang/perl:0/5.22=, use existing if same, installing to / from sys-apps/texinfo-6.1:0::installed (and 26 more)
-        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from app-text/po4a-0.45-r3:0::installed (and 14 more)
+        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from dev-perl/libintl-perl-1.240.0:0::installed (and 15 more)
       * dev-lang/perl-5.24.1_rc4:0::gentoo
         Masked by keyword
             Keywords ~alpha ~amd64 ~amd64-fbsd ~amd64-linux ~arm ~arm64 ~hppa ~hppa-hpux ~ia64 ~ia64-hpux ~ia64-linux ~m68k ~m68k-mint ~mips ~ppc ~ppc-aix ~ppc-macos ~ppc64 ~s390 ~sh ~sparc ~sparc-solaris ~sparc64-solaris ~x64-freebsd ~x64-macos ~x64-solaris ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~x86-linux ~x86-macos ~x86-solaris
@@ -660,53 +663,53 @@ I encountered the following errors:
         Did not meet =dev-lang/perl-5.22.2*, use existing if same, installing to / from virtual/perl-File-Spec-3.560.100-r1:0::installed
         Did not meet dev-lang/perl:0/5.20=[-build(-)], use existing if same, installing to / from perl-core/Module-Metadata-1.0.26:0::installed
         Did not meet dev-lang/perl:0/5.22=, use existing if same, installing to / from sys-apps/texinfo-6.1:0::installed (and 26 more)
-        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from app-text/po4a-0.45-r3:0::installed (and 14 more)
+        Did not meet dev-lang/perl:0/5.22=[-build(-)], use existing if same, installing to / from dev-perl/libintl-perl-1.240.0:0::installed (and 15 more)
+!   virtual/libudev
+    Reasons: dev-qt/qtgui-5.6.1:5::gentoo, media-libs/mesa-12.0.1:0::gentoo, sys-apps/pciutils-3.4.1:0::installed, 3 more
+    Unsuitable candidates:
+      * virtual/libudev-215-r1:0::installed
+      * virtual/libudev-215-r1:0::gentoo
+        Did not meet >=virtual/libudev-208:0/1=[static-libs?], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled if it is enabled for 'sys-fs/lvm2-2.02.116-r4:0::installed'
+      * virtual/libudev-232:0::gentoo
+        Masked by keyword
+            Keywords ~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+        Did not meet >=virtual/libudev-208:0/1=[static-libs?], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled if it is enabled for 'sys-fs/lvm2-2.02.116-r4:0::installed'
 !   sys-fs/eudev
-    Reasons: virtual/libudev-215-r1:0::gentoo, virtual/udev-215:0::installed
+    Reasons: sys-fs/lvm2-2.02.116-r4:0::installed, virtual/libudev-215-r1:0::gentoo, virtual/udev-215:0::installed
     Unsuitable candidates:
       * sys-fs/eudev-3.1.5:0::installed
       * sys-fs/eudev-1.9-r2:0::gentoo
-        Did not meet >=sys-fs/eudev-1.3:0/0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?,static-libs?], use existing if same, installing to / from virtual/libudev-215-r1:0::gentoo
-            Flag 'abi_x86_32' enabled if it is enabled for 'virtual/libudev-215-r1:0::gentoo', assuming disabled if missing
+        Did not meet >=sys-fs/eudev-3.1.2[static-libs], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
       * sys-fs/eudev-1.10-r2:0::gentoo
-        Did not meet >=sys-fs/eudev-1.3:0/0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?,static-libs?], use existing if same, installing to / from virtual/libudev-215-r1:0::gentoo
-            Flag 'abi_x86_32' enabled if it is enabled for 'virtual/libudev-215-r1:0::gentoo', assuming disabled if missing
+        Did not meet >=sys-fs/eudev-3.1.2[static-libs], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
       * sys-fs/eudev-3.1.2:0::gentoo
-        Did not meet >=sys-fs/eudev-1.3:0/0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?,static-libs?], use existing if same, installing to / from virtual/libudev-215-r1:0::gentoo
-            Flag 'abi_x86_32' enabled if it is enabled for 'virtual/libudev-215-r1:0::gentoo', assuming disabled if missing
+        Did not meet >=sys-fs/eudev-3.1.2[static-libs], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled
       * sys-fs/eudev-3.1.5:0::gentoo
-        Did not meet >=sys-fs/eudev-1.3:0/0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?,static-libs?], use existing if same, installing to / from virtual/libudev-215-r1:0::gentoo
-            Flag 'abi_x86_32' enabled if it is enabled for 'virtual/libudev-215-r1:0::gentoo', assuming disabled if missing
+        Did not meet >=sys-fs/eudev-3.1.2[static-libs], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled
       * sys-fs/eudev-3.2:0::gentoo
         Masked by keyword
             Keywords ~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86
-        Did not meet >=sys-fs/eudev-1.3:0/0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?,static-libs?], use existing if same, installing to / from virtual/libudev-215-r1:0::gentoo
-            Flag 'abi_x86_32' enabled if it is enabled for 'virtual/libudev-215-r1:0::gentoo', assuming disabled if missing
+        Did not meet >=sys-fs/eudev-3.1.2[static-libs], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled
       * sys-fs/eudev-4.9999:0::gentoo
         Masked by keyword
             Keywords 
-        Did not meet >=sys-fs/eudev-1.3:0/0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?,static-libs?], use existing if same, installing to / from virtual/libudev-215-r1:0::gentoo
-            Flag 'abi_x86_32' enabled if it is enabled for 'virtual/libudev-215-r1:0::gentoo', assuming disabled if missing
+        Did not meet >=sys-fs/eudev-3.1.2[static-libs], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled
       * sys-fs/eudev-9999:0::gentoo
         Masked by keyword
             Keywords 
-        Did not meet >=sys-fs/eudev-1.3:0/0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?,static-libs?], use existing if same, installing to / from virtual/libudev-215-r1:0::gentoo
-            Flag 'abi_x86_32' enabled if it is enabled for 'virtual/libudev-215-r1:0::gentoo', assuming disabled if missing
+        Did not meet >=sys-fs/eudev-3.1.2[static-libs], use existing if same, installing to / from sys-fs/lvm2-2.02.116-r4:0::installed
+            Flag 'static-libs' enabled
 
 I cannot proceed without being permitted to do the following:
 
 X   dev-java/java-config 2.2.0-r3:2::installed
     Will be broken by uninstalls:
     Reasons: dependent upon sys-apps/portage-2.3.0:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-fs/cryptsetup 1.7.2:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-apps/util-linux-2.26.2:0::installed (DEPEND), dependent upon sys-apps/util-linux-2.26.2:0::installed (RDEPEND), dependent upon virtual/libudev-215-r1:0::installed (DEPEND), dependent upon virtual/libudev-215-r1:0::installed (RDEPEND)
-    Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
-
-X   sys-fs/lvm2 2.02.116-r4:0::installed
-    Will be broken by uninstalls:
-    Reasons: dependent upon sys-apps/util-linux-2.26.2:0::installed (DEPEND), dependent upon virtual/libudev-215-r1:0::installed (DEPEND), dependent upon virtual/libudev-215-r1:0::installed (RDEPEND)
     Cannot proceed without: --uninstalls-may-break or --remove-if-dependent
 
