@@ -1,0 +1,3769 @@
+These are the actions I will take, in order:
+
+<   app-admin/chrpath 0.13-r2:0::installed
+    Reasons: was unused
+
+<   app-admin/eselect-guile 100:0::installed
+    Reasons: was unused
+
+<   app-admin/haskell-updater 1.2.10:0::installed [cycle 1]
+    Reasons: was used by dev-lang/ghc-7.10.3:0::installed
+    In run dependency cycle with: app-admin/haskell-updater:0, dev-lang/ghc:0 in dependency cycle with app-admin/haskell-updater:0, dev-lang/ghc:0
+
+<   dev-lang/ghc 7.10.3:0::installed [cycle 1]
+    Reasons: was used by app-admin/haskell-updater-1.2.10:0::installed
+
+<   app-admin/lib_users 0.9:0::installed
+    Reasons: was unused
+
+<   app-admin/python-updater 0.11:0::installed
+    Reasons: was unused
+
+<   app-arch/gcab 0.7:0::installed
+    Reasons: was unused
+
+<   app-arch/lzop 1.03:0::installed
+    Reasons: was unused
+
+<   app-arch/rpm 4.11.0.1:0::installed
+    Reasons: was unused
+
+<   app-arch/unrar 5.3.11:0::installed
+    Reasons: was unused
+
+<   app-backup/dar 2.4.20:0::installed
+    Reasons: was unused
+
+<   app-cdr/dvd+rw-tools 7.1-r1:0::installed
+    Reasons: was unused
+
+<   app-crypt/gpgme 1.5.5:1::installed
+    Reasons: was unused
+
+<   app-crypt/libsecret 0.18.5:0::installed
+    Reasons: was unused
+
+<   app-crypt/p11-kit 0.23.2:0::installed
+    Reasons: was unused
+
+<   app-crypt/qca 2.1.1:2::installed
+    Reasons: was unused
+
+<   app-crypt/tpm-tools 1.3.8:0::installed
+    Reasons: was unused
+
+<   app-crypt/trousers 0.3.13-r1:0::installed
+    Reasons: was used by app-crypt/tpm-tools-1.3.8:0::installed
+
+<   app-dicts/myspell-en 20160901:0::installed
+    Reasons: was unused
+
+<   app-doc/gnucash-docs 2.6.13:0::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 01:01::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 09:09::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 10:10::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 100:100::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 101:101::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 102:102::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 103:103::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 104:104::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 105:105::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 106:106::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 107:107::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 108:108::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 109:109::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 11:11::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 110:110::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 111:111::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 112:112::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 113:113::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 114:114::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 115:115::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 116:116::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 117:117::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 118:118::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 119:119::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 12:12::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 120:120::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 121:121::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 122:122::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 123:123::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 124:124::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 125:125::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 126:126::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 127:127::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 128:128::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 129:129::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 13:13::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 130:130::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 131:131::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 132:132::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 133:133::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 134:134::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 135:135::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 136:136::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 137:137::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 138:138::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 139:139::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 14:14::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 140:140::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 141:141::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 142:142::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 143:143::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 144:144::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 145:145::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 146:146::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 147:147::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 148:148::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 149:149::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 15:15::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 150:150::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 151:151::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 152:152::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 153:153::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 154:154::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 155:155::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 156:156::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 157:157::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 158:158::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 159:159::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 16:16::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 160:160::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 161:161::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 162:162::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 163:163::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 164:164::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 165:165::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 166:166::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 167:167::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 168:168::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 169:169::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 17:17::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 170:170::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 171:171::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 172:172::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 173:173::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 174:174::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 175:175::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 176:176::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 177:177::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 178:178::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 179:179::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 18:18::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 180:180::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 181:181::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 182:182::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 19:19::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 20:20::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 21:21::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 22:22::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 23:23::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 24:24::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 25:25::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 26:26::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 27:27::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 28:28::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 29:29::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 30:30::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 31:31::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 32:32::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 33:33::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 34:34::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 35:35::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 36:36::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 37:37::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 38:38::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 39:39::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 40:40::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 41:41::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 42:42::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 43:43::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 44:44::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 45:45::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 46:46::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 47:47::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 48:48::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 49:49::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 50:50::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 51:51::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 52:52::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 53:53::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 54:54::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 55:55::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 56:56::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 57:57::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 58:58::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 59:59::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 60:60::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 61:61::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 62:62::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 63:63::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 64:64::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 65:65::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 66:66::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 67:67::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 68:68::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 69:69::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 70:70::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 71:71::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 72:72::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 73:73::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 74:74::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 75:75::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 76:76::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 77:77::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 78:78::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 79:79::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 80:80::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 81:81::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 82:82::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 83:83::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 84:84::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 85:85::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 86:86::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 87:87::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 88:88::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 89:89::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 90:90::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 91:91::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 92:92::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 93:93::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 94:94::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 95:95::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 96:96::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 97:97::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 98:98::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette 99:99::installed
+    Reasons: was unused
+
+<   app-doc/linux-gazette-base 182:0::installed
+    Reasons: was used by app-doc/linux-gazette-01:01::installed, app-doc/linux-gazette-09:09::installed, app-doc/linux-gazette-10:10::installed, app-doc/linux-gazette-11:11::installed, app-doc/linux-gazette-12:12::installed, app-doc/linux-gazette-13:13::installed, app-doc/linux-gazette-14:14::installed, app-doc/linux-gazette-15:15::installed, app-doc/linux-gazette-16:16::installed, app-doc/linux-gazette-17:17::installed, app-doc/linux-gazette-18:18::installed, app-doc/linux-gazette-19:19::installed, app-doc/linux-gazette-20:20::installed, app-doc/linux-gazette-21:21::installed, app-doc/linux-gazette-22:22::installed, app-doc/linux-gazette-23:23::installed, app-doc/linux-gazette-24:24::installed, app-doc/linux-gazette-25:25::installed, app-doc/linux-gazette-26:26::installed, app-doc/linux-gazette-27:27::installed, app-doc/linux-gazette-28:28::installed, app-doc/linux-gazette-29:29::installed, app-doc/linux-gazette-30:30::installed, app-doc/linux-gazette-31:31::installed, app-doc/linux-gazette-32:32::installed, app-doc/linux-gazette-33:33::installed, app-doc/linux-gazette-34:34::installed, app-doc/linux-gazette-35:35::installed, app-doc/linux-gazette-36:36::installed, app-doc/linux-gazette-37:37::installed, app-doc/linux-gazette-38:38::installed, app-doc/linux-gazette-39:39::installed, app-doc/linux-gazette-40:40::installed, app-doc/linux-gazette-41:41::installed, app-doc/linux-gazette-42:42::installed, app-doc/linux-gazette-43:43::installed, app-doc/linux-gazette-44:44::installed, app-doc/linux-gazette-45:45::installed, app-doc/linux-gazette-46:46::installed, app-doc/linux-gazette-47:47::installed, app-doc/linux-gazette-48:48::installed, app-doc/linux-gazette-49:49::installed, app-doc/linux-gazette-50:50::installed, app-doc/linux-gazette-51:51::installed, app-doc/linux-gazette-52:52::installed, app-doc/linux-gazette-53:53::installed, app-doc/linux-gazette-54:54::installed, app-doc/linux-gazette-55:55::installed, app-doc/linux-gazette-56:56::installed, app-doc/linux-gazette-57:57::installed, app-doc/linux-gazette-58:58::installed, app-doc/linux-gazette-59:59::installed, app-doc/linux-gazette-60:60::installed, app-doc/linux-gazette-61:61::installed, app-doc/linux-gazette-62:62::installed, app-doc/linux-gazette-63:63::installed, app-doc/linux-gazette-64:64::installed, app-doc/linux-gazette-65:65::installed, app-doc/linux-gazette-66:66::installed, app-doc/linux-gazette-67:67::installed, app-doc/linux-gazette-68:68::installed, app-doc/linux-gazette-69:69::installed, app-doc/linux-gazette-70:70::installed, app-doc/linux-gazette-71:71::installed, app-doc/linux-gazette-72:72::installed, app-doc/linux-gazette-73:73::installed, app-doc/linux-gazette-74:74::installed, app-doc/linux-gazette-75:75::installed, app-doc/linux-gazette-76:76::installed, app-doc/linux-gazette-77:77::installed, app-doc/linux-gazette-78:78::installed, app-doc/linux-gazette-79:79::installed, app-doc/linux-gazette-80:80::installed, app-doc/linux-gazette-81:81::installed, app-doc/linux-gazette-82:82::installed, app-doc/linux-gazette-83:83::installed, app-doc/linux-gazette-84:84::installed, app-doc/linux-gazette-85:85::installed, app-doc/linux-gazette-86:86::installed, app-doc/linux-gazette-87:87::installed, app-doc/linux-gazette-88:88::installed, app-doc/linux-gazette-89:89::installed, app-doc/linux-gazette-90:90::installed, app-doc/linux-gazette-91:91::installed, app-doc/linux-gazette-92:92::installed, app-doc/linux-gazette-93:93::installed, app-doc/linux-gazette-94:94::installed, app-doc/linux-gazette-95:95::installed, app-doc/linux-gazette-96:96::installed, app-doc/linux-gazette-97:97::installed, app-doc/linux-gazette-98:98::installed, app-doc/linux-gazette-99:99::installed, app-doc/linux-gazette-100:100::installed, app-doc/linux-gazette-101:101::installed, app-doc/linux-gazette-102:102::installed, app-doc/linux-gazette-103:103::installed, app-doc/linux-gazette-104:104::installed, app-doc/linux-gazette-105:105::installed, app-doc/linux-gazette-106:106::installed, app-doc/linux-gazette-107:107::installed, app-doc/linux-gazette-108:108::installed, app-doc/linux-gazette-109:109::installed, app-doc/linux-gazette-110:110::installed, app-doc/linux-gazette-111:111::installed, app-doc/linux-gazette-112:112::installed, app-doc/linux-gazette-113:113::installed, app-doc/linux-gazette-114:114::installed, app-doc/linux-gazette-115:115::installed, app-doc/linux-gazette-116:116::installed, app-doc/linux-gazette-117:117::installed, app-doc/linux-gazette-118:118::installed, app-doc/linux-gazette-119:119::installed, app-doc/linux-gazette-120:120::installed, app-doc/linux-gazette-121:121::installed, app-doc/linux-gazette-122:122::installed, app-doc/linux-gazette-123:123::installed, app-doc/linux-gazette-124:124::installed, app-doc/linux-gazette-125:125::installed, app-doc/linux-gazette-126:126::installed, app-doc/linux-gazette-127:127::installed, app-doc/linux-gazette-128:128::installed, app-doc/linux-gazette-129:129::installed, app-doc/linux-gazette-130:130::installed, app-doc/linux-gazette-131:131::installed, app-doc/linux-gazette-132:132::installed, app-doc/linux-gazette-133:133::installed, app-doc/linux-gazette-134:134::installed, app-doc/linux-gazette-135:135::installed, app-doc/linux-gazette-136:136::installed, app-doc/linux-gazette-137:137::installed, app-doc/linux-gazette-138:138::installed, app-doc/linux-gazette-139:139::installed, app-doc/linux-gazette-140:140::installed, app-doc/linux-gazette-141:141::installed, app-doc/linux-gazette-142:142::installed, app-doc/linux-gazette-143:143::installed, app-doc/linux-gazette-144:144::installed, app-doc/linux-gazette-145:145::installed, app-doc/linux-gazette-146:146::installed, app-doc/linux-gazette-147:147::installed, app-doc/linux-gazette-148:148::installed, app-doc/linux-gazette-149:149::installed, app-doc/linux-gazette-150:150::installed, app-doc/linux-gazette-151:151::installed, app-doc/linux-gazette-152:152::installed, app-doc/linux-gazette-153:153::installed, app-doc/linux-gazette-154:154::installed, app-doc/linux-gazette-155:155::installed, app-doc/linux-gazette-156:156::installed, app-doc/linux-gazette-157:157::installed, app-doc/linux-gazette-158:158::installed, app-doc/linux-gazette-159:159::installed, app-doc/linux-gazette-160:160::installed, app-doc/linux-gazette-161:161::installed, app-doc/linux-gazette-162:162::installed, app-doc/linux-gazette-163:163::installed, app-doc/linux-gazette-164:164::installed, app-doc/linux-gazette-165:165::installed, app-doc/linux-gazette-166:166::installed, app-doc/linux-gazette-167:167::installed, app-doc/linux-gazette-168:168::installed, app-doc/linux-gazette-169:169::installed, app-doc/linux-gazette-170:170::installed, app-doc/linux-gazette-171:171::installed, app-doc/linux-gazette-172:172::installed, app-doc/linux-gazette-173:173::installed, app-doc/linux-gazette-174:174::installed, app-doc/linux-gazette-175:175::installed, app-doc/linux-gazette-176:176::installed, app-doc/linux-gazette-177:177::installed, app-doc/linux-gazette-178:178::installed, app-doc/linux-gazette-179:179::installed, app-doc/linux-gazette-180:180::installed, app-doc/linux-gazette-181:181::installed, app-doc/linux-gazette-182:182::installed
+
+<   app-doc/phrack 01:01::installed
+    Reasons: was unused
+
+<   app-doc/phrack 02:02::installed
+    Reasons: was unused
+
+<   app-doc/phrack 03:03::installed
+    Reasons: was unused
+
+<   app-doc/phrack 04:04::installed
+    Reasons: was unused
+
+<   app-doc/phrack 05:05::installed
+    Reasons: was unused
+
+<   app-doc/phrack 06:06::installed
+    Reasons: was unused
+
+<   app-doc/phrack 07:07::installed
+    Reasons: was unused
+
+<   app-doc/phrack 08:08::installed
+    Reasons: was unused
+
+<   app-doc/phrack 09:09::installed
+    Reasons: was unused
+
+<   app-doc/phrack 10:10::installed
+    Reasons: was unused
+
+<   app-doc/phrack 11:11::installed
+    Reasons: was unused
+
+<   app-doc/phrack 12:12::installed
+    Reasons: was unused
+
+<   app-doc/phrack 13:13::installed
+    Reasons: was unused
+
+<   app-doc/phrack 14:14::installed
+    Reasons: was unused
+
+<   app-doc/phrack 15:15::installed
+    Reasons: was unused
+
+<   app-doc/phrack 16:16::installed
+    Reasons: was unused
+
+<   app-doc/phrack 17:17::installed
+    Reasons: was unused
+
+<   app-doc/phrack 18:18::installed
+    Reasons: was unused
+
+<   app-doc/phrack 19:19::installed
+    Reasons: was unused
+
+<   app-doc/phrack 20:20::installed
+    Reasons: was unused
+
+<   app-doc/phrack 21:21::installed
+    Reasons: was unused
+
+<   app-doc/phrack 22:22::installed
+    Reasons: was unused
+
+<   app-doc/phrack 23:23::installed
+    Reasons: was unused
+
+<   app-doc/phrack 24:24::installed
+    Reasons: was unused
+
+<   app-doc/phrack 25:25::installed
+    Reasons: was unused
+
+<   app-doc/phrack 26:26::installed
+    Reasons: was unused
+
+<   app-doc/phrack 27:27::installed
+    Reasons: was unused
+
+<   app-doc/phrack 28:28::installed
+    Reasons: was unused
+
+<   app-doc/phrack 29:29::installed
+    Reasons: was unused
+
+<   app-doc/phrack 30:30::installed
+    Reasons: was unused
+
+<   app-doc/phrack 31:31::installed
+    Reasons: was unused
+
+<   app-doc/phrack 32:32::installed
+    Reasons: was unused
+
+<   app-doc/phrack 33:33::installed
+    Reasons: was unused
+
+<   app-doc/phrack 34:34::installed
+    Reasons: was unused
+
+<   app-doc/phrack 35:35::installed
+    Reasons: was unused
+
+<   app-doc/phrack 36:36::installed
+    Reasons: was unused
+
+<   app-doc/phrack 37:37::installed
+    Reasons: was unused
+
+<   app-doc/phrack 38:38::installed
+    Reasons: was unused
+
+<   app-doc/phrack 39:39::installed
+    Reasons: was unused
+
+<   app-doc/phrack 40:40::installed
+    Reasons: was unused
+
+<   app-doc/phrack 41:41::installed
+    Reasons: was unused
+
+<   app-doc/phrack 42:42::installed
+    Reasons: was unused
+
+<   app-doc/phrack 43:43::installed
+    Reasons: was unused
+
+<   app-doc/phrack 44:44::installed
+    Reasons: was unused
+
+<   app-doc/phrack 45:45::installed
+    Reasons: was unused
+
+<   app-doc/phrack 46:46::installed
+    Reasons: was unused
+
+<   app-doc/phrack 47:47::installed
+    Reasons: was unused
+
+<   app-doc/phrack 48:48::installed
+    Reasons: was unused
+
+<   app-doc/phrack 49:49::installed
+    Reasons: was unused
+
+<   app-doc/phrack 50:50::installed
+    Reasons: was unused
+
+<   app-doc/phrack 51:51::installed
+    Reasons: was unused
+
+<   app-doc/phrack 52:52::installed
+    Reasons: was unused
+
+<   app-doc/phrack 53:53::installed
+    Reasons: was unused
+
+<   app-doc/phrack 54:54::installed
+    Reasons: was unused
+
+<   app-doc/phrack 55:55::installed
+    Reasons: was unused
+
+<   app-doc/phrack 56:56::installed
+    Reasons: was unused
+
+<   app-doc/phrack 57:57::installed
+    Reasons: was unused
+
+<   app-doc/phrack 58:58::installed
+    Reasons: was unused
+
+<   app-doc/phrack 59:59::installed
+    Reasons: was unused
+
+<   app-doc/phrack 60:60::installed
+    Reasons: was unused
+
+<   app-doc/phrack 61:61::installed
+    Reasons: was unused
+
+<   app-doc/phrack 62:62::installed
+    Reasons: was unused
+
+<   app-doc/phrack 63:63::installed
+    Reasons: was unused
+
+<   app-doc/phrack 64:64::installed
+    Reasons: was unused
+
+<   app-doc/phrack 65:65::installed
+    Reasons: was unused
+
+<   app-doc/phrack 66:66::installed
+    Reasons: was unused
+
+<   app-doc/phrack 67:67::installed
+    Reasons: was unused
+
+<   app-doc/phrack 68:68::installed
+    Reasons: was unused
+
+<   app-eselect/eselect-cdparanoia 0.1:0::installed
+    Reasons: was unused
+
+<   app-eselect/eselect-java 0.2.0:0::installed
+    Reasons: was unused
+
+<   app-eselect/eselect-mesa 0.0.10:0::installed
+    Reasons: was unused
+
+<   app-eselect/eselect-mpg123 0.1:0::installed
+    Reasons: was unused
+
+<   app-eselect/eselect-postgresql 1.2.1:0::installed
+    Reasons: was unused
+
+<   app-eselect/eselect-qtgraphicssystem 1.1.1:0::installed
+    Reasons: was unused
+
+<   app-eselect/eselect-ruby 20151229:0::installed
+    Reasons: was unused
+
+<   app-eselect/eselect-wxwidgets 20140423:0::installed
+    Reasons: was unused
+
+<   app-i18n/libtabe 0.2.6.1.2:0::installed
+    Reasons: was unused
+
+<   app-misc/lirc 0.9.0-r6:0::installed
+    Reasons: was unused
+
+<   app-misc/media-player-info 22:0::installed
+    Reasons: was unused
+
+<   app-office/libreoffice-l10n 5.2.2.2:0::installed
+    Reasons: was unused
+
+<   app-portage/gentoopm 0.2.9:0::installed
+    Reasons: was unused
+
+<   app-shells/rc 1.7.4:0::installed
+    Reasons: was unused
+
+<   app-shells/runtitle 2.10:0::installed
+    Reasons: was unused
+
+<   app-text/dblatex 0.3.7:0::installed
+    Reasons: was unused
+
+<   app-text/docbook-dsssl-stylesheets 1.79:0::installed
+    Reasons: was unused
+
+<   app-text/docbook-sgml-dtd 3.0-r3:3.0::installed
+    Reasons: was unused
+
+<   app-text/docbook-sgml-dtd 4.4:4.4::installed
+    Reasons: was unused
+
+<   app-text/docbook-xml-simple-dtd 4.1.2.5-r2:4.1.2.5::installed
+    Reasons: was unused
+
+<   app-text/dvipsk 5.994_p20140525:0::installed
+    Reasons: was unused
+
+<   app-text/gnome-doc-utils 0.20.10-r1:0::installed
+    Reasons: was unused
+
+<   app-text/libabw 0.1.1:0::installed
+    Reasons: was unused
+
+<   app-text/libebook 0.1.2-r1:0::installed
+    Reasons: was unused
+
+<   app-text/libetonyek 0.1.3:0::installed
+    Reasons: was unused
+
+<   app-text/libexttextcat 3.4.4:0::installed
+    Reasons: was unused
+
+<   app-text/liblangtag 0.5.6:0::installed
+    Reasons: was unused
+
+<   app-text/libmspub 0.1.2:0::installed
+    Reasons: was unused
+
+<   app-text/libmwaw 0.3.6:0::installed
+    Reasons: was unused
+
+<   app-text/libodfgen 0.1.4:0::installed
+    Reasons: was unused
+
+<   app-text/libpaper 1.1.24-r2:0::installed
+    Reasons: was unused
+
+<   app-text/libspectre 0.2.7:0::installed
+    Reasons: was unused
+
+<   app-text/libwpg 0.3.0:0.3::installed
+    Reasons: was unused
+
+<   app-text/libwps 0.4.2:0::installed
+    Reasons: was unused
+
+<   app-text/libwpd 0.10.0-r1:0.10::installed
+    Reasons: was used by app-text/libwpg-0.3.0:0.3::installed, app-text/libwps-0.4.2:0::installed
+
+<   app-text/mupdf 1.5-r1:0::installed
+    Reasons: was unused
+
+<   app-text/mythes 1.2.4:0::installed
+    Reasons: was unused
+
+<   app-text/pdftk 2.02:0::installed
+    Reasons: was unused
+
+<   app-text/poppler-data 0.4.7:0::installed
+    Reasons: was unused
+
+<   app-text/ps2pkm 1.5_p20140525:0::installed
+    Reasons: was unused
+
+<   app-text/scrollkeeper 9999-r1:0::installed
+    Reasons: was unused
+
+<   app-text/rarian 0.8.1-r2:0::installed
+    Reasons: was used by app-doc/gnucash-docs-2.6.13:0::installed, app-text/scrollkeeper-9999-r1:0::installed
+
+<   app-text/scrollkeeper-dtd 1.0:1.0::installed
+    Reasons: was used by app-text/gnome-doc-utils-0.20.10-r1:0::installed, app-text/scrollkeeper-9999-r1:0::installed
+
+<   app-text/teckit 2.5.1:0::installed
+    Reasons: was unused
+
+<   app-text/tesseract 3.04.00-r2:0::installed
+    Reasons: was unused
+
+<   app-text/texi2html 5.0-r1:0::installed
+    Reasons: was unused
+
+<   app-text/texlive 2014:0::installed
+    Reasons: was used by app-text/dblatex-0.3.7:0::installed
+
+<   app-text/dvipng 1.15:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   app-text/lcdf-typetools 2.97:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   app-text/passivetex 1.25:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   app-text/pdfjam 2.08:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   app-text/ps2eps 1.68:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   app-text/psutils 1.17-r2:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   app-text/t1utils 1.39:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   app-text/ttf2pk2 2.0_p20140525:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   app-text/xdvik 22.85-r1:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   app-text/yelp-tools 3.18.0:0::installed
+    Reasons: was unused
+
+<   app-vim/cecutil 17:0::installed
+    Reasons: was unused
+
+<   app-vim/vim-misc 1.17.6:0::installed
+    Reasons: was unused
+
+<   dev-cpp/clucene 2.3.3.4-r5:1::installed
+    Reasons: was unused
+
+<   dev-cpp/gtest 1.7.0:0::installed
+    Reasons: was unused
+
+<   dev-cpp/libcmis 0.5.0-r1:0.5::installed
+    Reasons: was unused
+
+<   dev-db/mysql-connector-c++ 1.1.6:0::installed
+    Reasons: was unused
+
+<   dev-games/physfs 2.0.3-r1:0::installed
+    Reasons: was unused
+
+<   dev-java/javahelp 2.0.05_p63:0::installed
+    Reasons: was unused
+
+<   dev-java/junit 3.8.2-r1:0::installed
+    Reasons: was unused
+
+<   dev-java/lucene 2.4.1-r1:2.4::installed
+    Reasons: was unused
+
+<   dev-java/ant-nodeps 1.9.2:0::installed
+    Reasons: was used by dev-java/javahelp-2.0.05_p63:0::installed, dev-java/lucene-2.4.1-r1:2.4::installed
+
+<   dev-java/swing-layout 1.0.4:1::installed
+    Reasons: was unused
+
+<   dev-lang/fpc 2.6.4:0::installed
+    Reasons: was unused
+
+<   dev-lang/go 1.7.1:0::installed
+    Reasons: was unused
+
+<   dev-lang/mono 4.4.1.0:0::installed
+    Reasons: was unused
+
+<   dev-lang/php 5.6.28:5.6::installed
+    Reasons: was unused
+
+<   app-eselect/eselect-php 0.9.1:0::installed
+    Reasons: was used by dev-lang/php-5.6.28:5.6::installed
+
+<   dev-lang/vala 0.32.1:0.32::installed
+    Reasons: was unused
+
+<   dev-libs/DirectFB 1.4.9-r1:0::installed
+    Reasons: was unused
+
+<   dev-libs/btparser 0.26:0::installed
+    Reasons: was unused
+
+<   dev-libs/chmlib 0.40-r1:0::installed
+    Reasons: was unused
+
+<   dev-libs/cloog 0.18.4:0::installed
+    Reasons: was unused
+
+<   dev-libs/confuse 3.0:0::installed
+    Reasons: was unused
+
+<   dev-libs/cyrus-sasl 2.1.26-r9:2::installed
+    Reasons: was used by app-crypt/qca-2.1.1:2::installed
+
+<   dev-libs/dotconf 1.3:0::installed
+    Reasons: was unused
+
+<   dev-libs/folks 0.11.2:0::installed
+    Reasons: was unused
+
+<   dev-libs/hyphen 2.8.8:0::installed
+    Reasons: was unused
+
+<   dev-libs/json-glib 1.2.2:0::installed
+    Reasons: was unused
+
+<   dev-libs/jsoncpp 0.10.2-r1:0::installed
+    Reasons: was unused
+
+<   dev-libs/kqoauth 0.98-r1:0::installed
+    Reasons: was unused
+
+<   dev-libs/leveldb 1.18-r1:0::installed
+    Reasons: was unused
+
+<   app-arch/snappy 1.1.3-r1:0::installed
+    Reasons: was used by dev-libs/leveldb-1.18-r1:0::installed
+
+<   dev-libs/libchewing 0.4.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-libs/libclc 0.2.0_pre20160209:0::installed
+    Reasons: was unused
+
+<   dev-libs/libdispatch 9999:0::installed
+    Reasons: was unused
+
+<   dev-libs/libblocksruntime 9999:0::installed
+    Reasons: was used by dev-libs/libdispatch-9999:0::installed
+
+<   dev-libs/libdnet 1.12:0::installed
+    Reasons: was unused
+
+<   dev-libs/libgee 0.18.0:0.8::installed
+    Reasons: was used by dev-libs/folks-0.11.2:0::installed
+
+<   dev-libs/libical 1.0.1:0::installed
+    Reasons: was unused
+
+<   dev-libs/libinput 1.4.2:0::installed
+    Reasons: was unused
+
+<   dev-libs/libevdev 1.5.2:0::installed
+    Reasons: was used by dev-libs/libinput-1.4.2:0::installed
+
+<   dev-libs/libixion 0.9.0:0::installed
+    Reasons: was unused
+
+<   dev-libs/libkqueue 2.0.1:0::installed
+    Reasons: was used by dev-libs/libdispatch-9999:0::installed
+
+<   dev-libs/liblinear 210-r1:0::installed
+    Reasons: was unused
+
+<   dev-libs/liblinebreak 2.1:0::installed
+    Reasons: was unused
+
+<   dev-libs/libmcrypt 2.5.8-r2:0::installed
+    Reasons: was used by dev-lang/php-5.6.28:5.6::installed
+
+<   dev-libs/libmix 2.05-r7:0::installed
+    Reasons: was unused
+
+<   dev-libs/libpthread_workqueue 9999:0::installed
+    Reasons: was used by dev-libs/libdispatch-9999:0::installed
+
+<   dev-libs/libroadnav 0.19:0::installed
+    Reasons: was unused
+
+<   dev-libs/libtar 1.2.20-r3:0::installed
+    Reasons: was unused
+
+<   dev-libs/libunistring 0.9.5:0::installed
+    Reasons: was unused
+
+<   dev-libs/libwacom 0.18:0::installed
+    Reasons: was used by dev-libs/libinput-1.4.2:0::installed
+
+<   dev-libs/newt 0.52.15:0::installed
+    Reasons: was unused
+
+<   dev-libs/protobuf-c 1.0.2-r1:0::installed
+    Reasons: was unused
+
+<   dev-libs/protobuf 2.5.0-r2:0::installed
+    Reasons: was used by dev-libs/protobuf-c-1.0.2-r1:0::installed
+
+<   dev-libs/ptexenc 1.3.2_p20140525-r1:0::installed
+    Reasons: was unused
+
+<   dev-libs/pth 2.0.7-r3:0::installed
+    Reasons: was unused
+
+<   dev-libs/pugixml 1.5:0::installed
+    Reasons: was unused
+
+<   dev-libs/qjson 0.8.1-r1:0::installed
+    Reasons: was unused
+
+<   dev-libs/qof 0.8.8-r1:2::installed
+    Reasons: was unused
+
+<   dev-libs/re2 0.2016.05.01:0::installed
+    Reasons: was unused
+
+<   dev-libs/redland 1.0.16:0::installed
+    Reasons: was unused
+
+<   dev-libs/rasqal 0.9.32:0::installed
+    Reasons: was used by dev-libs/redland-1.0.16:0::installed
+
+<   app-crypt/mhash 0.9.9.9-r1:0::installed
+    Reasons: was used by dev-libs/rasqal-0.9.32:0::installed
+
+<   dev-libs/xapian 1.2.22:0::installed
+    Reasons: was unused
+
+<   dev-libs/xmlrpc-c 1.32.05-r1:0::installed
+    Reasons: was unused
+
+<   dev-libs/zziplib 0.13.60-r1:0::installed
+    Reasons: was unused
+
+<   dev-lua/toluapp 1.0.93:0::installed
+    Reasons: was unused
+
+<   dev-ml/camlidl 1.05-r1:0::installed
+    Reasons: was unused
+
+<   dev-ml/cryptokit 1.10:0::installed
+    Reasons: was unused
+
+<   dev-ml/ocaml-sqlite3 4.0.3:0::installed
+    Reasons: was unused
+
+<   dev-ml/ocaml-ssl 0.4.6:0::installed
+    Reasons: was unused
+
+<   dev-ml/ocamlgsl 0.6.0:0::installed
+    Reasons: was unused
+
+<   dev-ml/ocurl 0.6.1:0::installed
+    Reasons: was unused
+
+<   dev-ml/opam 1.2.2:0::installed
+    Reasons: was unused
+
+<   dev-ml/cmdliner 0.9.8:0::installed
+    Reasons: was used by dev-ml/opam-1.2.2:0::installed
+
+<   dev-ml/dose3 4.3:0::installed
+    Reasons: was used by dev-ml/opam-1.2.2:0::installed
+
+<   dev-ml/camlbz2 0.6.0:0::installed
+    Reasons: was used by dev-ml/dose3-4.3:0::installed
+
+<   dev-ml/cudf 0.8:0::installed
+    Reasons: was used by dev-ml/dose3-4.3:0::installed, dev-ml/opam-1.2.2:0::installed
+
+<   dev-ml/camlp4 4.02.1_p3:0::installed
+    Reasons: was used by dev-ml/cudf-0.8:0::installed
+
+<   dev-ml/extlib 1.7.0-r1:0::installed
+    Reasons: was used by dev-ml/cudf-0.8:0::installed, dev-ml/dose3-4.3:0::installed, dev-ml/opam-1.2.2:0::installed
+
+<   dev-ml/jsonm 0.9.1:0::installed
+    Reasons: was used by dev-ml/opam-1.2.2:0::installed
+
+<   dev-ml/ocaml-re 1.5.0:0::installed
+    Reasons: was used by dev-ml/dose3-4.3:0::installed, dev-ml/opam-1.2.2:0::installed
+
+<   dev-ml/ocamlgraph 1.8.7:0::installed
+    Reasons: was used by dev-ml/dose3-4.3:0::installed, dev-ml/opam-1.2.2:0::installed
+
+<   dev-ml/parmap 1.0_rc7:0::installed
+    Reasons: was used by dev-ml/dose3-4.3:0::installed
+
+<   dev-ml/ocaml-autoconf 1.1:0::installed
+    Reasons: was used by dev-ml/parmap-1.0_rc7:0::installed
+
+<   dev-ml/pcre-ocaml 6.2.5:0::installed
+    Reasons: was unused
+
+<   dev-ml/uutf 0.9.4:0::installed
+    Reasons: was used by dev-ml/jsonm-0.9.1:0::installed, dev-ml/opam-1.2.2:0::installed
+
+<   dev-ml/ocamlbuild 0.9.3:0::installed
+    Reasons: was used by dev-ml/camlp4-4.02.1_p3:0::installed, dev-ml/cmdliner-0.9.8:0::installed, dev-ml/cryptokit-1.10:0::installed, dev-ml/cudf-0.8:0::installed, dev-ml/dose3-4.3:0::installed, dev-ml/jsonm-0.9.1:0::installed, dev-ml/ocaml-re-1.5.0:0::installed, dev-ml/ocaml-sqlite3-4.0.3:0::installed, dev-ml/parmap-1.0_rc7:0::installed, dev-ml/uutf-0.9.4:0::installed
+
+<   dev-ml/yojson 1.3.2:0::installed
+    Reasons: was unused
+
+<   dev-ml/biniou 1.0.9:0::installed
+    Reasons: was used by dev-ml/yojson-1.3.2:0::installed
+
+<   dev-ml/cppo 1.3.2:0::installed
+    Reasons: was used by dev-ml/dose3-4.3:0::installed, dev-ml/extlib-1.7.0-r1:0::installed, dev-ml/yojson-1.3.2:0::installed
+
+<   dev-ml/easy-format 1.0.2:0::installed
+    Reasons: was used by dev-ml/biniou-1.0.9:0::installed, dev-ml/yojson-1.3.2:0::installed
+
+<   dev-ml/findlib 1.6.1-r1:0::installed
+    Reasons: was used by dev-ml/biniou-1.0.9:0::installed, dev-ml/camlbz2-0.6.0:0::installed, dev-ml/cmdliner-0.9.8:0::installed, dev-ml/cppo-1.3.2:0::installed, dev-ml/cryptokit-1.10:0::installed, dev-ml/cudf-0.8:0::installed, dev-ml/dose3-4.3:0::installed, dev-ml/easy-format-1.0.2:0::installed, dev-ml/extlib-1.7.0-r1:0::installed, dev-ml/jsonm-0.9.1:0::installed, dev-ml/ocaml-re-1.5.0:0::installed, dev-ml/ocaml-sqlite3-4.0.3:0::installed, dev-ml/ocaml-ssl-0.4.6:0::installed, dev-ml/ocamlgraph-1.8.7:0::installed, dev-ml/ocamlgsl-0.6.0:0::installed, dev-ml/ocurl-0.6.1:0::installed, dev-ml/opam-1.2.2:0::installed, dev-ml/parmap-1.0_rc7:0::installed, dev-ml/pcre-ocaml-6.2.5:0::installed, dev-ml/uutf-0.9.4:0::installed, dev-ml/yojson-1.3.2:0::installed
+
+<   dev-perl/Alien-SDL 1.446.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/Archive-Extract 0.720.0:0::installed
+    Reasons: was used by dev-perl/Alien-SDL-1.446.0:0::installed
+
+<   dev-perl/Archive-Zip 1.530.0:0::installed
+    Reasons: was used by dev-perl/Alien-SDL-1.446.0:0::installed
+
+<   dev-perl/Cache-Memcached 1.300.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/Capture-Tiny 0.360.0:0::installed
+    Reasons: was used by dev-perl/Alien-SDL-1.446.0:0::installed
+
+<   dev-perl/Class-Accessor 0.340.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/Class-Load 0.230.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/Compress-Bzip2 2.220.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/Config-General 2.600.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/CursesWidgets 1.997.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/DBD-SQLite 1.480.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/Date-Manip 6.510.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/Email-MIME 1.929.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/Email-MIME-ContentType 1.16.0-r1:0::installed
+    Reasons: was used by dev-perl/Email-MIME-1.929.0:0::installed
+
+<   dev-perl/Email-MIME-Encodings 1.315.0-r1:0::installed
+    Reasons: was used by dev-perl/Email-MIME-1.929.0:0::installed
+
+<   dev-perl/Email-Sender 1.300.16:0::installed
+    Reasons: was unused
+
+<   dev-perl/Email-Abstract 3.7.0:0::installed
+    Reasons: was used by dev-perl/Email-Sender-1.300.16:0::installed
+
+<   dev-perl/Email-Address 1.907.0:0::installed
+    Reasons: was used by dev-perl/Email-MIME-1.929.0:0::installed, dev-perl/Email-Sender-1.300.16:0::installed
+
+<   dev-perl/Email-Simple 2.206.0:0::installed
+    Reasons: was used by dev-perl/Email-Abstract-3.7.0:0::installed, dev-perl/Email-MIME-1.929.0:0::installed, dev-perl/Email-Sender-1.300.16:0::installed
+
+<   dev-perl/Email-Date-Format 1.2.0-r1:0::installed
+    Reasons: was used by dev-perl/Email-Simple-2.206.0:0::installed
+
+<   dev-perl/File-Copy-Recursive 0.380.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/File-Listing 6.40.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/File-MimeInfo 0.270.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/File-DesktopEntry 0.40.0-r1:0::installed
+    Reasons: was used by dev-perl/File-MimeInfo-0.270.0:0::installed
+
+<   dev-perl/File-BaseDir 0.30.0-r1:0::installed
+    Reasons: was used by dev-perl/File-DesktopEntry-0.40.0-r1:0::installed, dev-perl/File-MimeInfo-0.270.0:0::installed
+
+<   dev-perl/File-ShareDir 1.30.0-r1:0::installed
+    Reasons: was used by dev-perl/Alien-SDL-1.446.0:0::installed
+
+<   dev-perl/Class-Inspector 1.280.0-r1:0::installed
+    Reasons: was used by dev-perl/File-ShareDir-1.30.0-r1:0::installed
+
+<   dev-perl/File-Slurp 9999.190.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/File-Which 1.90.0-r1:0::installed
+    Reasons: was used by dev-perl/Alien-SDL-1.446.0:0::installed
+
+<   dev-perl/Gtk2-Notify 0.05-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/HTML-Form 6.30.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/HTML-Template 2.950.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/HTML-TokeParser-Simple 3.160.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/HTML-Tree 5.30.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/HTTP-Cookies 6.10.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/HTTP-Daemon 6.10.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/HTTP-Negotiate 6.10.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/HTTP-Message 6.110.0:0::installed
+    Reasons: was used by dev-perl/HTML-Form-6.30.0-r1:0::installed, dev-perl/HTTP-Cookies-6.10.0:0::installed, dev-perl/HTTP-Daemon-6.10.0-r1:0::installed, dev-perl/HTTP-Negotiate-6.10.0:0::installed
+
+<   dev-perl/Encode-Locale 1.30.0-r1:0::installed
+    Reasons: was used by dev-perl/HTTP-Message-6.110.0:0::installed
+
+<   dev-perl/HTTP-Date 6.20.0-r1:0::installed
+    Reasons: was used by dev-perl/File-Listing-6.40.0-r1:0::installed, dev-perl/HTTP-Cookies-6.10.0:0::installed, dev-perl/HTTP-Daemon-6.10.0-r1:0::installed, dev-perl/HTTP-Message-6.110.0:0::installed
+
+<   dev-perl/IO-HTML 1.1.0:0::installed
+    Reasons: was used by dev-perl/HTTP-Message-6.110.0:0::installed
+
+<   dev-perl/IPC-System-Simple 1.250.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/JSON 2.900.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/LWP-MediaTypes 6.20.0-r1:0::installed
+    Reasons: was used by dev-perl/HTTP-Daemon-6.10.0-r1:0::installed, dev-perl/HTTP-Message-6.110.0:0::installed
+
+<   dev-perl/LWP-Protocol-https 6.60.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/Lchown 1.10.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/Locale-Maketext-Lexicon 1.0.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/Log-Agent 1.1.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/Log-Log4perl 1.460.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/MIME-Types 2.120.0:0::installed
+    Reasons: was used by dev-perl/Email-MIME-1.929.0:0::installed
+
+<   dev-perl/MRO-Compat 0.120.0-r1:0::installed
+    Reasons: was used by dev-perl/Email-Abstract-3.7.0:0::installed
+
+<   dev-perl/Module-Pluggable 5.200.0:0::installed
+    Reasons: was used by dev-perl/Email-Abstract-3.7.0:0::installed
+
+<   dev-perl/MooX-Types-MooseLike 0.290.0:0::installed
+    Reasons: was used by dev-perl/Email-Sender-1.300.16:0::installed
+
+<   dev-perl/Moo 2.0.2:0::installed
+    Reasons: was used by dev-perl/Email-Sender-1.300.16:0::installed, dev-perl/MooX-Types-MooseLike-0.290.0:0::installed
+
+<   dev-perl/Class-Method-Modifiers 2.30.0:0::installed
+    Reasons: was used by dev-perl/Moo-2.0.2:0::installed
+
+<   dev-perl/Devel-GlobalDestruction 0.130.0:0::installed
+    Reasons: was used by dev-perl/Moo-2.0.2:0::installed
+
+<   dev-perl/MusicBrainz-DiscID 0.30.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/Net-CIDR 0.180.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/Net-CUPS 0.610.0-r2:0::installed
+    Reasons: was unused
+
+<   dev-perl/Net-HTTP 6.90.0:0::installed
+    Reasons: was used by dev-perl/LWP-Protocol-https-6.60.0:0::installed
+
+<   dev-perl/Net-Netmask 1.902.200:0::installed
+    Reasons: was unused
+
+<   dev-perl/Net-PcapUtils 0.10.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/Net-Pcap 0.170.0-r1:0::installed
+    Reasons: was used by dev-perl/Net-PcapUtils-0.10.0-r1:0::installed
+
+<   dev-perl/IO-Interface 1.90.0:0::installed
+    Reasons: was used by dev-perl/Net-Pcap-0.170.0-r1:0::installed
+
+<   dev-perl/Net-RawIP 0.250.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/Net-SNMP 6.0.1-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/Crypt-DES 2.70.0:0::installed
+    Reasons: was used by dev-perl/Net-SNMP-6.0.1-r1:0::installed
+
+<   dev-perl/Net-Server 2.8.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/IO-Multiplex 1.160.0:0::installed
+    Reasons: was used by dev-perl/Net-Server-2.8.0:0::installed
+
+<   dev-perl/IO-Socket-INET6 2.720.0:0::installed
+    Reasons: was used by dev-perl/Net-Server-2.8.0:0::installed
+
+<   dev-perl/NetPacket 1.6.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/Package-Stash 0.370.0:0::installed
+    Reasons: was used by dev-perl/Class-Load-0.230.0:0::installed
+
+<   dev-perl/Dist-CheckConflicts 0.20.0-r1:0::installed
+    Reasons: was used by dev-perl/Package-Stash-0.370.0:0::installed
+
+<   dev-perl/List-MoreUtils 0.413.0:0::installed
+    Reasons: was used by dev-perl/Dist-CheckConflicts-0.20.0-r1:0::installed, dev-perl/Email-Sender-1.300.16:0::installed
+
+<   dev-perl/Exporter-Tiny 0.42.0:0::installed
+    Reasons: was used by dev-perl/List-MoreUtils-0.413.0:0::installed
+
+<   dev-perl/Module-Implementation 0.90.0:0::installed
+    Reasons: was used by dev-perl/Class-Load-0.230.0:0::installed, dev-perl/Package-Stash-0.370.0:0::installed
+
+<   dev-perl/Module-Runtime 0.14.0:0::installed
+    Reasons: was used by dev-perl/Class-Load-0.230.0:0::installed, dev-perl/Email-Sender-1.300.16:0::installed, dev-perl/Module-Implementation-0.90.0:0::installed, dev-perl/Moo-2.0.2:0::installed, dev-perl/MooX-Types-MooseLike-0.290.0:0::installed
+
+<   dev-perl/Package-Stash-XS 0.280.0:0::installed
+    Reasons: was used by dev-perl/Package-Stash-0.370.0:0::installed
+
+<   dev-perl/Pango 1.227.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/Cairo 1.106.0:0::installed
+    Reasons: was used by dev-perl/Pango-1.227.0:0::installed
+
+<   dev-perl/ExtUtils-Depends 0.404.0:0::installed
+    Reasons: was used by dev-perl/Cairo-1.106.0:0::installed, dev-perl/Gtk2-Notify-0.05-r1:0::installed, dev-perl/Pango-1.227.0:0::installed
+
+<   dev-perl/Proc-ProcessTable 0.530.0:0::installed
+    Reasons: was unused
+
+<   dev-perl/Role-Tiny 2.0.1:0::installed
+    Reasons: was used by dev-perl/Moo-2.0.2:0::installed
+
+<   dev-perl/Socket6 0.270.0:0::installed
+    Reasons: was used by dev-perl/IO-Socket-INET6-2.720.0:0::installed
+
+<   dev-perl/String-CRC32 1.500.0:0::installed
+    Reasons: was used by dev-perl/Cache-Memcached-1.300.0-r1:0::installed
+
+<   dev-perl/String-ShellQuote 1.40.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/Sub-Exporter-Progressive 0.1.11:0::installed
+    Reasons: was used by dev-perl/Devel-GlobalDestruction-0.130.0:0::installed
+
+<   dev-perl/Sub-Exporter 0.987.0:0::installed
+    Reasons: was used by dev-perl/Dist-CheckConflicts-0.20.0-r1:0::installed, dev-perl/Email-Sender-1.300.16:0::installed, dev-perl/Sub-Exporter-Progressive-0.1.11:0::installed
+
+<   dev-perl/Data-OptList 0.109.0:0::installed
+    Reasons: was used by dev-perl/Class-Load-0.230.0:0::installed, dev-perl/Sub-Exporter-0.987.0:0::installed
+
+<   dev-perl/Params-Util 1.60.0-r1:0::installed
+    Reasons: was used by dev-perl/Data-OptList-0.109.0:0::installed, dev-perl/Sub-Exporter-0.987.0:0::installed
+
+<   dev-perl/Sub-Install 0.928.0:0::installed
+    Reasons: was used by dev-perl/Data-OptList-0.109.0:0::installed, dev-perl/Sub-Exporter-0.987.0:0::installed
+
+<   dev-perl/Sub-Name 0.50.0-r1:0::installed
+    Reasons: was used by dev-perl/Class-Accessor-0.340.0-r1:0::installed
+
+<   dev-perl/Sub-Override 0.90.0:0::installed
+    Reasons: was used by dev-perl/HTML-TokeParser-Simple-3.160.0-r1:0::installed
+
+<   dev-perl/Test-Most 0.310.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/Exception-Class 1.390.0:0::installed
+    Reasons: was used by dev-perl/Test-Most-0.310.0-r1:0::installed
+
+<   dev-perl/Class-Data-Inheritable 0.80.0-r1:0::installed
+    Reasons: was used by dev-perl/Exception-Class-1.390.0:0::installed
+
+<   dev-perl/Devel-StackTrace 2.0.0:0::installed
+    Reasons: was used by dev-perl/Exception-Class-1.390.0:0::installed
+
+<   dev-perl/Test-Differences 0.640.0:0::installed
+    Reasons: was used by dev-perl/Test-Most-0.310.0-r1:0::installed
+
+<   dev-perl/Test-Exception 0.430.0:0::installed
+    Reasons: was used by dev-perl/Test-Most-0.310.0-r1:0::installed
+
+<   dev-perl/Sub-Uplevel 0.250.0:0::installed
+    Reasons: was used by dev-perl/Test-Exception-0.430.0:0::installed
+
+<   dev-perl/XML-NamespaceSupport 1.110.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/XML-SAX-Base 1.80.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/CacheControl 0.11.5:0::installed
+    Reasons: was unused
+
+<   dev-python/apsw 3.11.1_p1:0::installed
+    Reasons: was unused
+
+<   dev-python/beautifulsoup 4.3.2:4::installed
+    Reasons: was unused
+
+<   dev-python/beautifulsoup 3.2.1-r1:python-2::installed
+    Reasons: was unused
+
+<   dev-python/bluelet 0.2.0:0::installed
+    Reasons: was unused
+
+<   dev-python/bottle 0.12.7:0::installed
+    Reasons: was unused
+
+<   dev-python/cffi 1.5.2:0::installed
+    Reasons: was unused
+
+<   dev-python/chardet 2.2.1:0::installed
+    Reasons: was unused
+
+<   dev-python/cheetah 2.4.4-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/colorama 0.3.3:0::installed
+    Reasons: was unused
+
+<   dev-python/configobj 5.0.5:0::installed
+    Reasons: was unused
+
+<   dev-python/cssselect 0.9.1:0::installed
+    Reasons: was unused
+
+<   dev-python/cssutils 1.0.1:0::installed
+    Reasons: was unused
+
+<   dev-python/dbus-python 1.2.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/decorator 4.0.2:0::installed
+    Reasons: was unused
+
+<   dev-python/distlib 0.2.1:0::installed
+    Reasons: was unused
+
+<   dev-python/dnspython 1.12.0-r200:py2::installed
+    Reasons: was unused
+
+<   dev-python/enum34 1.0.4:0::installed
+    Reasons: was unused
+
+<   dev-python/feedparser 5.1.3-r2:0::installed
+    Reasons: was unused
+
+<   dev-python/gconf-python 2.28.1-r1:2::installed
+    Reasons: was unused
+
+<   dev-python/gdata 2.0.18:0::installed
+    Reasons: was unused
+
+<   dev-python/google-api-python-client 1.5.0:0::installed
+    Reasons: was unused
+
+<   dev-python/gst-python 0.10.22-r1:0.10::installed
+    Reasons: was unused
+
+<   dev-python/html5lib 0.9999999:0::installed
+    Reasons: was unused
+
+<   dev-python/httplib2 0.9.1:0::installed
+    Reasons: was used by dev-python/google-api-python-client-1.5.0:0::installed
+
+<   dev-python/idna 2.0:0::installed
+    Reasons: was unused
+
+<   dev-python/ipaddr 2.1.11:0::installed
+    Reasons: was unused
+
+<   dev-python/ipaddress 1.0.14:0::installed
+    Reasons: was unused
+
+<   dev-python/joblib 0.8.4:0::installed
+    Reasons: was unused
+
+<   dev-python/kaa-metadata 0.7.7-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/kaa-base 0.6.0-r1:0::installed
+    Reasons: was used by dev-python/kaa-metadata-0.7.7-r1:0::installed
+
+<   dev-python/keyring 9.3.1:0::installed
+    Reasons: was unused
+
+<   dev-python/lockfile 0.11.0-r1:0::installed
+    Reasons: was used by dev-python/CacheControl-0.11.5:0::installed
+
+<   dev-python/markdown 2.6.1:0::installed
+    Reasons: was used by dev-python/cheetah-2.4.4-r1:0::installed
+
+<   dev-python/matplotlib 1.4.3:0::installed
+    Reasons: was unused
+
+<   dev-python/mechanize 0.2.5-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/meld3 1.0.0:0::installed
+    Reasons: was unused
+
+<   dev-python/munkres 1.0.5.4-r2:0::installed
+    Reasons: was unused
+
+<   dev-python/mygpoclient 1.7-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/netifaces 0.10.5:0::installed
+    Reasons: was unused
+
+<   dev-python/notify-python 0.1.1-r3:0::installed
+    Reasons: was unused
+
+<   dev-python/numpy 1.10.4:0::installed
+    Reasons: was used by dev-python/matplotlib-1.4.3:0::installed
+
+<   dev-python/packaging 16.6:0::installed
+    Reasons: was unused
+
+<   dev-python/paver 1.2.3:0::installed
+    Reasons: was unused
+
+<   dev-python/progress 1.2:0::installed
+    Reasons: was unused
+
+<   dev-python/psutil 2.1.3:0::installed
+    Reasons: was unused
+
+<   dev-python/py 1.4.30:0::installed
+    Reasons: was unused
+
+<   dev-python/py-notify 0.3.1-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/pyPdf 1.13-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/pyalsa 1.0.26-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/pyalsaaudio 0.7-r2:0::installed
+    Reasons: was unused
+
+<   dev-python/pyasn1-modules 0.0.5-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/pycparser 2.14:0::installed
+    Reasons: was used by dev-python/cffi-1.5.2:0::installed
+
+<   dev-python/ply 3.6-r1:0::installed
+    Reasons: was used by dev-python/pycparser-2.14:0::installed
+
+<   dev-python/pyenchant 1.6.6:0::installed
+    Reasons: was unused
+
+<   dev-python/pyglet 1.1.4-r2:0::installed
+    Reasons: was unused
+
+<   dev-python/pyinotify 0.9.6:0::installed
+    Reasons: was unused
+
+<   dev-python/pylibacl 0.5.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/pynotifier 0.7.0-r2:0::installed
+    Reasons: was used by dev-python/kaa-base-0.6.0-r1:0::installed
+
+<   dev-python/pyopengl 3.0.2-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/pyorbit 2.24.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/pypeg2 2.15.1:0::installed
+    Reasons: was unused
+
+<   dev-python/pyrex 0.9.9-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/pyserial 2.7-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/python-distutils-extra 2.38:0::installed
+    Reasons: was unused
+
+<   dev-python/python-gflags 2.0:0::installed
+    Reasons: was unused
+
+<   dev-python/python-levenshtein 0.11.2:0::installed
+    Reasons: was unused
+
+<   dev-python/python-mpd 0.5.4:0::installed
+    Reasons: was unused
+
+<   dev-python/python-musicbrainz-ngs 0.6:0::installed
+    Reasons: was unused
+
+<   dev-python/pyudev 0.16.1-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/pyxdg 0.25-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/pyxml 0.8.4-r3:0::installed
+    Reasons: was unused
+
+<   dev-python/pyyaml 3.12:0::installed
+    Reasons: was unused
+
+<   dev-python/reportlab 3.1.44-r2:0::installed
+    Reasons: was unused
+
+<   dev-python/requests 2.11.1:0::installed
+    Reasons: was used by dev-python/CacheControl-0.11.5:0::installed
+
+<   dev-python/rsa 3.2.3-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/setuptools_scm 1.10.1:0::installed
+    Reasons: was unused
+
+<   dev-python/simplebayes 1.5.7:0::installed
+    Reasons: was unused
+
+<   dev-python/sip 4.18:0::installed
+    Reasons: was unused
+
+<   dev-python/sphinx 1.3.1-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/Babel 2.3.4:0::installed
+    Reasons: was used by dev-python/sphinx-1.3.1-r1:0::installed
+
+<   dev-python/alabaster 0.7.6:0::installed
+    Reasons: was used by dev-python/sphinx-1.3.1-r1:0::installed
+
+<   dev-python/docutils 0.12:0::installed
+    Reasons: was used by dev-python/sphinx-1.3.1-r1:0::installed
+
+<   dev-python/jinja 2.8:0::installed
+    Reasons: was used by dev-python/sphinx-1.3.1-r1:0::installed
+
+<   dev-python/markupsafe 0.23:0::installed
+    Reasons: was used by dev-python/jinja-2.8:0::installed
+
+<   dev-python/pytz 2016.3:0::installed
+    Reasons: was used by dev-python/Babel-2.3.4:0::installed, dev-python/matplotlib-1.4.3:0::installed
+
+<   dev-python/snowballstemmer 1.2.0:0::installed
+    Reasons: was used by dev-python/sphinx-1.3.1-r1:0::installed
+
+<   dev-python/sphinx_rtd_theme 0.1.9:0::installed
+    Reasons: was used by dev-python/sphinx-1.3.1-r1:0::installed
+
+<   dev-python/sqlalchemy 1.0.12:0::installed
+    Reasons: was unused
+
+<   dev-python/subunit 1.2.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-libs/check 0.9.11:0::installed
+    Reasons: was used by dev-python/subunit-1.2.0-r1:0::installed
+
+<   dev-python/testtools 1.8.0:0::installed
+    Reasons: was unused
+
+<   dev-python/extras 0.0.3:0::installed
+    Reasons: was used by dev-python/subunit-1.2.0-r1:0::installed, dev-python/testtools-1.8.0:0::installed
+
+<   dev-python/mimeparse 0.1.4-r1:0::installed
+    Reasons: was used by dev-python/testtools-1.8.0:0::installed
+
+<   dev-python/tinycss 0.3:0::installed
+    Reasons: was unused
+
+<   dev-python/traceback2 1.4.0:0::installed
+    Reasons: was used by dev-python/rsa-3.2.3-r1:0::installed, dev-python/testtools-1.8.0:0::installed
+
+<   dev-python/linecache2 1.0.0:0::installed
+    Reasons: was used by dev-python/traceback2-1.4.0:0::installed
+
+<   dev-python/twisted-core 13.2.0:0::installed
+    Reasons: was used by dev-python/pynotifier-0.7.0-r2:0::installed
+
+<   dev-python/unidecode 0.04.18:0::installed
+    Reasons: was unused
+
+<   dev-python/uritemplate 0.6:0::installed
+    Reasons: was unused
+
+<   dev-python/simplejson 3.8.1:0::installed
+    Reasons: was used by dev-python/mygpoclient-1.7-r1:0::installed, dev-python/uritemplate-0.6:0::installed
+
+<   dev-python/urllib3 1.16:0::installed
+    Reasons: was used by dev-python/requests-2.11.1:0::installed
+
+<   dev-python/backports-ssl-match-hostname 3.5.0.1-r1:0::installed
+    Reasons: was used by dev-python/urllib3-1.16:0::installed
+
+<   dev-python/ndg-httpsclient 0.4.0:0::installed
+    Reasons: was used by dev-python/requests-2.11.1:0::installed, dev-python/urllib3-1.16:0::installed
+
+<   dev-python/pyasn1 0.1.8:0::installed
+    Reasons: was used by dev-python/pyasn1-modules-0.0.5-r1:0::installed, dev-python/rsa-3.2.3-r1:0::installed, dev-python/urllib3-1.16:0::installed
+
+<   dev-python/pyopenssl 16.1.0:0::installed
+    Reasons: was used by dev-python/ndg-httpsclient-0.4.0:0::installed, dev-python/requests-2.11.1:0::installed, dev-python/twisted-core-13.2.0:0::installed, dev-python/urllib3-1.16:0::installed
+
+<   dev-python/vobject 0.8.1c-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/python-dateutil 2.4.2-r1:0::installed
+    Reasons: was used by dev-python/matplotlib-1.4.3:0::installed, dev-python/vobject-0.8.1c-r1:0::installed
+
+<   dev-python/six 1.10.0:0::installed
+    Reasons: was used by dev-python/configobj-5.0.5:0::installed, dev-python/google-api-python-client-1.5.0:0::installed, dev-python/html5lib-0.9999999:0::installed, dev-python/matplotlib-1.4.3:0::installed, dev-python/packaging-16.6:0::installed, dev-python/pyopenssl-16.1.0:0::installed, dev-python/python-dateutil-2.4.2-r1:0::installed, dev-python/sphinx-1.3.1-r1:0::installed, dev-python/urllib3-1.16:0::installed
+
+<   dev-python/whoosh 2.6.0:0::installed
+    Reasons: was unused
+
+<   dev-python/zope-interface 4.1.1:0::installed
+    Reasons: was used by dev-python/twisted-core-13.2.0:0::installed
+
+<   dev-qt/qtdbus 5.6.1:5::installed
+    Reasons: was unused
+
+<   dev-ruby/minitest 5.8.4:5::installed
+    Reasons: was unused
+
+<   dev-ruby/rake 11.1.2:0::installed
+    Reasons: was unused
+
+<   dev-ruby/rdoc 4.2.2:0::installed
+    Reasons: was unused
+
+<   dev-ruby/syntax 1.2.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-ruby/test-unit 3.1.8:2::installed
+    Reasons: was unused
+
+<   dev-ruby/power_assert 0.2.7:0::installed
+    Reasons: was used by dev-ruby/test-unit-3.1.8:2::installed
+
+<   dev-scheme/guile-www 2.34:0::installed
+    Reasons: was unused
+
+<   dev-tcltk/tktable 2.10:0::installed
+    Reasons: was unused
+
+<   dev-tex/bibtexu 3.71_p20140525:0::installed
+    Reasons: was unused
+
+<   dev-libs/kpathsea 6.2.0_p20140525:0::installed
+    Reasons: was used by app-text/dvipng-1.15:0::installed, app-text/dvipsk-5.994_p20140525:0::installed, app-text/ps2pkm-1.5_p20140525:0::installed, app-text/ttf2pk2-2.0_p20140525:0::installed, app-text/xdvik-22.85-r1:0::installed, dev-libs/ptexenc-1.3.2_p20140525-r1:0::installed, dev-tex/bibtexu-3.71_p20140525:0::installed
+
+<   dev-tex/chktex 1.7.1:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-tex/cjk-latex 4.8.3-r1:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-tex/currvita 0.9i-r1:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-tex/dot2texi 3.0:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-tex/dot2tex 2.8.7:0::installed
+    Reasons: was used by dev-tex/dot2texi-3.0:0::installed
+
+<   dev-python/pyparsing 2.0.3:0::installed
+    Reasons: was used by dev-python/matplotlib-1.4.3:0::installed, dev-python/packaging-16.6:0::installed, dev-tex/dot2tex-2.8.7:0::installed
+
+<   dev-tex/dvi2tty 5.3.4:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-tex/envlab 1.2-r1:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-tex/europecv 20060424-r2:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-tex/g-brief 4.0.2:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-tex/glossaries 3.04:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-tex/latex-beamer 3.36:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-tex/latexdiff 1.1.0:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-perl/Algorithm-Diff 1.190.300:0::installed
+    Reasons: was used by dev-tex/latexdiff-1.1.0:0::installed
+
+<   dev-tex/latexmk 435:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-tex/leaflet 20041222:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-tex/svninfo 0.7.4:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-tex/xmltex 1.9-r2:0::installed
+    Reasons: was used by app-text/passivetex-1.25:0::installed, app-text/texlive-2014:0::installed
+
+<   dev-texlive/texlive-bibtexextra 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-texlive/texlive-documentation-base 2012:0::installed
+    Reasons: was unused
+
+<   dev-texlive/texlive-fontsextra 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-texlive/texlive-formatsextra 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-texlive/texlive-genericextra 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-texlive/texlive-htmlxml 2012:0::installed
+    Reasons: was unused
+
+<   dev-texlive/texlive-humanities 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-texlive/texlive-langcjk 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-texlive/texlive-langenglish 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-texlive/texlive-langgerman 2015:0::installed
+    Reasons: was used by dev-tex/currvita-0.9i-r1:0::installed, dev-tex/g-brief-4.0.2:0::installed
+
+<   dev-texlive/texlive-luatex 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-texlive/texlive-omega 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-texlive/texlive-publishers 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-texlive/texlive-science 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed
+
+<   dev-texlive/texlive-pstricks 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed, dev-texlive/texlive-science-2015:0::installed
+
+<   dev-texlive/texlive-xetex 2015:0::installed
+    Reasons: was used by app-text/dblatex-0.3.7:0::installed, app-text/texlive-2014:0::installed, dev-texlive/texlive-formatsextra-2015:0::installed, dev-texlive/texlive-luatex-2015:0::installed
+
+<   dev-texlive/texlive-latexextra 2015:0::installed
+    Reasons: was used by app-text/dblatex-0.3.7:0::installed, app-text/texlive-2014:0::installed, dev-tex/dot2texi-3.0:0::installed, dev-tex/europecv-20060424-r2:0::installed, dev-tex/glossaries-3.04:0::installed, dev-texlive/texlive-xetex-2015:0::installed
+
+<   dev-perl/Spreadsheet-ParseExcel 0.650.0:0::installed
+    Reasons: was used by dev-texlive/texlive-latexextra-2015:0::installed
+
+<   dev-perl/Crypt-RC4 2.020.0-r1:0::installed
+    Reasons: was used by dev-perl/Spreadsheet-ParseExcel-0.650.0:0::installed
+
+<   dev-perl/Digest-Perl-MD5 1.900.0:0::installed
+    Reasons: was used by dev-perl/Spreadsheet-ParseExcel-0.650.0:0::installed
+
+<   dev-perl/IO-stringy 2.111.0:0::installed
+    Reasons: was used by dev-perl/Spreadsheet-ParseExcel-0.650.0:0::installed
+
+<   dev-perl/Jcode 2.70.0-r1:0::installed
+    Reasons: was used by dev-perl/Spreadsheet-ParseExcel-0.650.0:0::installed
+
+<   dev-perl/OLE-StorageLite 0.190.0-r1:0::installed
+    Reasons: was used by dev-perl/Spreadsheet-ParseExcel-0.650.0:0::installed
+
+<   dev-texlive/texlive-mathextra 2015:0::installed
+    Reasons: was used by app-text/dblatex-0.3.7:0::installed, app-text/texlive-2014:0::installed, dev-texlive/texlive-xetex-2015:0::installed
+
+<   dev-texlive/texlive-fontsrecommended 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed, dev-tex/leaflet-20041222:0::installed, dev-texlive/texlive-htmlxml-2012:0::installed, dev-texlive/texlive-latexextra-2015:0::installed, dev-texlive/texlive-mathextra-2015:0::installed
+
+<   dev-texlive/texlive-genericrecommended 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed, dev-texlive/texlive-fontsrecommended-2015:0::installed, dev-texlive/texlive-pstricks-2015:0::installed, dev-texlive/texlive-xetex-2015:0::installed
+
+<   dev-texlive/texlive-pictures 2015-r2:0::installed
+    Reasons: was used by app-text/dblatex-0.3.7:0::installed, app-text/texlive-2014:0::installed, dev-texlive/texlive-latexextra-2015:0::installed
+
+<   dev-tex/pgf 3.0.1:0::installed
+    Reasons: was used by dev-tex/latex-beamer-3.36:0::installed, dev-texlive/texlive-pictures-2015-r2:0::installed, dev-texlive/texlive-pstricks-2015:0::installed
+
+<   dev-tex/xcolor 2.11:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed, dev-tex/latex-beamer-3.36:0::installed, dev-tex/pgf-3.0.1:0::installed
+
+<   dev-util/automoc 0.9.88-r1:0::installed
+    Reasons: was unused
+
+<   dev-util/bdelta 0.3.1:0::installed
+    Reasons: was unused
+
+<   dev-util/cmake-fedora 1.3.0:0::installed
+    Reasons: was unused
+
+<   dev-util/cppunit 1.13.2-r2:0::installed
+    Reasons: was used by dev-python/subunit-1.2.0-r1:0::installed
+
+<   dev-util/diffball 1.0.1:0::installed
+    Reasons: was unused
+
+<   dev-util/gob 2.0.20:2::installed
+    Reasons: was unused
+
+<   dev-util/google-perftools 2.0-r2:0::installed
+    Reasons: was used by dev-libs/leveldb-1.18-r1:0::installed
+
+<   dev-util/mdds 0.12.1:0::installed
+    Reasons: was used by app-text/libetonyek-0.1.3:0::installed, dev-libs/libixion-0.9.0:0::installed
+
+<   dev-util/mdds 1.2.2:1::installed
+    Reasons: was unused
+
+<   dev-util/patchelf 0.8:0::installed
+    Reasons: was unused
+
+<   dev-util/ragel 6.7-r1:0::installed
+    Reasons: was unused
+
+<   dev-util/strace 4.9:0::installed
+    Reasons: was unused
+
+<   dev-util/systemtap 2.4-r1:0::installed
+    Reasons: was unused
+
+<   dev-util/xdelta 1.1.4-r1:0::installed
+    Reasons: was unused
+
+<   dev-vcs/bzr 2.5.1-r1:0::installed
+    Reasons: was unused
+
+<   dev-python/paramiko 1.16.0:0::installed
+    Reasons: was used by dev-vcs/bzr-2.5.1-r1:0::installed
+
+<   dev-python/ecdsa 0.13:0::installed
+    Reasons: was used by dev-python/paramiko-1.16.0:0::installed
+
+<   dev-vcs/cvs 1.12.12-r11:0::installed
+    Reasons: was unused
+
+<   dev-vcs/subversion 1.9.4:0::installed
+    Reasons: was unused
+
+<   games-misc/fortune-mod 1.99.1-r2:0::installed
+    Reasons: was unused
+
+<   games-util/steam-client-meta 0-r20150828:0::installed
+    Reasons: was unused
+
+<   games-util/steam-games-meta 0-r20141109:0::installed
+    Reasons: was unused
+
+<   gnome-base/gconf 3.2.6-r4:2::installed
+    Reasons: was used by dev-python/gconf-python-2.28.1-r1:2::installed
+
+<   gnome-base/gsettings-desktop-schemas 3.20.0:0::installed
+    Reasons: was unused
+
+<   gnome-base/libgnome-keyring 3.12.0:0::installed
+    Reasons: was unused
+
+<   gnome-base/orbit 2.14.19-r5:2::installed
+    Reasons: was used by dev-python/pyorbit-2.24.0-r1:0::installed
+
+<   dev-libs/libIDL 0.8.14-r2:0::installed
+    Reasons: was used by gnome-base/orbit-2.14.19-r5:2::installed
+
+<   gnome-extra/libgsf 1.14.40:0::installed
+    Reasons: was unused
+
+<   gnustep-base/gnustep-make 2.6.2:0::installed
+    Reasons: was unused
+
+<   java-virtuals/servlet-api 2.4:2.4::installed
+    Reasons: was used by dev-java/javahelp-2.0.05_p63:0::installed
+
+<   dev-java/tomcat-servlet-api 5.5.27-r1:2.4::installed
+    Reasons: was used by java-virtuals/servlet-api-2.4:2.4::installed
+
+<   java-virtuals/servlet-api 3.0-r1:3.0::installed
+    Reasons: was unused
+
+<   dev-java/java-config 2.2.0-r3:2::installed
+    Reasons: was used by dev-java/ant-nodeps-1.9.2:0::installed, dev-java/javahelp-2.0.05_p63:0::installed, dev-java/junit-3.8.2-r1:0::installed, dev-java/lucene-2.4.1-r1:2.4::installed, dev-java/swing-layout-1.0.4:1::installed, dev-java/tomcat-servlet-api-5.5.27-r1:2.4::installed, java-virtuals/servlet-api-2.4:2.4::installed, java-virtuals/servlet-api-3.0-r1:3.0::installed
+
+<   mail-filter/libmilter 1.0.2:0::installed
+    Reasons: was unused
+
+<   mail-filter/spamassassin 3.4.0-r1:0::installed
+    Reasons: was unused
+
+<   dev-perl/Encode-Detect 1.10.0-r1:0::installed
+    Reasons: was used by mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   dev-perl/Geo-IP 1.450.0:0::installed
+    Reasons: was used by mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   dev-libs/geoip 1.6.9:0::installed
+    Reasons: was used by dev-perl/Geo-IP-1.450.0:0::installed
+
+<   dev-perl/HTML-Parser 3.710.0-r1:0::installed
+    Reasons: was used by dev-perl/HTML-Form-6.30.0-r1:0::installed, dev-perl/HTML-TokeParser-Simple-3.160.0-r1:0::installed, dev-perl/HTML-Tree-5.30.0-r1:0::installed, mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   dev-perl/HTML-Tagset 3.200.0-r1:0::installed
+    Reasons: was used by dev-perl/HTML-Parser-3.710.0-r1:0::installed, dev-perl/HTML-Tree-5.30.0-r1:0::installed
+
+<   dev-perl/Mail-DKIM 0.400.0:0::installed
+    Reasons: was used by mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   dev-perl/Crypt-OpenSSL-RSA 0.280.0-r2:0::installed
+    Reasons: was used by dev-perl/Mail-DKIM-0.400.0:0::installed
+
+<   dev-perl/Crypt-OpenSSL-Bignum 0.40.0-r2:0::installed
+    Reasons: was used by dev-perl/Crypt-OpenSSL-RSA-0.280.0-r2:0::installed
+
+<   dev-perl/Crypt-OpenSSL-Random 0.40.0-r2:0::installed
+    Reasons: was used by dev-perl/Crypt-OpenSSL-RSA-0.280.0-r2:0::installed
+
+<   dev-perl/Mail-SPF 2.9.0-r1:0::installed
+    Reasons: was used by mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   dev-perl/MailTools 2.140.0:0::installed
+    Reasons: was used by dev-perl/Mail-DKIM-0.400.0:0::installed
+
+<   dev-perl/Net-DNS-Resolver-Programmable 0.3.0-r1:0::installed
+    Reasons: was used by dev-perl/Mail-SPF-2.9.0-r1:0::installed
+
+<   dev-perl/Net-DNS 1.40.0:0::installed
+    Reasons: was used by dev-perl/Mail-DKIM-0.400.0:0::installed, dev-perl/Mail-SPF-2.9.0-r1:0::installed, dev-perl/Net-DNS-Resolver-Programmable-0.3.0-r1:0::installed, mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   dev-perl/Net-Patricia 1.220.0:0::installed
+    Reasons: was used by mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   dev-perl/Net-CIDR-Lite 0.210.0:0::installed
+    Reasons: was used by dev-perl/Net-Patricia-1.220.0:0::installed
+
+<   dev-perl/NetAddr-IP 4.78.0:0::installed
+    Reasons: was used by dev-perl/Mail-SPF-2.9.0-r1:0::installed, mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   media-fonts/arphicfonts 0.2.20080216.1-r2:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-adobe-100dpi 1.0.3:0::installed
+    Reasons: was used by games-util/steam-client-meta-0-r20150828:0::installed
+
+<   media-fonts/font-adobe-75dpi 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-adobe-utopia-100dpi 1.0.4:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-adobe-utopia-75dpi 1.0.4:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-adobe-utopia-type1 1.0.4:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-bh-100dpi 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-bh-75dpi 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-bh-lucidatypewriter-100dpi 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-bh-lucidatypewriter-75dpi 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-bh-ttf 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-bh-type1 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-bitstream-100dpi 1.0.3:0::installed
+    Reasons: was used by games-util/steam-client-meta-0-r20150828:0::installed
+
+<   media-fonts/font-bitstream-75dpi 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-bitstream-speedo 1.0.2:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-bitstream-type1 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-cronyx-cyrillic 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-cursor-misc 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-daewoo-misc 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-dec-misc 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-ibm-type1 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-isas-misc 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-jis-misc 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-micro-misc 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-misc-cyrillic 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-misc-ethiopic 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-misc-meltho 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-misc-misc 1.1.2:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-mutt-misc 1.0.3:0::installed
+    Reasons: was used by games-util/steam-client-meta-0-r20150828:0::installed
+
+<   media-fonts/font-schumacher-misc 1.1.2:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-screen-cyrillic 1.0.4:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-sony-misc 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-sun-misc 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-winitzki-cyrillic 1.0.3:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-xfree86-type1 1.0.4:0::installed
+    Reasons: was unused
+
+<   media-fonts/font-alias 1.0.3-r1:0::installed
+    Reasons: was used by media-fonts/font-adobe-100dpi-1.0.3:0::installed, media-fonts/font-adobe-75dpi-1.0.3:0::installed, media-fonts/font-adobe-utopia-100dpi-1.0.4:0::installed, media-fonts/font-adobe-utopia-75dpi-1.0.4:0::installed, media-fonts/font-adobe-utopia-type1-1.0.4:0::installed, media-fonts/font-bh-100dpi-1.0.3:0::installed, media-fonts/font-bh-75dpi-1.0.3:0::installed, media-fonts/font-bh-lucidatypewriter-100dpi-1.0.3:0::installed, media-fonts/font-bh-lucidatypewriter-75dpi-1.0.3:0::installed, media-fonts/font-bh-ttf-1.0.3:0::installed, media-fonts/font-bh-type1-1.0.3:0::installed, media-fonts/font-bitstream-100dpi-1.0.3:0::installed, media-fonts/font-bitstream-75dpi-1.0.3:0::installed, media-fonts/font-bitstream-speedo-1.0.2:0::installed, media-fonts/font-bitstream-type1-1.0.3:0::installed, media-fonts/font-cronyx-cyrillic-1.0.3:0::installed, media-fonts/font-cursor-misc-1.0.3:0::installed, media-fonts/font-daewoo-misc-1.0.3:0::installed, media-fonts/font-dec-misc-1.0.3:0::installed, media-fonts/font-ibm-type1-1.0.3:0::installed, media-fonts/font-isas-misc-1.0.3:0::installed, media-fonts/font-jis-misc-1.0.3:0::installed, media-fonts/font-micro-misc-1.0.3:0::installed, media-fonts/font-misc-cyrillic-1.0.3:0::installed, media-fonts/font-misc-ethiopic-1.0.3:0::installed, media-fonts/font-misc-meltho-1.0.3:0::installed, media-fonts/font-misc-misc-1.1.2:0::installed, media-fonts/font-mutt-misc-1.0.3:0::installed, media-fonts/font-schumacher-misc-1.1.2:0::installed, media-fonts/font-screen-cyrillic-1.0.4:0::installed, media-fonts/font-sony-misc-1.0.3:0::installed, media-fonts/font-sun-misc-1.0.3:0::installed, media-fonts/font-winitzki-cyrillic-1.0.3:0::installed, media-fonts/font-xfree86-type1-1.0.4:0::installed
+
+<   media-fonts/hkscs-ming 1.0_pre20030919-r2:0::installed
+    Reasons: was unused
+
+<   media-fonts/libertine 5.3.0.20120702-r2:0::installed
+    Reasons: was unused
+
+<   media-fonts/lklug 0.6:0::installed
+    Reasons: was unused
+
+<   media-fonts/lohit-fonts 2.4.2:0::installed
+    Reasons: was unused
+
+<   media-fonts/powerline-symbols 20150224:0::installed
+    Reasons: was unused
+
+<   media-fonts/sazanami 20040629:0::installed
+    Reasons: was unused
+
+<   media-fonts/stix-fonts 1.0.0-r1:0::installed
+    Reasons: was used by dev-python/matplotlib-1.4.3:0::installed
+
+<   media-libs/aalib 1.4_rc5-r6:0::installed
+    Reasons: was unused
+
+<   media-libs/allegro 4.4.2-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/alsa-oss 1.0.28:0::installed
+    Reasons: was unused
+
+<   media-libs/audiofile 0.3.6-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/babl 0.1.18:0::installed
+    Reasons: was unused
+
+<   media-libs/devil 1.7.8-r2:0::installed
+    Reasons: was unused
+
+<   media-libs/faac 1.28-r4:0::installed
+    Reasons: was unused
+
+<   media-libs/faad2 2.7-r3:0::installed
+    Reasons: was unused
+
+<   media-libs/fdk-aac 0.1.3:0::installed
+    Reasons: was unused
+
+<   media-libs/freeimage 3.15.4:0::installed
+    Reasons: was unused
+
+<   media-libs/game-music-emu 0.6.0-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/gd 2.2.3:2::installed
+    Reasons: was used by app-text/dvipng-1.15:0::installed
+
+<   media-libs/giblib 1.2.4:0::installed
+    Reasons: was unused
+
+<   media-libs/giflib 5.1.4:0::installed
+    Reasons: was unused
+
+<   media-libs/glm 0.9.6.1:0::installed
+    Reasons: was used by app-text/libetonyek-0.1.3:0::installed
+
+<   media-libs/gstreamer 0.10.36-r2:0.10::installed
+    Reasons: was used by dev-python/gst-python-0.10.22-r1:0.10::installed
+
+<   media-libs/gstreamer 1.8.3:1.0::installed
+    Reasons: was unused
+
+<   media-libs/imlib2 1.4.9:0::installed
+    Reasons: was used by media-libs/giblib-1.2.4:0::installed
+
+<   media-libs/jbig2dec 0.11-r1:0::installed
+    Reasons: was used by app-text/mupdf-1.5-r1:0::installed
+
+<   media-libs/lensfun 0.3.1:0::installed
+    Reasons: was unused
+
+<   media-libs/leptonica 1.71-r1:0::installed
+    Reasons: was used by app-text/tesseract-3.04.00-r2:0::installed
+
+<   media-libs/lib3ds 2.0.0_rc1:0::installed
+    Reasons: was unused
+
+<   media-libs/libao 1.2.0:0::installed
+    Reasons: was unused
+
+<   media-libs/libass 0.12.3:0::installed
+    Reasons: was unused
+
+<   app-i18n/enca 1.14-r2:0::installed
+    Reasons: was used by media-libs/libass-0.12.3:0::installed
+
+<   app-text/recode 3.6_p20-r1:0::installed
+    Reasons: was used by app-i18n/enca-1.14-r2:0::installed, games-misc/fortune-mod-1.99.1-r2:0::installed
+
+<   dev-libs/fribidi 0.19.6:0::installed
+    Reasons: was used by media-libs/libass-0.12.3:0::installed
+
+<   media-libs/libbluray 0.6.2:0::installed
+    Reasons: was unused
+
+<   media-libs/libbs2b 3.1.0-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/libcddb 1.3.2-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/libcdr 0.1.1:0::installed
+    Reasons: was unused
+
+<   media-libs/libdc1394 2.2.1:2::installed
+    Reasons: was unused
+
+<   media-libs/libdca 0.0.5-r3:0::installed
+    Reasons: was unused
+
+<   media-libs/libdiscid 0.6.1:0::installed
+    Reasons: was used by dev-perl/MusicBrainz-DiscID-0.30.0-r1:0::installed
+
+<   media-libs/libdv 1.0.0-r3:0::installed
+    Reasons: was unused
+
+<   media-libs/libdvbpsi 1.3.0-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/libdvdnav 5.0.3:0::installed
+    Reasons: was unused
+
+<   media-libs/libexif 0.6.21-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/libfreehand 0.1.1:0::installed
+    Reasons: was unused
+
+<   media-libs/libgphoto2 2.5.10:0::installed
+    Reasons: was unused
+
+<   media-libs/liblqr 0.4.2-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/libmatroska 1.4.4:0::installed
+    Reasons: was unused
+
+<   dev-libs/libebml 1.3.3:0::installed
+    Reasons: was used by media-libs/libmatroska-1.4.4:0::installed
+
+<   media-libs/libmms 0.6.4:0::installed
+    Reasons: was unused
+
+<   media-libs/libmng 2.0.2-r1:0::installed
+    Reasons: was used by media-libs/devil-1.7.8-r2:0::installed
+
+<   media-libs/libmodplug 0.8.8.5:0::installed
+    Reasons: was unused
+
+<   media-libs/libmp3splt 0.9.1a:0::installed
+    Reasons: was unused
+
+<   media-libs/libid3tag 0.15.1b-r4:0::installed
+    Reasons: was used by media-libs/libmp3splt-0.9.1a:0::installed
+
+<   media-libs/libmad 0.15.1b-r8:0::installed
+    Reasons: was used by media-libs/libmp3splt-0.9.1a:0::installed
+
+<   media-libs/libmp4v2 2.0.0:0::installed
+    Reasons: was used by media-libs/faac-1.28-r4:0::installed
+
+<   media-libs/libmpd 11.8.17-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/libmpeg2 0.5.1-r2:0::installed
+    Reasons: was unused
+
+<   media-libs/libmtp 1.1.11:0::installed
+    Reasons: was unused
+
+<   media-libs/libopenraw 0.0.9:0::installed
+    Reasons: was unused
+
+<   media-libs/libpagemaker 0.0.2:0::installed
+    Reasons: was unused
+
+<   media-libs/libpgf 6.12.27:0::installed
+    Reasons: was unused
+
+<   media-libs/libquvi-scripts 0.9.20131130-r1:0::installed
+    Reasons: was unused
+
+<   dev-lua/LuaBitOp 1.0.2-r1:0::installed
+    Reasons: was used by media-libs/libquvi-scripts-0.9.20131130-r1:0::installed
+
+<   dev-lua/luaexpat 1.3.0-r1:0::installed
+    Reasons: was used by media-libs/libquvi-scripts-0.9.20131130-r1:0::installed
+
+<   dev-lua/luajson 1.3.2:0::installed
+    Reasons: was used by media-libs/libquvi-scripts-0.9.20131130-r1:0::installed
+
+<   dev-lang/luajit 2.0.4:2::installed
+    Reasons: was used by dev-lua/luajson-1.3.2:0::installed
+
+<   dev-lua/lpeg 0.12:0::installed
+    Reasons: was used by dev-lua/luajson-1.3.2:0::installed
+
+<   dev-lua/luasocket 3.0_rc1-r3:0::installed
+    Reasons: was used by media-libs/libquvi-scripts-0.9.20131130-r1:0::installed
+
+<   media-libs/libraw 0.16.2:0::installed
+    Reasons: was unused
+
+<   media-libs/libshout 2.3.1-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/libsidplay 2.1.1-r4:2::installed
+    Reasons: was unused
+
+<   media-libs/libtheora 1.1.1-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/libtiger 0.3.4:0::installed
+    Reasons: was unused
+
+<   media-libs/libkate 0.3.7:0::installed
+    Reasons: was used by media-libs/libtiger-0.3.4:0::installed
+
+<   media-libs/libuninameslist 20091231:0::installed
+    Reasons: was unused
+
+<   media-libs/libv4l 1.10.1:0::installed
+    Reasons: was unused
+
+<   media-libs/libvisio 0.1.5:0::installed
+    Reasons: was unused
+
+<   dev-libs/librevenge 0.0.4:0::installed
+    Reasons: was used by app-text/libabw-0.1.1:0::installed, app-text/libebook-0.1.2-r1:0::installed, app-text/libetonyek-0.1.3:0::installed, app-text/libmspub-0.1.2:0::installed, app-text/libmwaw-0.3.6:0::installed, app-text/libodfgen-0.1.4:0::installed, app-text/libwpd-0.10.0-r1:0.10::installed, app-text/libwpg-0.3.0:0.3::installed, app-text/libwps-0.4.2:0::installed, media-libs/libcdr-0.1.1:0::installed, media-libs/libfreehand-0.1.1:0::installed, media-libs/libpagemaker-0.0.2:0::installed, media-libs/libvisio-0.1.5:0::installed
+
+<   media-libs/libvpx 1.5.0:0::installed
+    Reasons: was unused
+
+<   media-libs/libwmf 0.2.8.4-r6:0::installed
+    Reasons: was unused
+
+<   media-fonts/urw-fonts 2.4.9:0::installed
+    Reasons: was used by media-libs/libwmf-0.2.8.4-r6:0::installed
+
+<   app-arch/rpm2targz 9.0.0.5g:0::installed
+    Reasons: was used by app-office/libreoffice-l10n-5.2.2.2:0::installed, media-fonts/hkscs-ming-1.0_pre20030919-r2:0::installed, media-fonts/urw-fonts-2.4.9:0::installed
+
+<   media-libs/mutagen 1.31:0::installed
+    Reasons: was unused
+
+<   media-libs/openal 1.15.1-r2:0::installed
+    Reasons: was used by dev-python/pyglet-1.1.4-r2:0::installed
+
+<   media-libs/opencore-amr 0.1.3-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/openjpeg 1.5.2:0::installed
+    Reasons: was unused
+
+<   media-libs/openjpeg 2.1.1_p20160922:2::installed
+    Reasons: was used by app-text/mupdf-1.5-r1:0::installed
+
+<   media-libs/lcms 2.6-r1:2::installed
+    Reasons: was used by media-libs/libcdr-0.1.1:0::installed, media-libs/libfreehand-0.1.1:0::installed, media-libs/libraw-0.16.2:0::installed, media-libs/openjpeg-1.5.2:0::installed, media-libs/openjpeg-2.1.1_p20160922:2::installed
+
+<   media-libs/opusfile 0.6:0::installed
+    Reasons: was unused
+
+<   media-libs/opus 1.1:0::installed
+    Reasons: was used by media-libs/opusfile-0.6:0::installed
+
+<   media-libs/qhull 2012.1-r1:0::installed
+    Reasons: was used by dev-python/matplotlib-1.4.3:0::installed
+
+<   media-libs/raptor 2.0.14:2::installed
+    Reasons: was used by dev-libs/rasqal-0.9.32:0::installed, dev-libs/redland-1.0.16:0::installed
+
+<   media-libs/sbc 1.3:0::installed
+    Reasons: was unused
+
+<   media-libs/schroedinger 1.0.11-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/sdl-mixer 1.2.12-r4:0::installed
+    Reasons: was unused
+
+<   media-libs/sdl-ttf 2.0.11-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/sdl2-image 2.0.1:0::installed
+    Reasons: was unused
+
+<   media-libs/sdl2-ttf 2.0.14:0::installed
+    Reasons: was unused
+
+<   media-libs/libsdl2 2.0.4:0::installed
+    Reasons: was used by media-libs/sdl2-image-2.0.1:0::installed, media-libs/sdl2-ttf-2.0.14:0::installed
+
+<   media-libs/soxr 0.1.1:0::installed
+    Reasons: was unused
+
+<   media-libs/t1lib 5.1.2:5::installed
+    Reasons: was used by app-text/xdvik-22.85-r1:0::installed, dev-lang/php-5.6.28:5.6::installed
+
+<   media-libs/taglib 1.9.1-r2:0::installed
+    Reasons: was unused
+
+<   media-libs/tremor 0_pre20130223-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/urt 3.1b-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/vo-aacenc 0.1.3:0::installed
+    Reasons: was unused
+
+<   media-libs/x265 1.8-r3:0::installed
+    Reasons: was unused
+
+<   media-libs/xvid 1.3.3:0::installed
+    Reasons: was unused
+
+<   media-libs/zvbi 0.2.35-r1:0::installed
+    Reasons: was unused
+
+<   media-sound/cd-discid 1.4:0::installed
+    Reasons: was unused
+
+<   media-sound/ecasound 2.6.0:1::installed
+    Reasons: was unused
+
+<   media-libs/ladspa-sdk 1.13-r2:0::installed
+    Reasons: was used by media-sound/ecasound-2.6.0:1::installed
+
+<   media-sound/gsm 1.0.13-r1:0::installed
+    Reasons: was unused
+
+<   media-sound/id3 0.15:0::installed
+    Reasons: was unused
+
+<   media-sound/id3v2 0.1.12:0::installed
+    Reasons: was unused
+
+<   media-libs/id3lib 3.8.3-r8:0::installed
+    Reasons: was used by media-sound/id3v2-0.1.12:0::installed
+
+<   media-sound/lame 3.99.5-r1:0::installed
+    Reasons: was unused
+
+<   media-sound/mp3gain 1.5.2:0::installed
+    Reasons: was unused
+
+<   media-sound/musepack-tools 465-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/libcuefile 477-r1:0::installed
+    Reasons: was used by media-sound/musepack-tools-465-r1:0::installed
+
+<   media-libs/libreplaygain 477-r1:0::installed
+    Reasons: was used by media-sound/musepack-tools-465-r1:0::installed
+
+<   media-sound/ncmpc 0.24:0::installed
+    Reasons: was unused
+
+<   media-libs/libmpdclient 2.10:0::installed
+    Reasons: was used by media-sound/ncmpc-0.24:0::installed
+
+<   media-sound/normalize 0.7.7-r1:0::installed
+    Reasons: was unused
+
+<   media-sound/pulseaudio 9.0:0::installed
+    Reasons: was used by media-libs/openal-1.15.1-r2:0::installed
+
+<   dev-lang/orc 0.4.26-r1:0::installed
+    Reasons: was used by media-libs/schroedinger-1.0.11-r1:0::installed, media-sound/pulseaudio-9.0:0::installed
+
+<   dev-libs/json-c 0.12:0::installed
+    Reasons: was used by media-sound/pulseaudio-9.0:0::installed
+
+<   media-libs/libsndfile 1.0.26:0::installed
+    Reasons: was used by media-libs/libbs2b-3.1.0-r1:0::installed, media-sound/pulseaudio-9.0:0::installed
+
+<   media-libs/flac 1.3.1-r1:0::installed
+    Reasons: was used by media-libs/libsndfile-1.0.26:0::installed
+
+<   media-libs/speex 1.2_rc1-r2:0::installed
+    Reasons: was used by media-sound/pulseaudio-9.0:0::installed
+
+<   media-libs/webrtc-audio-processing 0.3:0::installed
+    Reasons: was used by media-sound/pulseaudio-9.0:0::installed
+
+<   media-sound/timidity++ 2.14.0-r2:0::installed
+    Reasons: was unused
+
+<   media-sound/timidity-eawpatches 12-r5:0::installed
+    Reasons: was used by media-sound/timidity++-2.14.0-r2:0::installed
+
+<   app-eselect/eselect-timidity 20110513:0::installed
+    Reasons: was used by media-sound/timidity++-2.14.0-r2:0::installed, media-sound/timidity-eawpatches-12-r5:0::installed
+
+<   media-sound/vorbisgain 0.37-r1:0::installed
+    Reasons: was unused
+
+<   media-libs/libvorbis 1.3.4:0::installed
+    Reasons: was used by media-libs/allegro-4.4.2-r1:0::installed, media-libs/libmp3splt-0.9.1a:0::installed, media-libs/libshout-2.3.1-r1:0::installed, media-libs/libsndfile-1.0.26:0::installed, media-libs/libtheora-1.1.1-r1:0::installed, media-libs/sdl-mixer-1.2.12-r4:0::installed, media-sound/vorbisgain-0.37-r1:0::installed
+
+<   media-libs/libogg 1.3.1:0::installed
+    Reasons: was used by media-libs/flac-1.3.1-r1:0::installed, media-libs/libkate-0.3.7:0::installed, media-libs/libmp3splt-0.9.1a:0::installed, media-libs/libshout-2.3.1-r1:0::installed, media-libs/libsndfile-1.0.26:0::installed, media-libs/libtheora-1.1.1-r1:0::installed, media-libs/libvorbis-1.3.4:0::installed, media-libs/opusfile-0.6:0::installed, media-libs/sdl-mixer-1.2.12-r4:0::installed, media-libs/speex-1.2_rc1-r2:0::installed, media-libs/tremor-0_pre20130223-r1:0::installed, media-sound/vorbisgain-0.37-r1:0::installed
+
+<   media-video/atomicparsley 0.9.0:0::installed
+    Reasons: was unused
+
+<   media-video/lsdvd 0.17:0::installed
+    Reasons: was unused
+
+<   media-libs/libdvdread 5.0.3:0::installed
+    Reasons: was used by media-libs/libdvdnav-5.0.3:0::installed, media-video/lsdvd-0.17:0::installed
+
+<   media-libs/libdvdcss 1.3.0:1.2::installed
+    Reasons: was used by media-libs/libdvdread-5.0.3:0::installed
+
+<   media-video/subtitleripper 0.3.4-r4:0::installed
+    Reasons: was unused
+
+<   app-text/gocr 0.49:0::installed
+    Reasons: was used by media-video/subtitleripper-0.3.4-r4:0::installed
+
+<   media-libs/netpbm 10.66.00:0::installed
+    Reasons: was used by app-text/gocr-0.49:0::installed, media-video/subtitleripper-0.3.4-r4:0::installed
+
+<   media-video/vcdimager 0.7.24:0::installed
+    Reasons: was unused
+
+<   dev-libs/libcdio 0.92:0::installed
+    Reasons: was used by media-video/vcdimager-0.7.24:0::installed
+
+<   net-analyzer/net-snmp 5.7.3-r3:0::installed
+    Reasons: was unused
+
+<   net-analyzer/nstats 0.4-r2:0::installed
+    Reasons: was unused
+
+<   net-analyzer/scapy 2.2.0-r2:0::installed
+    Reasons: was unused
+
+<   dev-python/pycrypto 2.6.1:0::installed
+    Reasons: was used by dev-python/dnspython-1.12.0-r200:py2::installed, dev-python/paramiko-1.16.0:0::installed, net-analyzer/scapy-2.2.0-r2:0::installed
+
+<   net-analyzer/tcpdump 4.7.4:0::installed
+    Reasons: was used by net-analyzer/scapy-2.2.0-r2:0::installed
+
+<   net-dialup/ppp 2.4.7:0::installed
+    Reasons: was unused
+
+<   net-dns/avahi 0.6.32:0::installed
+    Reasons: was unused
+
+<   app-doc/xmltoman 0.4:0::installed
+    Reasons: was used by net-dns/avahi-0.6.32:0::installed
+
+<   dev-libs/libdaemon 0.14-r2:0::installed
+    Reasons: was used by net-dns/avahi-0.6.32:0::installed
+
+<   net-fs/libnfs 1.9.7:0::installed
+    Reasons: was unused
+
+<   net-im/telepathy-mission-control 5.16.3:0::installed [cycle 2]
+    Reasons: was used by dev-libs/folks-0.11.2:0::installed, net-libs/telepathy-glib-0.24.1:0::installed
+    In run dependency cycle with: net-im/telepathy-mission-control:0, net-libs/telepathy-glib:0 in dependency cycle with net-im/telepathy-mission-control:0, net-libs/telepathy-glib:0
+
+<   net-libs/telepathy-glib 0.24.1:0::installed [cycle 2]
+    Reasons: was used by dev-libs/folks-0.11.2:0::installed, net-im/telepathy-mission-control-5.16.3:0::installed
+
+<   dev-lang/vala 0.26.2:0.26::installed
+    Reasons: was used by dev-libs/folks-0.11.2:0::installed, net-libs/telepathy-glib-0.24.1:0::installed
+
+<   dev-lang/vala 0.30.1:0.30::installed
+    Reasons: was used by dev-libs/folks-0.11.2:0::installed, net-libs/telepathy-glib-0.24.1:0::installed
+
+<   net-libs/courier-unicode 1.3:0::installed
+    Reasons: was unused
+
+<   net-libs/daq 2.0.2:0::installed
+    Reasons: was unused
+
+<   net-libs/libasyncns 0.8-r3:0::installed
+    Reasons: was used by media-sound/pulseaudio-9.0:0::installed
+
+<   net-libs/libnet 1.0.2a-r5:1.0::installed
+    Reasons: was unused
+
+<   net-libs/libnetfilter_conntrack 1.0.4:0::installed
+    Reasons: was unused
+
+<   net-libs/libnfnetlink 1.0.1:0::installed
+    Reasons: was used by net-libs/libnetfilter_conntrack-1.0.4:0::installed
+
+<   net-libs/libnfsidmap 0.24:0::installed
+    Reasons: was unused
+
+<   net-libs/liboauth 1.0.1:0::installed
+    Reasons: was unused
+
+<   dev-libs/nss 3.23:0::installed
+    Reasons: was used by app-arch/rpm-4.11.0.1:0::installed, net-libs/liboauth-1.0.1:0::installed
+
+<   net-libs/librsync 0.9.7-r3:0::installed
+    Reasons: was unused
+
+<   net-libs/libssh 0.7.3-r1:0::installed
+    Reasons: was unused
+
+<   net-libs/libtorrent 0.13.6:0::installed
+    Reasons: was unused
+
+<   dev-libs/libsigc++ 2.8.0:2::installed
+    Reasons: was used by net-libs/libtorrent-0.13.6:0::installed
+
+<   net-libs/libupnp 1.6.18-r1:0::installed
+    Reasons: was unused
+
+<   net-libs/libvncserver 0.9.10-r3:0::installed
+    Reasons: was unused
+
+<   net-libs/neon 0.30.1:0::installed
+    Reasons: was unused
+
+<   net-libs/netwib 5.39.0:0::installed
+    Reasons: was unused
+
+<   net-libs/libnet 1.1.6:1.1::installed
+    Reasons: was used by net-libs/netwib-5.39.0:0::installed
+
+<   net-libs/libpcap 1.8.0:0::installed
+    Reasons: was used by dev-perl/Net-Pcap-0.170.0-r1:0::installed, dev-perl/Net-RawIP-0.250.0-r1:0::installed, net-analyzer/nstats-0.4-r2:0::installed, net-analyzer/tcpdump-4.7.4:0::installed, net-libs/daq-2.0.2:0::installed, net-libs/netwib-5.39.0:0::installed
+
+<   net-libs/nodejs 4.4.6:0::installed
+    Reasons: was unused
+
+<   dev-libs/libuv 1.8.0:0::installed
+    Reasons: was used by net-libs/nodejs-4.4.6:0::installed
+
+<   net-libs/http-parser 2.6.2:0::installed
+    Reasons: was used by net-libs/nodejs-4.4.6:0::installed
+
+<   net-libs/serf 1.3.8:1::installed
+    Reasons: was used by dev-vcs/subversion-1.9.4:0::installed
+
+<   dev-libs/apr-util 1.5.4:1::installed
+    Reasons: was used by dev-vcs/subversion-1.9.4:0::installed, net-libs/serf-1.3.8:1::installed
+
+<   dev-libs/apr 1.5.2:1::installed
+    Reasons: was used by dev-libs/apr-util-1.5.4:1::installed, dev-vcs/subversion-1.9.4:0::installed, net-libs/serf-1.3.8:1::installed
+
+<   net-libs/socket_wrapper 1.1.6:0::installed
+    Reasons: was unused
+
+<   net-libs/wvstreams 4.6.1-r3:0::installed
+    Reasons: was unused
+
+<   net-misc/modemmanager 1.4.14:0::installed
+    Reasons: was unused
+
+<   net-libs/libqmi 1.12.6:0::installed
+    Reasons: was used by net-misc/modemmanager-1.4.14:0::installed
+
+<   net-misc/npapi-sdk 0.27.2:0::installed
+    Reasons: was unused
+
+<   net-misc/socat 1.7.3.1:0::installed
+    Reasons: was unused
+
+<   net-misc/vde 2.3.2-r2:0::installed
+    Reasons: was unused
+
+<   net-misc/whois 5.1.5:0::installed
+    Reasons: was unused
+
+<   net-wireless/iw 3.17:0::installed
+    Reasons: was unused
+
+<   sci-libs/fftw 3.3.4:3.0::installed
+    Reasons: was unused
+
+<   sci-libs/gsl 1.16:0::installed
+    Reasons: was used by dev-ml/ocamlgsl-0.6.0:0::installed
+
+<   app-eselect/eselect-cblas 0.1:0::installed
+    Reasons: was used by sci-libs/gsl-1.16:0::installed
+
+<   sci-libs/jama 1.2.5:0::installed
+    Reasons: was unused
+
+<   sci-libs/tnt 3.0.12:0::installed
+    Reasons: was used by sci-libs/jama-1.2.5:0::installed
+
+<   sci-mathematics/lpsolve 5.5.2.0:0::installed
+    Reasons: was unused
+
+<   sci-libs/colamd 2.8.0:0::installed
+    Reasons: was used by sci-mathematics/lpsolve-5.5.2.0:0::installed
+
+<   sci-libs/suitesparseconfig 4.2.1:0::installed
+    Reasons: was used by sci-libs/colamd-2.8.0:0::installed
+
+<   sys-apps/baselayout-java 0.1.0:0::installed
+    Reasons: was used by dev-java/java-config-2.2.0-r3:2::installed
+
+<   sys-apps/cracklib-words 20080507:0::installed
+    Reasons: was unused
+
+<   sys-apps/dmidecode 2.12-r1:0::installed
+    Reasons: was unused
+
+<   sys-apps/dtc 1.4.1:0::installed
+    Reasons: was unused
+
+<   sys-apps/lm_sensors 3.3.5:0::installed
+    Reasons: was unused
+
+<   sys-apps/lsb-release 1.4:0::installed
+    Reasons: was unused
+
+<   sys-apps/miscfiles 1.5-r1:0::installed
+    Reasons: was unused
+
+<   sys-apps/usbredir 0.7:0::installed
+    Reasons: was unused
+
+<   sys-apps/xinetd 2.3.15-r3:0::installed
+    Reasons: was unused
+
+<   sys-auth/realtime-base 0.1:0::installed
+    Reasons: was unused
+
+<   sys-auth/rtkit 0.11-r1:0::installed
+    Reasons: was unused
+
+<   sys-block/blktrace 1.0.3:0::installed
+    Reasons: was unused
+
+<   sys-boot/syslinux 5.10:0::installed
+    Reasons: was unused
+
+<   dev-perl/Crypt-PasswdMD5 1.400.0:0::installed
+    Reasons: was used by sys-boot/syslinux-5.10:0::installed
+
+<   dev-perl/Digest-SHA1 2.130.0-r1:0::installed
+    Reasons: was used by dev-perl/Net-SNMP-6.0.1-r1:0::installed, mail-filter/spamassassin-3.4.0-r1:0::installed, sys-boot/syslinux-5.10:0::installed
+
+<   sys-devel/autoconf-archive 2016.03.20-r1:0::installed
+    Reasons: was unused
+
+<   sys-devel/bc 1.06.95-r1:0::installed
+    Reasons: was used by dev-lang/mono-4.4.1.0:0::installed
+
+<   sys-devel/clang 3.7.1-r100:0::installed [cycle 3]
+    Reasons: was used by dev-libs/libclc-0.2.0_pre20160209:0::installed, dev-libs/libdispatch-9999:0::installed, sys-devel/llvm-3.7.1-r3:0::installed
+    In run dependency cycle with: sys-devel/clang:0, sys-devel/llvm:0 in dependency cycle with sys-devel/clang:0, sys-devel/llvm:0
+
+<   sys-devel/llvm 3.7.1-r3:0::installed [cycle 4]
+    Reasons: was used by dev-libs/libclc-0.2.0_pre20160209:0::installed, sys-devel/clang-3.7.1-r100:0::installed, sys-devel/llvm-3.7.1-r3:0::installed
+    In run dependency cycle with: sys-devel/clang:0, sys-devel/llvm:0 in dependency cycle with sys-devel/clang:0, sys-devel/llvm:0; Self dependent (already met)
+
+<   dev-util/ninja 1.6.0:0::installed
+    Reasons: was used by sys-devel/llvm-3.7.1-r3:0::installed
+
+<   dev-util/re2c 0.16:0::installed
+    Reasons: was used by dev-util/ninja-1.6.0:0::installed, mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   sys-devel/gdb 7.10.1:0::installed
+    Reasons: was unused
+
+<   sys-devel/ucpp 1.3.4:0::installed
+    Reasons: was unused
+
+<   sys-firmware/intel-microcode 20150121:0::installed
+    Reasons: was unused
+
+<   sys-firmware/ipxe 1.0.0_p20130925:0::installed
+    Reasons: was unused
+
+<   sys-firmware/seabios 1.8.2:0::installed
+    Reasons: was unused
+
+<   sys-firmware/sgabios 0.1_pre8:0::installed
+    Reasons: was unused
+
+<   sys-firmware/vgabios 0.7a:0::installed
+    Reasons: was unused
+
+<   sys-devel/dev86 0.16.19:0::installed
+    Reasons: was used by sys-firmware/vgabios-0.7a:0::installed
+
+<   sys-devel/bin86 0.16.21:0::installed
+    Reasons: was used by sys-devel/dev86-0.16.19:0::installed
+
+<   sys-fs/btrfs-progs 4.6.1:0::installed
+    Reasons: was unused
+
+<   sys-fs/dmraid 1.0.0_rc16-r3:0::installed
+    Reasons: was unused
+
+<   sys-fs/dosfstools 3.0.28:0::installed
+    Reasons: was unused
+
+<   sys-fs/inotify-tools 3.14:0::installed
+    Reasons: was unused
+
+<   sys-fs/jfsutils 1.1.15:0::installed
+    Reasons: was unused
+
+<   sys-fs/mdadm 3.3.1-r2:0::installed
+    Reasons: was unused
+
+<   sys-fs/mtools 4.0.15:0::installed
+    Reasons: was used by sys-boot/syslinux-5.10:0::installed
+
+<   sys-fs/multipath-tools 0.5.0-r1:0::installed
+    Reasons: was unused
+
+<   sys-fs/quota 4.02:0::installed
+    Reasons: was unused
+
+<   sys-fs/reiser4progs 1.0.9:0::installed
+    Reasons: was unused
+
+<   sys-fs/udisks 2.1.7:2::installed
+    Reasons: was unused
+
+<   dev-libs/libatasmart 0.19-r1:0::installed
+    Reasons: was used by sys-fs/udisks-2.1.7:2::installed
+
+<   sys-block/parted 3.2:0::installed
+    Reasons: was used by sys-fs/udisks-2.1.7:2::installed
+
+<   sys-fs/xfsdump 3.1.6:0::installed
+    Reasons: was unused
+
+<   sys-apps/dmapi 2.2.12-r1:0::installed
+    Reasons: was used by sys-fs/xfsdump-3.1.6:0::installed
+
+<   sys-libs/binutils-libs 2.25.1-r2:0::installed
+    Reasons: was used by sys-devel/llvm-3.7.1-r3:0::installed
+
+<   sys-libs/ldb 1.1.26:0::installed
+    Reasons: was unused
+
+<   net-nds/openldap 2.4.38-r2:0::installed
+    Reasons: was used by sys-libs/ldb-1.1.26:0::installed
+
+<   sys-libs/libaal 1.0.6:0::installed
+    Reasons: was used by sys-fs/reiser4progs-1.0.9:0::installed
+
+<   sys-libs/libavc1394 0.5.4-r1:0::installed
+    Reasons: was unused
+
+<   sys-libs/libraw1394 2.1.0-r1:0::installed
+    Reasons: was used by media-libs/libdc1394-2.2.1:2::installed, sys-libs/libavc1394-0.5.4-r1:0::installed
+
+<   sys-libs/libstatgrab 0.17:0::installed
+    Reasons: was unused
+
+<   sys-libs/libtermcap-compat 2.0.8-r3:0::installed
+    Reasons: was unused
+
+<   sys-libs/libunwind 1.1-r1:7::installed
+    Reasons: was used by dev-util/google-perftools-2.0-r2:0::installed
+
+<   sys-libs/mtdev 1.1.5:0::installed
+    Reasons: was used by dev-libs/libinput-1.4.2:0::installed
+
+<   sys-libs/nss_wrapper 1.1.3:0::installed
+    Reasons: was unused
+
+<   sys-libs/ntdb 1.0-r1:0::installed
+    Reasons: was unused
+
+<   sys-libs/slang 2.2.4-r1:0::installed
+    Reasons: was used by dev-libs/newt-0.52.15:0::installed
+
+<   dev-libs/oniguruma 5.9.5:0::installed
+    Reasons: was used by dev-lang/php-5.6.28:5.6::installed, sys-libs/slang-2.2.4-r1:0::installed
+
+<   sys-libs/tdb 1.3.8:0::installed
+    Reasons: was used by sys-libs/ldb-1.1.26:0::installed
+
+<   sys-libs/tevent 0.9.28:0::installed
+    Reasons: was used by sys-libs/ldb-1.1.26:0::installed
+
+<   sys-libs/talloc 2.1.5:0::installed
+    Reasons: was used by sys-libs/ldb-1.1.26:0::installed, sys-libs/tevent-0.9.28:0::installed
+
+<   sys-libs/uid_wrapper 1.2.1:0::installed
+    Reasons: was unused
+
+<   sys-process/acct 6.5.5-r3:0::installed
+    Reasons: was unused
+
+<   sys-process/audit 2.4.3-r1:0::installed
+    Reasons: was unused
+
+<   sys-libs/libcap-ng 0.7.7:0::installed
+    Reasons: was used by net-analyzer/tcpdump-4.7.4:0::installed, sys-process/audit-2.4.3-r1:0::installed
+
+<   sys-process/lsof 4.88-r1:0::installed
+    Reasons: was unused
+
+<   sys-process/numactl 2.0.11:0::installed
+    Reasons: was used by media-libs/x265-1.8-r3:0::installed
+
+<   sys-process/time 1.7-r1:0::installed
+    Reasons: was unused
+
+<   virtual/awk 1:0::installed
+    Reasons: was used by app-text/gnome-doc-utils-0.20.10-r1:0::installed, app-text/yelp-tools-3.18.0:0::installed
+
+<   virtual/cdrtools 0:0::installed
+    Reasons: was used by app-cdr/dvd+rw-tools-7.1-r1:0::installed
+
+<   virtual/eject 0:0::installed
+    Reasons: was used by sys-fs/udisks-2.1.7:2::installed
+
+<   virtual/fam 0-r1:0::installed
+    Reasons: was unused
+
+<   virtual/fortran 0:0::installed
+    Reasons: was used by sci-libs/fftw-3.3.4:3.0::installed
+
+<   virtual/glu 9.0-r1:0::installed
+    Reasons: was unused
+
+<   virtual/gnustep-back 0.24.0:0::installed
+    Reasons: was unused
+
+<   virtual/jack 0:0::installed
+    Reasons: was unused
+
+<   virtual/jpeg 62:62::installed
+    Reasons: was used by app-text/mupdf-1.5-r1:0::installed
+
+<   virtual/jre 1.7.0-r2:1.7::installed
+    Reasons: was used by dev-java/javahelp-2.0.05_p63:0::installed, dev-java/junit-3.8.2-r1:0::installed, dev-java/swing-layout-1.0.4:1::installed
+
+<   virtual/jre 1.8.0-r1:1.8::installed
+    Reasons: was used by dev-java/javahelp-2.0.05_p63:0::installed, dev-java/junit-3.8.2-r1:0::installed, dev-java/swing-layout-1.0.4:1::installed
+
+<   virtual/krb5 0-r1:0::installed
+    Reasons: was unused
+
+<   app-crypt/mit-krb5 1.14.2:0::installed
+    Reasons: was used by virtual/krb5-0-r1:0::installed
+
+<   dev-libs/libverto 0.2.5-r1:0::installed
+    Reasons: was used by app-crypt/mit-krb5-1.14.2:0::installed
+
+<   dev-libs/libev 4.19:0::installed
+    Reasons: was used by dev-libs/libverto-0.2.5-r1:0::installed
+
+<   sys-apps/keyutils 1.5.9-r1:0::installed
+    Reasons: was used by app-crypt/mit-krb5-1.14.2:0::installed
+
+<   virtual/libelf 1:0::installed
+    Reasons: was unused
+
+<   virtual/mailx 1:0::installed
+    Reasons: was unused
+
+<   net-mail/mailutils 2.99.98:0::installed
+    Reasons: was used by virtual/mailx-1:0::installed
+
+<   dev-db/mariadb 10.0.28:0::installed [cycle 5]
+    Reasons: was used by virtual/libmysqlclient-18:0::installed, virtual/mysql-5.6-r6:0::installed
+    In run dependency cycle with: dev-db/mariadb:0, dev-perl/DBD-mysql:0, virtual/libmysqlclient:0, virtual/mysql:0 in dependency cycle with dev-db/mariadb:0, dev-perl/DBD-mysql:0, virtual/libmysqlclient:0, virtual/mysql:0
+
+<   dev-perl/DBD-mysql 4.32.0-r2:0::installed [cycle 5]
+    Reasons: was used by dev-db/mariadb-10.0.28:0::installed
+
+<   virtual/libmysqlclient 18:0::installed [cycle 5]
+    Reasons: was used by dev-db/mariadb-10.0.28:0::installed, dev-db/mysql-connector-c++-1.1.6:0::installed, dev-perl/DBD-mysql-4.32.0-r2:0::installed, virtual/mysql-5.6-r6:0::installed
+
+<   virtual/mysql 5.6-r6:0::installed [cycle 5]
+    Reasons: was used by dev-db/mariadb-10.0.28:0::installed, net-mail/mailutils-2.99.98:0::installed
+
+<   dev-db/mysql-init-scripts 2.1-r1:0::installed
+    Reasons: was used by dev-db/mariadb-10.0.28:0::installed
+
+<   dev-perl/DBI 1.634.0:0::installed
+    Reasons: was used by dev-perl/DBD-SQLite-1.480.0:0::installed, dev-perl/DBD-mysql-4.32.0-r2:0::installed
+
+<   dev-perl/PlRPC 0.202.0-r2:0::installed
+    Reasons: was used by dev-perl/DBI-1.634.0:0::installed
+
+<   dev-perl/Net-Daemon 0.480.0-r1:0::installed
+    Reasons: was used by dev-perl/PlRPC-0.202.0-r2:0::installed
+
+<   dev-perl/Test-Deep 1.120.0:0::installed
+    Reasons: was used by dev-perl/DBD-mysql-4.32.0-r2:0::installed, dev-perl/Test-Most-0.310.0-r1:0::installed
+
+<   sys-apps/tcp-wrappers 7.6.22-r1:0::installed
+    Reasons: was used by net-analyzer/net-snmp-5.7.3-r3:0::installed, net-mail/mailutils-2.99.98:0::installed, net-nds/openldap-2.4.38-r2:0::installed, sys-apps/xinetd-2.3.15-r3:0::installed, sys-fs/quota-4.02:0::installed
+
+<   virtual/opencl 0-r4:0::installed
+    Reasons: was unused
+
+<   app-eselect/eselect-opencl 1.1.0-r1:0::installed
+    Reasons: was used by virtual/opencl-0-r4:0::installed
+
+<   virtual/opengl 7.0-r1:0::installed
+    Reasons: was used by dev-python/pyglet-1.1.4-r2:0::installed, dev-python/pyopengl-3.0.2-r1:0::installed, games-util/steam-client-meta-0-r20150828:0::installed, media-libs/lib3ds-2.0.0_rc1:0::installed, media-libs/sdl2-ttf-2.0.14:0::installed
+
+<   virtual/perl-Archive-Tar 2.40.0-r1:0::installed
+    Reasons: was used by dev-perl/Alien-SDL-1.446.0:0::installed, mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   virtual/perl-DB_File 1.835.0-r1:0::installed
+    Reasons: was used by mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   virtual/perl-Digest 1.170.0-r6:0::installed
+    Reasons: was used by dev-perl/Digest-SHA1-2.130.0-r1:0::installed
+
+<   virtual/perl-Encode 2.730.0:0::installed
+    Reasons: was used by dev-perl/Date-Manip-6.510.0:0::installed, dev-perl/Email-MIME-1.929.0:0::installed, dev-perl/HTML-Form-6.30.0-r1:0::installed, dev-perl/HTTP-Message-6.110.0:0::installed, dev-perl/IO-HTML-1.1.0:0::installed
+
+<   perl-core/Encode 2.730.0:0::installed
+    Reasons: was used by virtual/perl-Encode-2.730.0:0::installed
+
+<   virtual/perl-Exporter 5.720.0-r1:0::installed
+    Reasons: was used by dev-perl/Capture-Tiny-0.360.0:0::installed, dev-perl/Class-Load-0.230.0:0::installed, dev-perl/Digest-Perl-MD5-1.900.0:0::installed, dev-perl/HTTP-Message-6.110.0:0::installed, dev-perl/IO-HTML-1.1.0:0::installed, dev-perl/IPC-System-Simple-1.250.0:0::installed, dev-perl/Moo-2.0.2:0::installed, dev-perl/NetPacket-1.6.0:0::installed, dev-perl/Role-Tiny-2.0.1:0::installed, dev-perl/Test-Exception-0.430.0:0::installed
+
+<   virtual/perl-File-Path 2.90.0-r3:0::installed
+    Reasons: was used by dev-perl/Archive-Extract-0.720.0:0::installed, dev-perl/Email-Sender-1.300.16:0::installed, dev-perl/List-MoreUtils-0.413.0:0::installed, dev-perl/Log-Log4perl-1.460.0:0::installed
+
+<   virtual/perl-IO 1.350.0:0::installed
+    Reasons: was used by dev-perl/Archive-Zip-1.530.0:0::installed, dev-perl/Capture-Tiny-0.360.0:0::installed, dev-perl/Config-General-2.600.0:0::installed, dev-perl/Date-Manip-6.510.0:0::installed, dev-perl/Email-Sender-1.300.16:0::installed, dev-perl/ExtUtils-Depends-0.404.0:0::installed, dev-perl/HTTP-Daemon-6.10.0-r1:0::installed, dev-perl/MailTools-2.140.0:0::installed, dev-perl/Net-HTTP-6.90.0:0::installed
+
+<   virtual/perl-IO-Compress 2.68.0:0::installed
+    Reasons: was used by dev-perl/HTTP-Message-6.110.0:0::installed, dev-perl/Net-HTTP-6.90.0:0::installed
+
+<   virtual/perl-Compress-Raw-Bzip2 2.68.0:0::installed
+    Reasons: was used by virtual/perl-IO-Compress-2.68.0:0::installed
+
+<   virtual/perl-Compress-Raw-Zlib 2.68.0:0::installed
+    Reasons: was used by dev-perl/Archive-Zip-1.530.0:0::installed, dev-perl/HTTP-Message-6.110.0:0::installed, dev-perl/Net-HTTP-6.90.0:0::installed, virtual/perl-IO-Compress-2.68.0:0::installed
+
+<   virtual/perl-IO-Zlib 1.100.0-r7:0::installed
+    Reasons: was used by mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   virtual/perl-IPC-Cmd 0.920.0-r2:0::installed
+    Reasons: was used by dev-perl/Archive-Extract-0.720.0:0::installed, dev-perl/List-MoreUtils-0.413.0:0::installed
+
+<   virtual/perl-Locale-Maketext 1.260.0-r1:0::installed
+    Reasons: was used by dev-perl/Locale-Maketext-Lexicon-1.0.0:0::installed
+
+<   virtual/perl-Locale-Maketext-Simple 0.210.0-r7:0::installed
+    Reasons: was used by dev-perl/Archive-Extract-0.720.0:0::installed
+
+<   virtual/perl-Module-CoreList 5.201.604.290:0::installed
+    Reasons: was unused
+
+<   virtual/perl-Module-Load-Conditional 0.640.0-r1:0::installed
+    Reasons: was used by dev-perl/Archive-Extract-0.720.0:0::installed
+
+<   virtual/perl-Params-Check 0.380.0-r3:0::installed
+    Reasons: was used by dev-perl/Archive-Extract-0.720.0:0::installed
+
+<   virtual/perl-Pod-Parser 1.630.0-r1:0::installed
+    Reasons: was used by mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   virtual/perl-Storable 2.530.100-r1:0::installed
+    Reasons: was used by dev-perl/Date-Manip-6.510.0:0::installed, dev-perl/PlRPC-0.202.0-r2:0::installed, dev-perl/Proc-ProcessTable-0.530.0:0::installed, mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   virtual/perl-Sys-Syslog 0.330.0-r3:0::installed
+    Reasons: was used by dev-perl/DBI-1.634.0:0::installed
+
+<   virtual/perl-Term-ANSIColor 4.30.0:0::installed
+    Reasons: was used by dev-db/mariadb-10.0.28:0::installed
+
+<   virtual/perl-Test-Simple 1.1.14_p522:0::installed
+    Reasons: was used by dev-perl/HTML-TokeParser-Simple-3.160.0-r1:0::installed, dev-perl/Test-Deep-1.120.0:0::installed, dev-perl/Test-Exception-0.430.0:0::installed, dev-perl/Test-Most-0.310.0-r1:0::installed
+
+<   virtual/perl-Text-Balanced 2.30.0-r1:0::installed
+    Reasons: was unused
+
+<   virtual/perl-Time-HiRes 1.972.600-r2:0::installed
+    Reasons: was used by dev-db/mariadb-10.0.28:0::installed, dev-perl/Log-Log4perl-1.460.0:0::installed, mail-filter/spamassassin-3.4.0-r1:0::installed
+
+<   virtual/perl-XSLoader 0.200.0:0::installed
+    Reasons: was used by dev-perl/List-MoreUtils-0.413.0:0::installed
+
+<   virtual/perl-if 0.60.400:0::installed
+    Reasons: was used by dev-perl/Archive-Extract-0.720.0:0::installed, dev-perl/Module-Pluggable-5.200.0:0::installed
+
+<   virtual/perl-parent 0.232.0-r1:0::installed
+    Reasons: was used by dev-perl/Email-MIME-1.929.0:0::installed
+
+<   virtual/podofo-build 0.9.2:0::installed
+    Reasons: was unused
+
+<   app-text/podofo 0.9.2:0::installed
+    Reasons: was used by virtual/podofo-build-0.9.2:0::installed
+
+<   dev-lang/lua 5.1.5-r3:0::installed
+    Reasons: was used by app-text/podofo-0.9.2:0::installed, dev-lua/LuaBitOp-1.0.2-r1:0::installed, dev-lua/lpeg-0.12:0::installed, dev-lua/luaexpat-1.3.0-r1:0::installed, dev-lua/luajson-1.3.2:0::installed, dev-lua/luasocket-3.0_rc1-r3:0::installed, dev-lua/toluapp-1.0.93:0::installed
+
+<   dev-util/cmake 3.5.2-r1:0::installed
+    Reasons: was used by app-crypt/qca-2.1.1:2::installed, app-text/podofo-0.9.2:0::installed, dev-cpp/clucene-2.3.3.4-r5:1::installed, dev-db/mariadb-10.0.28:0::installed, dev-db/mysql-connector-c++-1.1.6:0::installed, dev-games/physfs-2.0.3-r1:0::installed, dev-libs/jsoncpp-0.10.2-r1:0::installed, dev-libs/libdispatch-9999:0::installed, dev-libs/libical-1.0.1:0::installed, dev-libs/libkqueue-2.0.1:0::installed, dev-libs/pugixml-1.5:0::installed, dev-libs/qjson-0.8.1-r1:0::installed, dev-util/automoc-0.9.88-r1:0::installed, dev-util/cmake-fedora-1.3.0:0::installed, media-libs/allegro-4.4.2-r1:0::installed, media-libs/game-music-emu-0.6.0-r1:0::installed, media-libs/lensfun-0.3.1:0::installed, media-libs/libcuefile-477-r1:0::installed, media-libs/libraw-0.16.2:0::installed, media-libs/libreplaygain-477-r1:0::installed, media-libs/openal-1.15.1-r2:0::installed, media-libs/openjpeg-1.5.2:0::installed, media-libs/openjpeg-2.1.1_p20160922:2::installed, media-libs/qhull-2012.1-r1:0::installed, media-libs/soxr-0.1.1:0::installed, media-libs/taglib-1.9.1-r2:0::installed, media-libs/x265-1.8-r3:0::installed, media-sound/musepack-tools-465-r1:0::installed, net-libs/libssh-0.7.3-r1:0::installed, net-libs/socket_wrapper-1.1.6:0::installed, sys-devel/llvm-3.7.1-r3:0::installed, sys-libs/nss_wrapper-1.1.3:0::installed, sys-libs/uid_wrapper-1.2.1:0::installed
+
+<   dev-qt/qtcore 5.6.1:5::installed
+    Reasons: was used by dev-qt/qtdbus-5.6.1:5::installed, dev-util/cmake-3.5.2-r1:0::installed
+
+<   virtual/python-ipaddress 1.0:0::installed
+    Reasons: was unused
+
+<   virtual/tex-base 0:0::installed
+    Reasons: was used by app-text/lcdf-typetools-2.97:0::installed
+
+<   virtual/texi2dvi 0:0::installed
+    Reasons: was used by app-text/dvipng-1.15:0::installed
+
+<   dev-texlive/texlive-plainextra 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed, virtual/texi2dvi-0:0::installed
+
+<   virtual/latex-base 1.0:0::installed
+    Reasons: was used by app-text/dvipng-1.15:0::installed, app-text/passivetex-1.25:0::installed, app-text/pdfjam-2.08:0::installed, app-text/xdvik-22.85-r1:0::installed, dev-tex/chktex-1.7.1:0::installed, dev-tex/cjk-latex-4.8.3-r1:0::installed, dev-tex/currvita-0.9i-r1:0::installed, dev-tex/dot2texi-3.0:0::installed, dev-tex/envlab-1.2-r1:0::installed, dev-tex/europecv-20060424-r2:0::installed, dev-tex/g-brief-4.0.2:0::installed, dev-tex/glossaries-3.04:0::installed, dev-tex/latex-beamer-3.36:0::installed, dev-tex/latexmk-435:0::installed, dev-tex/leaflet-20041222:0::installed, dev-tex/pgf-3.0.1:0::installed, dev-tex/svninfo-0.7.4:0::installed, dev-tex/xcolor-2.11:0::installed, dev-tex/xmltex-1.9-r2:0::installed, virtual/texi2dvi-0:0::installed
+
+<   dev-texlive/texlive-fontutils 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed, virtual/latex-base-1.0:0::installed
+
+<   dev-texlive/texlive-latexrecommended 2014:0::installed
+    Reasons: was used by app-text/dblatex-0.3.7:0::installed, app-text/texlive-2014:0::installed, dev-tex/dot2texi-3.0:0::installed, dev-tex/glossaries-3.04:0::installed, dev-tex/pgf-3.0.1:0::installed, virtual/latex-base-1.0:0::installed
+
+<   dev-texlive/texlive-latex 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed, dev-tex/latex-beamer-3.36:0::installed, dev-tex/xcolor-2.11:0::installed, dev-texlive/texlive-bibtexextra-2015:0::installed, dev-texlive/texlive-formatsextra-2015:0::installed, dev-texlive/texlive-htmlxml-2012:0::installed, dev-texlive/texlive-humanities-2015:0::installed, dev-texlive/texlive-langcjk-2015:0::installed, dev-texlive/texlive-latexrecommended-2014:0::installed, dev-texlive/texlive-mathextra-2015:0::installed, dev-texlive/texlive-omega-2015:0::installed, dev-texlive/texlive-publishers-2015:0::installed, dev-texlive/texlive-science-2015:0::installed
+
+<   dev-texlive/texlive-basic 2015:0::installed
+    Reasons: was used by app-text/texlive-2014:0::installed, dev-texlive/texlive-fontsextra-2015:0::installed, dev-texlive/texlive-fontsrecommended-2015:0::installed, dev-texlive/texlive-fontutils-2015:0::installed, dev-texlive/texlive-formatsextra-2015:0::installed, dev-texlive/texlive-genericextra-2015:0::installed, dev-texlive/texlive-genericrecommended-2015:0::installed, dev-texlive/texlive-htmlxml-2012:0::installed, dev-texlive/texlive-langcjk-2015:0::installed, dev-texlive/texlive-langenglish-2015:0::installed, dev-texlive/texlive-langgerman-2015:0::installed, dev-texlive/texlive-latex-2015:0::installed, dev-texlive/texlive-luatex-2015:0::installed, dev-texlive/texlive-omega-2015:0::installed, dev-texlive/texlive-pictures-2015-r2:0::installed, dev-texlive/texlive-plainextra-2015:0::installed, dev-texlive/texlive-pstricks-2015:0::installed, dev-texlive/texlive-xetex-2015:0::installed
+
+<   www-client/elinks 0.12_pre6-r1:0::installed
+    Reasons: was unused
+
+<   x11-apps/appres 1.0.4:0::installed
+    Reasons: was unused
+
+<   x11-apps/bdftopcf 1.0.5:0::installed
+    Reasons: was used by media-fonts/font-adobe-100dpi-1.0.3:0::installed, media-fonts/font-adobe-75dpi-1.0.3:0::installed, media-fonts/font-adobe-utopia-100dpi-1.0.4:0::installed, media-fonts/font-adobe-utopia-75dpi-1.0.4:0::installed, media-fonts/font-bh-100dpi-1.0.3:0::installed, media-fonts/font-bh-75dpi-1.0.3:0::installed, media-fonts/font-bh-lucidatypewriter-100dpi-1.0.3:0::installed, media-fonts/font-bh-lucidatypewriter-75dpi-1.0.3:0::installed, media-fonts/font-bitstream-100dpi-1.0.3:0::installed, media-fonts/font-bitstream-75dpi-1.0.3:0::installed, media-fonts/font-cronyx-cyrillic-1.0.3:0::installed, media-fonts/font-cursor-misc-1.0.3:0::installed, media-fonts/font-daewoo-misc-1.0.3:0::installed, media-fonts/font-dec-misc-1.0.3:0::installed, media-fonts/font-isas-misc-1.0.3:0::installed, media-fonts/font-jis-misc-1.0.3:0::installed, media-fonts/font-micro-misc-1.0.3:0::installed, media-fonts/font-misc-cyrillic-1.0.3:0::installed, media-fonts/font-misc-ethiopic-1.0.3:0::installed, media-fonts/font-misc-meltho-1.0.3:0::installed, media-fonts/font-misc-misc-1.1.2:0::installed, media-fonts/font-mutt-misc-1.0.3:0::installed, media-fonts/font-schumacher-misc-1.1.2:0::installed, media-fonts/font-screen-cyrillic-1.0.4:0::installed, media-fonts/font-sony-misc-1.0.3:0::installed, media-fonts/font-sun-misc-1.0.3:0::installed, media-fonts/font-winitzki-cyrillic-1.0.3:0::installed
+
+<   x11-apps/bitmap 1.0.8:0::installed
+    Reasons: was unused
+
+<   x11-apps/iceauth 1.0.7:0::installed
+    Reasons: was unused
+
+<   x11-apps/luit 1.1.1:0::installed
+    Reasons: was unused
+
+<   x11-apps/rgb 1.0.6:0::installed
+    Reasons: was unused
+
+<   x11-apps/sessreg 1.1.0:0::installed
+    Reasons: was unused
+
+<   x11-apps/setxkbmap 1.3.1:0::installed
+    Reasons: was unused
+
+<   x11-apps/smproxy 1.0.6:0::installed
+    Reasons: was unused
+
+<   x11-apps/x11perf 1.6.0:0::installed
+    Reasons: was unused
+
+<   x11-apps/xcalc 1.0.6:0::installed
+    Reasons: was unused
+
+<   x11-apps/xcmsdb 1.0.5:0::installed
+    Reasons: was unused
+
+<   x11-apps/xcursorgen 1.0.6:0::installed
+    Reasons: was unused
+
+<   x11-apps/xdpyinfo 1.3.2:0::installed
+    Reasons: was unused
+
+<   x11-apps/xedit 1.2.2:0::installed
+    Reasons: was unused
+
+<   x11-apps/xf86dga 1.0.3:0::installed
+    Reasons: was unused
+
+<   x11-apps/xgamma 1.0.6:0::installed
+    Reasons: was unused
+
+<   x11-apps/xinit 1.3.4-r1:0::installed
+    Reasons: was unused
+
+<   x11-apps/xauth 1.0.9-r2:0::installed
+    Reasons: was used by x11-apps/xinit-1.3.4-r1:0::installed
+
+<   x11-apps/xinput 1.6.2:0::installed
+    Reasons: was unused
+
+<   x11-apps/xkbevd 1.1.4:0::installed
+    Reasons: was unused
+
+<   x11-apps/xkbutils 1.0.4:0::installed
+    Reasons: was unused
+
+<   x11-apps/xmessage 1.0.4:0::installed
+    Reasons: was unused
+
+<   x11-apps/xpr 1.0.4:0::installed
+    Reasons: was unused
+
+<   x11-apps/xrdb 1.1.0:0::installed
+    Reasons: was used by x11-apps/xinit-1.3.4-r1:0::installed
+
+<   x11-apps/xrefresh 1.0.5:0::installed
+    Reasons: was unused
+
+<   x11-apps/xset 1.2.3:0::installed
+    Reasons: was unused
+
+<   x11-apps/xvinfo 1.1.3:0::installed
+    Reasons: was unused
+
+<   x11-apps/xwd 1.0.6:0::installed
+    Reasons: was unused
+
+<   x11-apps/xwininfo 1.1.3:0::installed
+    Reasons: was unused
+
+<   x11-apps/xwud 1.0.4:0::installed
+    Reasons: was unused
+
+<   x11-libs/agg 2.5-r2:0::installed
+    Reasons: was unused
+
+<   x11-libs/gtk+ 3.20.9:3::installed
+    Reasons: was unused
+
+<   app-accessibility/at-spi2-atk 2.20.1:2::installed
+    Reasons: was used by x11-libs/gtk+-3.20.9:3::installed
+
+<   app-accessibility/at-spi2-core 2.20.2:2::installed
+    Reasons: was used by app-accessibility/at-spi2-atk-2.20.1:2::installed
+
+<   dev-libs/atk 2.20.0:0::installed
+    Reasons: was used by app-accessibility/at-spi2-atk-2.20.1:2::installed, x11-libs/gtk+-3.20.9:3::installed
+
+<   dev-util/gtk-update-icon-cache 3.20.9:0::installed
+    Reasons: was used by x11-libs/gtk+-3.20.9:3::installed
+
+<   media-libs/libepoxy 1.3.1:0::installed
+    Reasons: was used by x11-libs/gtk+-3.20.9:3::installed
+
+<   x11-libs/libFS 1.0.7:0::installed
+    Reasons: was unused
+
+<   x11-libs/libXaw 1.0.13:0::installed
+    Reasons: was used by app-text/xdvik-22.85-r1:0::installed, x11-apps/bitmap-1.0.8:0::installed, x11-apps/xcalc-1.0.6:0::installed, x11-apps/xedit-1.2.2:0::installed, x11-apps/xkbutils-1.0.4:0::installed, x11-apps/xmessage-1.0.4:0::installed
+
+<   x11-libs/libXaw3d 1.6.2:0::installed
+    Reasons: was unused
+
+<   x11-libs/libXcursor 1.1.14:0::installed
+    Reasons: was used by media-libs/allegro-4.4.2-r1:0::installed, x11-apps/xcursorgen-1.0.6:0::installed, x11-libs/gtk+-3.20.9:3::installed
+
+<   x11-libs/libXfont 1.5.1:0::installed
+    Reasons: was used by x11-apps/bdftopcf-1.0.5:0::installed
+
+<   x11-libs/libXft 2.3.2:0::installed
+    Reasons: was used by x11-apps/x11perf-1.6.0:0::installed
+
+<   x11-libs/libXinerama 1.1.3:0::installed
+    Reasons: was used by x11-apps/xdpyinfo-1.3.2:0::installed, x11-apps/xinput-1.6.2:0::installed
+
+<   x11-libs/libXmu 1.1.2:0::installed
+    Reasons: was used by app-text/xdvik-22.85-r1:0::installed, dev-python/pyopengl-3.0.2-r1:0::installed, x11-apps/bitmap-1.0.8:0::installed, x11-apps/smproxy-1.0.6:0::installed, x11-apps/x11perf-1.6.0:0::installed, x11-apps/xauth-1.0.9-r2:0::installed, x11-apps/xedit-1.2.2:0::installed, x11-apps/xpr-1.0.4:0::installed, x11-apps/xrdb-1.1.0:0::installed, x11-apps/xset-1.2.3:0::installed, x11-libs/libXaw-1.0.13:0::installed, x11-libs/libXaw3d-1.6.2:0::installed
+
+<   x11-libs/libXp 1.0.3:0::installed
+    Reasons: was used by app-text/xdvik-22.85-r1:0::installed
+
+<   x11-libs/libXpm 3.5.11:0::installed
+    Reasons: was used by app-text/xdvik-22.85-r1:0::installed, media-libs/allegro-4.4.2-r1:0::installed, x11-libs/libXaw-1.0.13:0::installed
+
+<   x11-libs/libXvMC 1.0.9:0::installed
+    Reasons: was unused
+
+<   app-eselect/eselect-xvmc 0.4:0::installed
+    Reasons: was used by x11-libs/libXvMC-1.0.9:0::installed
+
+<   x11-libs/libXv 1.0.11:0::installed
+    Reasons: was used by x11-apps/xvinfo-1.1.3:0::installed, x11-libs/libXvMC-1.0.9:0::installed
+
+<   x11-libs/libXxf86dga 1.1.4:0::installed
+    Reasons: was used by media-libs/allegro-4.4.2-r1:0::installed, x11-apps/xf86dga-1.0.3:0::installed
+
+<   x11-libs/libXxf86misc 1.0.3:0::installed
+    Reasons: was unused
+
+<   x11-libs/libfakekey 0.1-r1:0::installed
+    Reasons: was unused
+
+<   x11-libs/libXtst 1.2.3:0::installed
+    Reasons: was used by app-accessibility/at-spi2-core-2.20.2:2::installed, media-sound/pulseaudio-9.0:0::installed, x11-apps/xdpyinfo-1.3.2:0::installed, x11-libs/libfakekey-0.1-r1:0::installed
+
+<   x11-libs/libnotify 0.7.6-r3:0::installed
+    Reasons: was used by dev-perl/Gtk2-Notify-0.05-r1:0::installed, dev-python/notify-python-0.1.1-r3:0::installed
+
+<   app-eselect/eselect-notify-send 0.1:0::installed
+    Reasons: was used by x11-libs/libnotify-0.7.6-r3:0::installed
+
+<   virtual/notification-daemon 0:0::installed
+    Reasons: was used by x11-libs/libnotify-0.7.6-r3:0::installed
+
+<   x11-libs/libva-intel-driver 1.6.2:0::installed
+    Reasons: was unused
+
+<   x11-libs/libdrm 2.4.70:0::installed
+    Reasons: was used by x11-libs/libva-intel-driver-1.6.2:0::installed
+
+<   x11-libs/libpciaccess 0.13.4:0::installed
+    Reasons: was used by x11-libs/libdrm-2.4.70:0::installed
+
+<   x11-libs/libvdpau 1.1.1:0::installed
+    Reasons: was unused
+
+<   x11-libs/libxkbcommon 0.6.0:0::installed
+    Reasons: was unused
+
+<   x11-libs/libxklavier 5.3:0::installed
+    Reasons: was unused
+
+<   app-text/iso-codes 3.70:0::installed
+    Reasons: was used by x11-libs/libxklavier-5.3:0::installed
+
+<   x11-apps/xkbcomp 1.3.1:0::installed
+    Reasons: was used by x11-libs/libxklavier-5.3:0::installed
+
+<   x11-libs/libXi 1.7.8:0::installed
+    Reasons: was used by app-accessibility/at-spi2-core-2.20.2:2::installed, dev-python/pyopengl-3.0.2-r1:0::installed, x11-apps/xdpyinfo-1.3.2:0::installed, x11-apps/xinput-1.6.2:0::installed, x11-libs/gtk+-3.20.9:3::installed, x11-libs/libXtst-1.2.3:0::installed, x11-libs/libxklavier-5.3:0::installed
+
+<   x11-libs/libxkbfile 1.0.9:0::installed
+    Reasons: was used by x11-apps/setxkbmap-1.3.1:0::installed, x11-apps/xkbcomp-1.3.1:0::installed, x11-apps/xkbevd-1.1.4:0::installed, x11-apps/xwd-1.0.6:0::installed, x11-libs/libxklavier-5.3:0::installed
+
+<   x11-libs/libxshmfence 1.2:0::installed
+    Reasons: was unused
+
+<   x11-libs/pixman 0.34.0:0::installed
+    Reasons: was unused
+
+<   x11-libs/qscintilla 2.9.2:0::installed
+    Reasons: was unused
+
+<   dev-qt/qtcore 4.8.6-r2:4::installed [cycle 6]
+    Reasons: was used by app-crypt/qca-2.1.1:2::installed, dev-libs/kqoauth-0.98-r1:0::installed, dev-libs/qjson-0.8.1-r1:0::installed, dev-qt/qttranslations-4.8.6-r1:4::installed, dev-util/automoc-0.9.88-r1:0::installed, x11-libs/qscintilla-2.9.2:0::installed
+    In run dependency cycle with: dev-qt/qtcore:4, dev-qt/qttranslations:4 in dependency cycle with dev-qt/qtcore:4, dev-qt/qttranslations:4
+
+<   dev-qt/qttranslations 4.8.6-r1:4::installed [cycle 6]
+    Reasons: was used by dev-qt/qtcore-4.8.6-r2:4::installed
+
+<   dev-qt/qtchooser 0_p20151008:0::installed
+    Reasons: was used by dev-qt/qtcore-4.8.6-r2:4::installed, dev-qt/qtcore-5.6.1:5::installed, dev-qt/qtdbus-5.6.1:5::installed, dev-qt/qttranslations-4.8.6-r1:4::installed
+
+<   x11-libs/startup-notification 0.12-r1:0::installed
+    Reasons: was unused
+
+<   x11-libs/tslib 1.0-r3:0::installed
+    Reasons: was unused
+
+<   x11-libs/xcb-util-xrm 1.0:0::installed
+    Reasons: was unused
+
+<   x11-libs/xcb-util 0.4.0:0::installed [cycle 7]
+    Reasons: was used by x11-libs/startup-notification-0.12-r1:0::installed, x11-libs/xcb-util-image-0.4.0:0::installed, x11-libs/xcb-util-xrm-1.0:0::installed
+    In run dependency cycle with: x11-libs/xcb-util:0, x11-libs/xcb-util-cursor:0, x11-libs/xcb-util-image:0 in dependency cycle with x11-libs/xcb-util:0, x11-libs/xcb-util-cursor:0, x11-libs/xcb-util-image:0
+
+<   x11-libs/xcb-util-cursor 0.1.3-r1:0::installed [cycle 7]
+    Reasons: was used by x11-libs/xcb-util-0.4.0:0::installed
+
+<   x11-libs/xcb-util-image 0.4.0:0::installed [cycle 7]
+    Reasons: was used by x11-libs/xcb-util-0.4.0:0::installed, x11-libs/xcb-util-cursor-0.1.3-r1:0::installed
+
+<   x11-libs/xcb-util-keysyms 0.4.0:0::installed
+    Reasons: was used by x11-libs/xcb-util-0.4.0:0::installed
+
+<   x11-libs/xcb-util-renderutil 0.3.9-r1:0::installed
+    Reasons: was used by x11-libs/xcb-util-0.4.0:0::installed, x11-libs/xcb-util-cursor-0.1.3-r1:0::installed
+
+<   x11-libs/xcb-util-wm 0.4.1-r1:0::installed
+    Reasons: was used by x11-libs/xcb-util-0.4.0:0::installed
+
+<   x11-misc/gccmakedep 1.0.3:0::installed
+    Reasons: was unused
+
+<   x11-misc/xautolock 2.2_p5:0::installed
+    Reasons: was unused
+
+<   app-text/rman 3.2-r1:0::installed
+    Reasons: was used by x11-misc/xautolock-2.2_p5:0::installed
+
+<   x11-libs/libXScrnSaver 1.2.2-r1:0::installed
+    Reasons: was used by x11-misc/xautolock-2.2_p5:0::installed
+
+<   x11-misc/imake 1.0.7:0::installed
+    Reasons: was used by x11-misc/xautolock-2.2_p5:0::installed
+
+<   x11-misc/slock 1.3-r3:0::installed
+    Reasons: was used by x11-misc/xautolock-2.2_p5:0::installed
+
+<   x11-libs/libXrandr 1.5.1:0::installed
+    Reasons: was used by x11-apps/xinput-1.6.2:0::installed, x11-libs/gtk+-3.20.9:3::installed, x11-misc/slock-1.3-r3:0::installed
+
+<   x11-misc/xcalib 0.8:0::installed
+    Reasons: was unused
+
+<   x11-libs/libXxf86vm 1.1.4:0::installed
+    Reasons: was used by media-libs/allegro-4.4.2-r1:0::installed, x11-apps/xdpyinfo-1.3.2:0::installed, x11-apps/xgamma-1.0.6:0::installed, x11-misc/xcalib-0.8:0::installed
+
+<   x11-misc/xcompmgr 1.1.7:0::installed
+    Reasons: was unused
+
+<   x11-libs/libXcomposite 0.4.4-r1:0::installed
+    Reasons: was used by x11-apps/xdpyinfo-1.3.2:0::installed, x11-libs/gtk+-3.20.9:3::installed, x11-misc/xcompmgr-1.1.7:0::installed
+
+<   x11-libs/libXdamage 1.1.4-r1:0::installed
+    Reasons: was used by x11-libs/gtk+-3.20.9:3::installed, x11-misc/xcompmgr-1.1.7:0::installed
+
+<   x11-libs/libXext 1.3.3:0::installed
+    Reasons: was used by media-libs/allegro-4.4.2-r1:0::installed, media-libs/giblib-1.2.4:0::installed, media-libs/imlib2-1.4.9:0::installed, x11-apps/x11perf-1.6.0:0::installed, x11-apps/xauth-1.0.9-r2:0::installed, x11-apps/xdpyinfo-1.3.2:0::installed, x11-apps/xinput-1.6.2:0::installed, x11-apps/xset-1.2.3:0::installed, x11-libs/gtk+-3.20.9:3::installed, x11-libs/libXScrnSaver-1.2.2-r1:0::installed, x11-libs/libXaw-1.0.13:0::installed, x11-libs/libXaw3d-1.6.2:0::installed, x11-libs/libXft-2.3.2:0::installed, x11-libs/libXi-1.7.8:0::installed, x11-libs/libXinerama-1.1.3:0::installed, x11-libs/libXmu-1.1.2:0::installed, x11-libs/libXp-1.0.3:0::installed, x11-libs/libXpm-3.5.11:0::installed, x11-libs/libXrandr-1.5.1:0::installed, x11-libs/libXtst-1.2.3:0::installed, x11-libs/libXv-1.0.11:0::installed, x11-libs/libXvMC-1.0.9:0::installed, x11-libs/libXxf86dga-1.1.4:0::installed, x11-libs/libXxf86misc-1.0.3:0::installed, x11-libs/libXxf86vm-1.1.4:0::installed, x11-libs/libvdpau-1.1.1:0::installed, x11-misc/slock-1.3-r3:0::installed, x11-misc/xcalib-0.8:0::installed, x11-misc/xcompmgr-1.1.7:0::installed
+
+<   x11-libs/libXfixes 5.0.3:0::installed
+    Reasons: was used by x11-libs/gtk+-3.20.9:3::installed, x11-libs/libXcomposite-0.4.4-r1:0::installed, x11-libs/libXcursor-1.1.14:0::installed, x11-libs/libXdamage-1.1.4-r1:0::installed, x11-libs/libXi-1.7.8:0::installed, x11-misc/xcompmgr-1.1.7:0::installed
+
+<   x11-libs/libXrender 0.9.10:0::installed
+    Reasons: was used by x11-apps/x11perf-1.6.0:0::installed, x11-apps/xdpyinfo-1.3.2:0::installed, x11-libs/gtk+-3.20.9:3::installed, x11-libs/libXcursor-1.1.14:0::installed, x11-libs/libXft-2.3.2:0::installed, x11-libs/libXrandr-1.5.1:0::installed, x11-misc/xcompmgr-1.1.7:0::installed
+
+<   x11-misc/xdg-user-dirs 0.15:0::installed
+    Reasons: was unused
+
+<   app-text/docbook-xml-dtd 4.3-r1:4.3::installed
+    Reasons: was used by x11-misc/xdg-user-dirs-0.15:0::installed
+
+<   x11-misc/xorg-cf-files 1.0.6:0::installed
+    Reasons: was used by x11-misc/imake-1.0.7:0::installed
+
+<   x11-proto/bigreqsproto 1.1.2:0::installed
+    Reasons: was unused
+
+<   x11-proto/damageproto 1.2.1-r1:0::installed
+    Reasons: was used by x11-libs/gtk+-3.20.9:3::installed, x11-libs/libXdamage-1.1.4-r1:0::installed
+
+<   x11-proto/dri2proto 2.8-r1:0::installed
+    Reasons: was used by x11-libs/libvdpau-1.1.1:0::installed
+
+<   x11-proto/dri3proto 1.0:0::installed
+    Reasons: was unused
+
+<   x11-proto/fixesproto 5.0-r1:0::installed
+    Reasons: was used by x11-libs/libXfixes-5.0.3:0::installed
+
+<   x11-proto/fontsproto 2.1.3:0::installed
+    Reasons: was used by x11-libs/libFS-1.0.7:0::installed, x11-libs/libXfont-1.5.1:0::installed
+
+<   x11-proto/glproto 1.4.17-r1:0::installed
+    Reasons: was unused
+
+<   app-eselect/eselect-opengl 1.3.1-r4:0::installed
+    Reasons: was used by x11-proto/glproto-1.4.17-r1:0::installed
+
+<   x11-proto/presentproto 1.0:0::installed
+    Reasons: was unused
+
+<   x11-proto/randrproto 1.5.0:0::installed
+    Reasons: was used by x11-libs/libXrandr-1.5.1:0::installed, x11-misc/slock-1.3-r3:0::installed
+
+<   x11-proto/renderproto 0.11.1-r1:0::installed
+    Reasons: was used by x11-apps/xdpyinfo-1.3.2:0::installed, x11-libs/libXrandr-1.5.1:0::installed, x11-libs/libXrender-0.9.10:0::installed
+
+<   x11-proto/scrnsaverproto 1.2.2-r1:0::installed
+    Reasons: was used by x11-libs/libXScrnSaver-1.2.2-r1:0::installed, x11-misc/xautolock-2.2_p5:0::installed
+
+<   x11-proto/videoproto 2.3.3:0::installed
+    Reasons: was used by x11-libs/libXv-1.0.11:0::installed, x11-libs/libXvMC-1.0.9:0::installed
+
+<   x11-proto/xcmiscproto 1.2.2:0::installed
+    Reasons: was unused
+
+<   x11-proto/xf86driproto 2.1.1-r1:0::installed
+    Reasons: was unused
+
+<   x11-proto/xf86rushproto 1.1.2-r1:0::installed
+    Reasons: was unused
+
+<   x11-proto/xf86vidmodeproto 2.3.1-r1:0::installed
+    Reasons: was used by media-libs/allegro-4.4.2-r1:0::installed, x11-apps/xdpyinfo-1.3.2:0::installed, x11-apps/xgamma-1.0.6:0::installed, x11-libs/libXxf86vm-1.1.4:0::installed, x11-misc/xcalib-0.8:0::installed
+
+<   x11-proto/xineramaproto 1.2.1-r1:0::installed
+    Reasons: was used by x11-apps/xdpyinfo-1.3.2:0::installed, x11-libs/libXinerama-1.1.3:0::installed
+
+<   x11-themes/adwaita-icon-theme 3.20:0::installed
+    Reasons: was used by x11-libs/gtk+-3.20.9:3::installed
+
+<   gnome-base/librsvg 2.40.16:2::installed
+    Reasons: was used by app-text/dblatex-0.3.7:0::installed, x11-libs/gtk+-3.20.9:3::installed, x11-themes/adwaita-icon-theme-3.20:0::installed
+
+<   dev-libs/libcroco 0.6.11:0.6::installed
+    Reasons: was used by gnome-base/librsvg-2.40.16:2::installed
+
+<   dev-libs/vala-common 0.32.1:0::installed
+    Reasons: was used by dev-lang/vala-0.26.2:0.26::installed, dev-lang/vala-0.30.1:0.30::installed, dev-lang/vala-0.32.1:0.32::installed, gnome
+ [35;01m*[0m No unread news items found
+-base/librsvg-2.40.16:2::installed
+
+<   x11-libs/gdk-pixbuf 2.34.0:2::installed
+    Reasons: was used by dev-util/gtk-update-icon-cache-3.20.9:0::installed, gnome-base/librsvg-2.40.16:2::installed, media-libs/libwmf-0.2.8.4-r6:0::installed, x11-libs/gtk+-3.20.9:3::installed, x11-libs/libnotify-0.7.6-r3:0::installed
+
+<   media-libs/libpng 1.6.25:0::installed
+    Reasons: was used by app-text/dvipng-1.15:0::installed, app-text/podofo-0.9.2:0::installed, dev-lang/php-5.6.28:5.6::installed, dev-python/matplotlib-1.4.3:0::installed, media-libs/allegro-4.4.2-r1:0::installed, media-libs/devil-1.7.8-r2:0::installed, media-libs/gd-2.2.3:2::installed, media-libs/imlib2-1.4.9:0::installed, media-libs/lensfun-0.3.1:0::installed, media-libs/libkate-0.3.7:0::installed, media-libs/libwmf-0.2.8.4-r6:0::installed, media-libs/openjpeg-1.5.2:0::installed, media-libs/openjpeg-2.1.1_p20160922:2::installed, media-libs/sdl2-image-2.0.1:0::installed, media-libs/zvbi-0.2.35-r1:0::installed, media-video/subtitleripper-0.3.4-r4:0::installed, net-libs/libvncserver-0.9.10-r3:0::installed, sys-libs/slang-2.2.4-r1:0::installed, x11-apps/xcursorgen-1.0.6:0::installed, x11-libs/gdk-pixbuf-2.34.0:2::installed
+
+<   media-libs/tiff 4.0.7:0::installed
+    Reasons: was used by app-text/podofo-0.9.2:0::installed, media-libs/devil-1.7.8-r2:0::installed, media-libs/openjpeg-1.5.2:0::installed, media-libs/openjpeg-2.1.1_p20160922:2::installed, x11-libs/gdk-pixbuf-2.34.0:2::installed
+
+<   media-libs/jbigkit 2.1:0::installed
+    Reasons: was used by media-libs/tiff-4.0.7:0::installed
+
+<   virtual/jpeg 0-r2:0::installed
+    Reasons: was used by app-text/mupdf-1.5-r1:0::installed, app-text/podofo-0.9.2:0::installed, dev-lang/php-5.6.28:5.6::installed, media-libs/allegro-4.4.2-r1:0::installed, media-libs/gd-2.2.3:2::installed, media-libs/imlib2-1.4.9:0::installed, media-libs/libmng-2.0.2-r1:0::installed, media-libs/libopenraw-0.0.9:0::installed, media-libs/libwmf-0.2.8.4-r6:0::installed, media-libs/sdl2-image-2.0.1:0::installed, media-libs/tiff-4.0.7:0::installed, net-libs/libvncserver-0.9.10-r3:0::installed, x11-libs/gdk-pixbuf-2.34.0:2::installed
+
+<   media-libs/libjpeg-turbo 1.5.0:0::installed
+    Reasons: was used by virtual/jpeg-0-r2:0::installed, virtual/jpeg-62:62::installed
+
+<   dev-lang/nasm 2.12.01:0::installed
+    Reasons: was used by media-libs/flac-1.3.1-r1:0::installed, media-libs/libjpeg-turbo-1.5.0:0::installed, media-libs/xvid-1.3.3:0::installed, sys-boot/syslinux-5.10:0::installed
+
+<   dev-lang/yasm 1.2.0-r1:0::installed
+    Reasons: was used by media-libs/libass-0.12.3:0::installed, media-libs/libjpeg-turbo-1.5.0:0::installed, media-libs/libvpx-1.5.0:0::installed, media-libs/x265-1.8-r3:0::installed, media-libs/xvid-1.3.3:0::installed
+
+<   x11-themes/hicolor-icon-theme 0.15:0::installed
+    Reasons: was used by x11-themes/adwaita-icon-theme-3.20:0::installed
+
+Total: 1252 uninstalls
+
