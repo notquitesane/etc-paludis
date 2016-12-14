@@ -1,0 +1,90 @@
+These are the actions I will take, in order:
+
+r   sys-apps/busybox:0::gentoo 1.24.2 to ::installed replacing 1.24.2
+    -debug ipv6 -livecd -make-symlinks -math mdev* -pam -savedconfig (-selinux) -sep-usr static -syslog -systemd build_options: symbols=split -dwarf_compress (-optional_tests) -trace work=tidyup
+    Reasons: target (system::gentoo)
+
+r   net-misc/rsync:0::gentoo 3.1.2 to ::installed replacing 3.1.2
+    acl iconv ipv6 -static stunnel* xattr build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (system::gentoo), sys-apps/portage-2.3.0:0::installed
+
+u   sys-apps/sed:0::gentoo 4.2.2 to ::installed replacing 4.2.1-r1 [cycle 1]
+    acl nls (-selinux) -static build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (system::gentoo), app-admin/eselect-1.4.5:0::installed, gnome-base/gnome-keyring-3.20.0:0::gentoo, sys-apps/portage-2.3.0:0::installed
+    1.01 MBytes to download
+    In dependency cycle with existing packages: sys-apps/sed:0, sys-apps/util-linux:0, sys-process/procps:0
+
+u   sys-process/procps:0::gentoo 3.3.12 to ::installed replacing 3.3.11-r3 [cycle 1]
+    kill modern-top ncurses nls (-selinux) -static-libs -systemd unicode (-test) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (system::gentoo), !<sys-process/procps-3.3.9-r2 from sys-apps/openrc-0.22.4:0::installed
+
+r   sys-apps/util-linux:0::gentoo 2.26.2 to ::installed replacing 2.26.2 [cycle 1]
+    -build -caps cramfs -fdformat ncurses nls pam python (-selinux) -slang static-libs suid -systemd tty-helpers* udev unicode (-test) ABI_X86: 32 (64) (-x32) PYTHON_SINGLE_TARGET: -python2_7 python3_4 PYTHON_TARGETS: -python2_7 python3_4 build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (system::gentoo), !<sys-apps/util-linux-2.13 from sys-apps/coreutils-8.25:0::installed, !sys-apps/util-linux[kill] from sys-process/procps-3.3.12:0::gentoo, 8 more
+
+n   gnome-base/gnome-keyring:0::gentoo 3.20.0 to ::installed
+    "Password and keyring managing daemon"
+    -caps -filecaps pam (-selinux) -ssh-agent (-test) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: !<gnome-base/gnome-keyring-3.3 from app-crypt/gcr-3.20.0:0::installed, app-crypt/libsecret-0.18.5:0::installed
+
+u   sys-libs/e2fsprogs-libs:0::gentoo 1.43.3 to ::installed replacing 1.42.13
+    nls -static-libs ABI_X86: -32 (64) (-x32) build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: !<sys-libs/e2fsprogs-libs-1.41.8 from sys-apps/util-linux-2.26.2:0::gentoo, sys-fs/e2fsprogs-1.43.3-r1:0::gentoo
+    585.34 kBytes to download
+
+u   sys-fs/e2fsprogs:0::gentoo 1.43.3-r1 to ::installed replacing 1.42.13
+    -fuse+ nls -static-libs build_options: symbols=split -dwarf_compress -optional_tests -trace work=tidyup
+    Reasons: target (system::gentoo), !<sys-fs/e2fsprogs-1.41.8 from sys-apps/util-linux-2.26.2:0::gentoo, !<sys-fs/e2fsprogs-1.41.8 from sys-libs/e2fsprogs-libs-1.43.3:0::gentoo
+    7.06 MBytes to download
+
+Total: 3 reinstalls, 4 upgrades, 1 new installs, 8.65 MBytes to download
+
+Build Options:
+    dwarf_compress:                Compress DWARF2+ debug information
+    optional_tests:                Run tests considered by the package to be optional
+    symbols:                       How to handle debug symbols in installed files
+    trace:                         Trace actions executed by the package (very noisy, for debugging broken builds only)
+    work:                          Whether to preserve or remove working directories
+
+USE:
+    caps:                          Use Linux capabilities library to control privilege
+    filecaps:                      Use Linux file capabilities to control privilege rather than set*id (this is orthogonal to USE=caps which uses capabilities at runtime e.g. libcap)
+    fuse:                          Build fuse2fs, a FUSE file system client for ext2/ext3/ext4 file systems
+    mdev:                          Create the appropriate symlink in /sbin and install mdev.conf and support files
+    pam:                           Add support for PAM (Pluggable Authentication Modules) - DANGEROUS to arbitrarily flip
+    selinux:                       !!internal use only!! Security Enhanced Linux support, this must be set by the selinux profile or breakage will occur
+    ssh-agent:                     Use GNOME Keyring to unlock SSH keys. Recommended unless you are using ECDSA or Ed25519 keys.
+    stunnel:                       Provide helper scripts for using rsync via >=net-misc/stunnel-4
+    test:                          Workaround to pull in packages needed to run with FEATURES=test. Portage-2.1.2 handles this internally, so don't set it in make.conf/package.use anymore
+    tty-helpers:                   install the mesg/wall/write tools for talking to local users
+
+I encountered the following errors:
+
+!   sys-libs/ncurses
+    Reasons: app-admin/eselect-1.4.5:0::installed, app-crypt/pinentry-0.9.7-r1:0::installed, app-editors/nano-2.5.3:0::installed, 15 more
+    Unsuitable candidates:
+      * sys-libs/ncurses-5.9-r3:0::gentoo
+        Did not meet >=sys-libs/ncurses-5.2-r2:0/5=, use existing if possible, installing to / from sys-apps/texinfo-6.1:0::installed
+        Did not meet >=sys-libs/ncurses-5.2-r2:0/6=, use existing if possible, installing to / from app-shells/bash-4.3_p48-r1:0::installed
+        Did not meet >=sys-libs/ncurses-5.2:0/6=, use existing if possible, installing to / from sys-apps/less-481:0::installed (and 1 more)
+        Did not meet >=sys-libs/ncurses-5.7-r7:0/6=, use existing if possible, installing to / from sys-process/psmisc-22.21-r3:0::installed
+        Did not meet >=sys-libs/ncurses-5.9-r3:0/6=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?], use existing if possible, installing to / from sys-libs/readline-6.3_p8-r3:0::installed
+        Did not meet sys-libs/ncurses:0/6=, use existing if possible, installing to / from sys-apps/openrc-0.22.4:0::installed (and 1 more)
+      * sys-libs/ncurses-5.9-r4:0::gentoo
+        Masked by keyword
+            Keywords ~alpha ~amd64 ~amd64-fbsd ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~sparc-fbsd ~x86 ~x86-fbsd
+        Did not meet >=sys-libs/ncurses-5.2-r2:0/5=, use existing if possible, installing to / from sys-apps/texinfo-6.1:0::installed
+        Did not meet >=sys-libs/ncurses-5.2-r2:0/6=, use existing if possible, installing to / from app-shells/bash-4.3_p48-r1:0::installed
+        Did not meet >=sys-libs/ncurses-5.2:0/6=, use existing if possible, installing to / from sys-apps/less-481:0::installed (and 1 more)
+        Did not meet >=sys-libs/ncurses-5.7-r7:0/6=, use existing if possible, installing to / from sys-process/psmisc-22.21-r3:0::installed
+        Did not meet >=sys-libs/ncurses-5.9-r3:0/6=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?], use existing if possible, installing to / from sys-libs/readline-6.3_p8-r3:0::installed
+        Did not meet sys-libs/ncurses:0/6=, use existing if possible, installing to / from sys-apps/openrc-0.22.4:0::installed (and 1 more)
+      * sys-libs/ncurses-5.9-r5:0::gentoo
+        Did not meet >=sys-libs/ncurses-5.2-r2:0/6=, use existing if possible, installing to / from app-shells/bash-4.3_p48-r1:0::installed
+        Did not meet >=sys-libs/ncurses-5.2:0/6=, use existing if possible, installing to / from sys-apps/less-481:0::installed (and 1 more)
+        Did not meet >=sys-libs/ncurses-5.7-r7:0/6=, use existing if possible, installing to / from sys-process/psmisc-22.21-r3:0::installed
+        Did not meet >=sys-libs/ncurses-5.9-r3:0/6=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?], use existing if possible, installing to / from sys-libs/readline-6.3_p8-r3:0::installed
+        Did not meet sys-libs/ncurses:0/6=, use existing if possible, installing to / from sys-apps/openrc-0.22.4:0::installed (and 1 more)
+      * sys-libs/ncurses-6.0-r1:0::gentoo
+        Did not meet >=sys-libs/ncurses-5.2-r2:0/5=, use existing if possible, installing to / from sys-apps/texinfo-6.1:0::installed
+
