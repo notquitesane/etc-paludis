@@ -5,3 +5,4 @@ CFLAGS="-march=westmere -mmmx -Os -pipe -fomit-frame-pointer -msse -msse2 -msse3
 CXXFLAGS="${CFLAGS}"
 LDFLAGS="-Wl,-O1 -Wl,--as-needed"
 MAKEOPTS="-j17 -l1"
+BUILD_OPTIONS="-* work=remove"
